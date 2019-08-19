@@ -1,0 +1,231 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Nasio\n"
+"POT-Creation-Date: 2019-08-19 22:41+0300\n"
+"PO-Revision-Date: 2019-08-19 22:41+0300\n"
+"Last-Translator: \n"
+"Language-Team: Yonkov, yonkov.atanas@gmail.com\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_x;esc_attr_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:19
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:22
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: archive.php:48 search.php:40
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: comments.php:34
+#, php-format
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr ""
+
+#: comments.php:73
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:80
+msgid "Leave a Comment"
+msgstr ""
+
+#: comments.php:83
+msgid "Submit Query"
+msgstr ""
+
+#: comments.php:85
+msgid "Message"
+msgstr ""
+
+#: functions.php:13 template-parts/navigation.php:13
+msgid "Top Menu"
+msgstr ""
+
+#: functions.php:14
+msgid "Social Links Menu"
+msgstr ""
+
+#: functions.php:64 sidebar.php:17
+msgid "Right Sidebar"
+msgstr ""
+
+#: functions.php:66
+msgid ""
+"Add widgets here to appear in your sidebar on blog posts and archive pages."
+msgstr ""
+
+#: functions.php:74
+msgid "Footer 1"
+msgstr ""
+
+#: functions.php:76 functions.php:86
+msgid "Add widgets here to appear in your footer."
+msgstr ""
+
+#: functions.php:84
+msgid "Footer 2"
+msgstr ""
+
+#: functions.php:144
+msgid "Sticky"
+msgstr ""
+
+#: functions.php:164
+#, php-format
+msgid "View all posts in %s"
+msgstr ""
+
+#: functions.php:184
+msgid "Recent Posts"
+msgstr ""
+
+#: functions.php:262
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: functions.php:272
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#: functions.php:280
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:299
+msgid "..."
+msgstr ""
+
+#: functions.php:421
+msgid "About"
+msgstr ""
+
+#: functions.php:423
+msgid ""
+"Welcome on board! This is your about page, which is what most visitors will "
+"check to find out more information about yourself. Write here about your "
+"hobbies, work and passion."
+msgstr ""
+
+#: functions.php:427
+msgid "Homepage"
+msgstr ""
+
+#: functions.php:428
+msgid ""
+"Welcome to your site! This is your homepage, which is what most visitors "
+"will see when they come to your site for the first time. Use the customizer "
+"to choose between a static homepage or display the latest posts in a "
+"beautiful 2-column layout instead."
+msgstr ""
+
+#: header.php:38
+msgid "Footer Social Links Menu"
+msgstr ""
+
+#: inc/customizer.php:25
+msgid "Top Menu Text Color"
+msgstr ""
+
+#: inc/customizer.php:36
+msgid "Headings Text Color"
+msgstr ""
+
+#: inc/customizer.php:48
+msgid "Body Text Color"
+msgstr ""
+
+#: inc/customizer.php:60
+msgid "Links Text Color"
+msgstr ""
+
+#: inc/customizer.php:135
+msgid "Typography"
+msgstr ""
+
+#: inc/customizer.php:160
+msgid "Body Font Size"
+msgstr ""
+
+#: inc/customizer.php:209 template-parts/footer-widgets.php:1
+msgid "Footer"
+msgstr ""
+
+#: inc/customizer.php:210
+msgid "Set editable text for certain content."
+msgstr ""
+
+#: inc/customizer.php:213
+msgid "Edit Footer Credits"
+msgstr ""
+
+#: inc/customizer.php:225
+msgid "Footer Text"
+msgstr ""
+
+#: index.php:8
+msgid "Latest Posts"
+msgstr ""
+
+#: index.php:29
+msgid "There are no posts!"
+msgstr ""
+
+#: searchform.php:8
+msgid "Search"
+msgstr ""
+
+#: template-parts/footer-widgets.php:7
+msgid "About me"
+msgstr ""
+
+#: template-parts/footer-widgets.php:11
+msgid ""
+"This is a good place to introduce yourself. Write about your work, hobbies "
+"and passion."
+msgstr ""
+
+#: template-parts/footer-widgets.php:12
+msgid "Read more"
+msgstr ""
+
+#: template-parts/footer-widgets.php:22
+msgid "Get Social"
+msgstr ""
+
+#: template-parts/post/content.php:51
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: template-parts/site-info.php:24
+msgid "https://yonkov.github.io/"
+msgstr ""
+
+#: template-parts/site-info.php:25
+#, php-format
+msgid "Designed by %s"
+msgstr ""
+
+#: template-parts/site-info.php:28
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: template-parts/site-info.php:29
+#, php-format
+msgid "Powered by %s"
+msgstr ""

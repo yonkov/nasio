@@ -1,0 +1,237 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Nasio\n"
+"POT-Creation-Date: 2019-08-20 00:02+0300\n"
+"PO-Revision-Date: 2019-08-20 00:02+0300\n"
+"Last-Translator: \n"
+"Language-Team: Yonkov, yonkov.atanas@gmail.com\n"
+"Language: bg_BG\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_x;esc_attr_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:19
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Опа! Не намерихме такава страница."
+
+#: 404.php:22
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+"Изглежда, че нищо не бе намерено на този адрес. Може би опитайте търсене?"
+
+#: archive.php:48 search.php:40
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Съжаляваме, но не намерихме нищо. Моля опитайте отново с различно търсене."
+
+#: comments.php:34
+#, php-format
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr ""
+
+#: comments.php:73
+msgid "Comments are closed."
+msgstr "Коментарите са затворени."
+
+#: comments.php:80
+msgid "Leave a Comment"
+msgstr "Оставете коментар"
+
+#: comments.php:83
+msgid "Submit Query"
+msgstr "Изпрати заявка"
+
+#: comments.php:85
+msgid "Message"
+msgstr "Съобщение"
+
+#: functions.php:13 template-parts/navigation.php:13
+msgid "Top Menu"
+msgstr "Основно меню"
+
+#: functions.php:14
+msgid "Social Links Menu"
+msgstr "Социални медии"
+
+#: functions.php:64 sidebar.php:17
+msgid "Right Sidebar"
+msgstr "Дясна странична лента"
+
+#: functions.php:66
+msgid ""
+"Add widgets here to appear in your sidebar on blog posts and archive pages."
+msgstr "Добавете джаджи тук, които да се появят в страничната лента."
+
+#: functions.php:74
+msgid "Footer 1"
+msgstr ""
+
+#: functions.php:76 functions.php:86
+msgid "Add widgets here to appear in your footer."
+msgstr "Добавете джаджи тук, които да се появят във футъра."
+
+#: functions.php:84
+msgid "Footer 2"
+msgstr ""
+
+#: functions.php:144
+msgid "Sticky"
+msgstr ""
+
+#: functions.php:164
+#, php-format
+msgid "View all posts in %s"
+msgstr "Вижте всички постове в %s"
+
+#: functions.php:184
+msgid "Recent Posts"
+msgstr "Последни публикации"
+
+#: functions.php:262
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">казва:</span>"
+
+#: functions.php:272
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#: functions.php:280
+msgid "Your comment is awaiting moderation."
+msgstr "Вашият коментар ще бъде модериран скоро."
+
+#: functions.php:299
+msgid "..."
+msgstr ""
+
+#: functions.php:415
+msgid "About"
+msgstr "За мен"
+
+#: functions.php:417
+msgid ""
+"Welcome on board! This is your about page, which is what most visitors will "
+"check to find out more information about yourself. Write here about your "
+"hobbies, work and passion."
+msgstr ""
+"Добре дошли! Това е страница „За мен“, която повечето от вашите посетители "
+"ще проверят, за да намерят повече информация за вас и вашата дейност. "
+"Споделете тук какво сте учили, с какво се занимавате и как обичате да "
+"прекарвате свободното си време."
+
+#: functions.php:421
+msgid "Homepage"
+msgstr "Начална страница"
+
+#: functions.php:422
+msgid ""
+"Welcome to your site! This is your homepage, which is what most visitors "
+"will see when they come to your site for the first time. Use the customizer "
+"to choose between a static homepage or display the latest posts in a "
+"beautiful 2-column layout instead."
+msgstr ""
+"Добре дошли на вашия сайт! Това е вашата начална страница. Tова е "
+"страницата, която повечето посетители ще видят, когато влязат в сайта за "
+"първи път. Използвайте настройките на темата , за да изберете между статична "
+"начална страница или страница с най-новите публикации с красиво оформление в "
+"две колони."
+
+#: header.php:38
+msgid "Footer Social Links Menu"
+msgstr ""
+
+#: inc/customizer.php:25
+msgid "Top Menu Text Color"
+msgstr ""
+
+#: inc/customizer.php:36
+msgid "Headings Text Color"
+msgstr ""
+
+#: inc/customizer.php:48
+msgid "Body Text Color"
+msgstr ""
+
+#: inc/customizer.php:60
+msgid "Links Text Color"
+msgstr ""
+
+#: index.php:8
+msgid "Latest Posts"
+msgstr "Последни публикации"
+
+#: index.php:29
+msgid "There are no posts!"
+msgstr "Няма публикации!"
+
+#: search.php:18
+msgid "Search Results"
+msgstr "Резултати от търсенето"
+
+#: searchform.php:8
+msgid "Search"
+msgstr "Търсене"
+
+#: template-parts/footer-widgets.php:1
+msgid "Footer"
+msgstr "Футър"
+
+#: template-parts/footer-widgets.php:7
+msgid "About me"
+msgstr "За мен"
+
+#: template-parts/footer-widgets.php:11
+msgid ""
+"This is a good place to introduce yourself. Write about your work, hobbies "
+"and passion."
+msgstr ""
+"Това е добро място да се представите. Напишете с какво се занимавате и какви "
+"са Вашите хобита и интереси."
+
+#: template-parts/footer-widgets.php:12
+msgid "Read more"
+msgstr "Вижте повече"
+
+#: template-parts/footer-widgets.php:22
+msgid "Get Social"
+msgstr "Социализирай се"
+
+#: template-parts/post/content.php:51
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Вижте повече<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#: template-parts/site-info.php:24
+msgid "https://yonkov.github.io/"
+msgstr ""
+
+#: template-parts/site-info.php:25
+#, php-format
+msgid "Designed by %s"
+msgstr "Направен от %s"
+
+#: template-parts/site-info.php:28
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: template-parts/site-info.php:29
+#, php-format
+msgid "Powered by %s"
+msgstr "Задвижван от %s"
+
+#~ msgid "Typography"
+#~ msgstr "Шрифтове"
+
+#~ msgid "Edit Footer Credits"
+#~ msgstr "Променете текста във футъра"
+
+#~ msgid "Footer Text"
+#~ msgstr "Текст във футъра"
