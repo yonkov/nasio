@@ -124,8 +124,14 @@ Other menu items that you may wish to add:
 
 You can add as many as you wish. For more information check Font Awesome documentation: https://fontawesome.com/v4.7.0/icons/
 
-* **Widgets** - This is another place where you can customize the right sidebar's widgets as well as the footer widgets.
-* Static Front Page - Optionally specify a static front page
+### Widgets
+This is another place where you can customize the right sidebar's widgets as well as the footer widgets.
+
+### Homepage Settings
+Optionally specify a static front page
+
+### Additional CSS
+This section is for more advanced users who want to write custom css to override the default theme's styles.
 
 ## Further customisation
 If you want to customise Nasio beyond the included options, I strongly recommend that you do so via a [child theme](http://codex.wordpress.org/Child_Themes).
