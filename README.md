@@ -1,9 +1,10 @@
 # Nasio
 
-Nasio is a lightweight WordPress theme developed by Atanas Yonkov in 2019. Suitable for blogs and portfolio websites. Inspired by Twenty Seventeen theme by Autommatic. Nasio is optimized for speed and high performance in Google search results. With its minimalistic and clean design, it is made to showcase high quality content.
+Nasio is a lightweight WordPress theme developed by Atanas Yonkov in 2019. Suitable for blogs and portfolio websites. Inspired by Twenty Seventeen theme by Automattic. Nasio is optimized for speed and high performance in Google search results. With its minimalistic and clean design, it's divine purpose is to showcase high quality content.
 
-Nasio uses Bootstrap 4 and has fully responsive 3-column grid layout. It comes with starter content for the sidebar and the footer. Option to use a static Homepage. Beautiful pagination. Option to change logo, site icon and theme accent colors from the customizer. 
-The theme extends the Recent Posts widget to include post thumbnail images. Posts without a featured image are displayed with a default thumbnail. Optimized css and font delivery for better performance. Ideal for any type of blog.
+Nasio uses Bootstrap 4 and has fully responsive 3-column grid layout. It comes with starter content for the sidebar and the footer. Option to use a static Homepage. Beautiful pagination. Option to add custom logo, site icon and change theme accent colors from the customizer.
+
+The theme extends the Recent Posts widget to include beautiful post thumbnail images. Posts without a featured image are displayed with a default thumbnail. Optimized css and font delivery for better performance. Ideal for any type of blog or portfolio website.
 
 # License
 
@@ -19,6 +20,9 @@ The theme is optimized for speed. It loads all the fonts and most of the css in 
 
 ## Responsive
 Nasio has been fully optimised for small screen display. Your content will look beautiful whether it's viewed on a desktop, a tablet or a smartphone.
+
+## Translation-ready
+Nasio is a translation-ready theme and it comes with two default languages - English and Bulgarian. You can easily use poedit or any other translation plugin to translate it to any language you need.
 
 ## Theme Hook Alliance
 Nasio fully supports the [Theme Hook Alliance](https://github.com/zamoose/themehookalliance.
@@ -78,10 +82,10 @@ By default, the theme shows default text in the footer but you can change it thr
 
 For the above code you will need to use two custom html widgets. Drag them to the footer sidebars and paste the code there. Do not forget to save. In this way you will be able to customize the footer the way you like it.
 
-## Customizer
-Just enough options to make your site unique. There are options in the theme customizer to change header background color, to change the headings color and the primary menu color. 
+## Theme Customizer
+Use the theme customizer to customize the theme to taste. There are just enough options to make your site unique. You can change the header background color, the headings text color and the primary menu text color. 
 
-To use the theme's customizer log in to your dashboard and navigate to Appearance > Customize. You can also access the customizer from the admin bar.
+To use the theme's customizer log in to your dashboard and navigate to Appearance > Customize. You can also access the customizer from the admin bar on the top of the page.
 
 ### Site identity:
 
