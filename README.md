@@ -132,7 +132,7 @@ You can add as many social icons as you wish. For more information check Font Aw
 This is another place where you can customize the right sidebar's widgets as well as the footer widgets.
 
 ### Homepage Settings:
-Optionally specify a static front page
+Optionally specify a static front page.
 
 ### Additional CSS:
 This section is for more advanced users who want to write custom css to override the default theme's styles.
