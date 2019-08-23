@@ -2,7 +2,7 @@
 
 Nasio is a lightweight WordPress theme developed by Atanas Yonkov in 2019. Suitable for blogs and portfolio websites. Inspired by Twenty Seventeen theme by Automattic. Nasio is optimized for speed and high performance in Google search results. With its minimalistic and clean design, it's divine purpose is to showcase high quality content.
 
-Nasio uses Bootstrap 4 and Font Awesome to provide first-class user experience. It has fully responsive 3-column grid layout. It comes with starter content for the sidebar and the footer. Option to use a static Homepage. Beautiful pagination. Option to add custom logo, site icon and change theme accent colors from the customizer.
+Nasio uses Bootstrap 4 and Font Awesome to provide first-class user experience. It has fully responsive 3-column grid layout. It comes with starter content for the sidebar and the footer. Option to use a static Homepage. Beautiful pagination. Option to add custom logo, site icon and change the theme accent colors from the customizer.
 
 The theme extends the Recent Posts widget to include beautiful post thumbnail images. Posts without a featured image are displayed with a default thumbnail. Optimized css and font delivery for better performance. Ideal for any type of blog or portfolio website.
 
@@ -104,7 +104,7 @@ Please keep in mind that in this way you will not be able to show any logos on t
 
 Change theme colors such as the header, the headings and the primary menu
 
-### Menus
+### Menus:
 
 Specify which menu to use in the menu location. This website supports two menus - Top menu and Social Links Menu. 
 
@@ -126,15 +126,15 @@ Other menu items that you may wish to add:
 
 ```<span class="fa fa-youtube-play"></span>```
 
-You can add as many as you wish. For more information check Font Awesome documentation: https://fontawesome.com/v4.7.0/icons/
+You can add as many social icons as you wish. For more information check Font Awesome's documentation: https://fontawesome.com/v4.7.0/icons/
 
-### Widgets
+### Widgets:
 This is another place where you can customize the right sidebar's widgets as well as the footer widgets.
 
-### Homepage Settings
+### Homepage Settings:
 Optionally specify a static front page
 
-### Additional CSS
+### Additional CSS:
 This section is for more advanced users who want to write custom css to override the default theme's styles.
 
 ## Further customisation
