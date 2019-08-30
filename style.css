@@ -500,17 +500,9 @@ header .navbar a:hover{
   background: #fff;
 }
 
-@media (min-width: 992px){
   .site-section {
     padding: 2em 0;
   }
-}
-
-@media (max-width: 991px){
-  .site-section {
-    padding: 1em 0;
-  }
-}
 
 .site-section.py-md {
   padding: 3em 0;
@@ -845,6 +837,16 @@ textarea.form-control {
   position: relative;
   -webkit-box-shadow: 4px 4px 70px -20px rgba(0, 0, 0, 0.5);
   box-shadow: 4px 4px 70px -20px rgba(0, 0, 0, 0.5);
+}
+
+#commentform label{
+	display: block;
+}
+
+@media (max-width: 448px){
+	#commentform input{
+		width: 100%;
+	}
 }
 
 .comment-form-wrap {
@@ -1232,6 +1234,10 @@ section[id*="recent-posts"] h2, section[id*="recent-comments"] h2 {
   color: #999999;
 }
 
+.site-footer p{
+    font-size: 16px;
+}
+
 .site-footer .form-group{
 	background: #262626;
 }
@@ -1286,7 +1292,7 @@ section[id*="recent-posts"] h2, section[id*="recent-comments"] h2 {
 
 .footer-credits {
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   color: #999999;
   font-family: Consolas, "Liberation Mono", "Courier New", "OpenSans", monospace;
 }
