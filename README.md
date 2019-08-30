@@ -52,20 +52,7 @@ Pick a custom html widget and drag it to the right sidebar. Paste the above html
 By default, the theme shows default text in the footer but you can change it through the dashboard > widgets. In addition to the right sidebar you can add widgets to two defined regions in the footer. They are named "Footer 1" and "Footer 2". These will be arranged in a beautiful multi-column layout. The theme works best if you add just one widget  in Footer 1 and two widgets in Footer 2. In this way you should have 3 widgets in the footer in total. If you want, you can use and modify the text of the theme's default text widgets. Here is the code for them:
     
     <!-- About me widget-->
-    <div class="widget-column footer-widget-1">
-        <section id="custom_html-3" class="widget_text col-md-9">
-            <h3 class="heading"><?php echo _e( 'About me', 'nasio'); ?></h3>
-            <div class="textwidget custom-html-widget">
-                <p class="mb-4"><img src="/wp-content/themes/nasio/images/about.jpg" alt="About" class="img-fluid"></p>
-                <p>This is a good place to introduce yourself. Write about your work, hobbies and passion.
-                    <a href="/about">
-                        Read more
-                    </a>
-                </p>
-            </div>
-        </section>
-    </div>
-
+    <h3 class="heading">About me</h3><p class="mb-4"><img src="/wp-content/themes/nasio/images/about.jpg" alt="placeholder" class="img-fluid"></p><p>This is a good place to introduce yourself. Write about your work, hobbies and passion.<a href="/about"> Read More</a></p>
 
     <!--Get Social Widget-->
     <h3 class="widget-title">Get Social</h3>

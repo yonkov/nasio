@@ -3,7 +3,7 @@ Contributors: nravota12
 Requires at least: WordPress 4.7
 Tested up to: WordPress 5.2
 Requires PHP: 5.2.4
-Version: 1.02
+Version: 1.021
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, theme-options, threaded-comments, translation-ready
@@ -71,6 +71,9 @@ License: CC0 1.0 Universal (CC0 1.0)
 Source: https://pixabay.com/photos/atoll-beach-couple-destination-2179281/
 
 == Changelog ==
+
+= 1.021 =
+* Released: August, 2019
 
 = 1.02 =
 * Released: August, 2019
