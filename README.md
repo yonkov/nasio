@@ -25,7 +25,7 @@ Nasio has been fully optimised for small screen display. Your content will look 
 Nasio is a translation-ready theme and it comes with two default languages - English and Bulgarian. You can easily use poedit or any other translation plugin to translate it to any language you need.
 
 ## Theme Hook Alliance
-Nasio fully supports the [Theme Hook Alliance](https://github.com/zamoose/themehookalliance.
+Nasio fully supports the [Theme Hook Alliance](https://github.com/zamoose/themehookalliance).
 
 ## Typography
 All aspects of typography are set up in accordance to a Modular Scale ensuring consistent typographical hierarchy.
