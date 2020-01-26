@@ -3,8 +3,8 @@ Contributors: nravota12
 Requires at least: WordPress 4.7
 Tested up to: WordPress 5.3
 Requires PHP: 5.2.4
-Version: 1.0371
-Stable tag: 1.0371
+Version: 1.0373
+Stable tag: 1.0373
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, portfolio, photography, two-columns, right-sidebar, custom-colors, custom-menu, custom-logo, featured-images, footer-widgets, theme-options, threaded-comments, translation-ready

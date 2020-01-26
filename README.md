@@ -2,9 +2,9 @@
 
 Nasio is a lightweight WordPress theme developed by Atanas Yonkov in 2020. Suitable for blogs and portfolio websites. Inspired by Twenty Seventeen theme by Automattic. Nasio is optimized for speed and high performance in Google search results. With its minimalistic and clean design, it's divine purpose is to showcase high quality content.
 
-Nasio does not use any additional frameworks to provide first-class user experience. It has fully responsive 3-column grid layout. It comes with starter content for the sidebar and the footer. Option to use a static Homepage. Beautiful pagination. Option to add custom logo, site icon and change the theme accent colors from the customizer.
+Nasio does not use any additional frameworks to provide first-class user experience. It has fully responsive 3-column grid layout. It supports nested menu items. Option to use a static Homepage. Beautiful pagination. Option to add custom logo, site icon and change the theme accent colors from the customizer.
 
-The theme extends the Recent Posts widget to include beautiful post thumbnail images. Posts without a featured image are displayed with a default thumbnail. Optimized css and font delivery for better performance. Ideal for any type of blog or portfolio website.
+The theme extends the Recent Posts widget to include beautiful post thumbnail images. Posts without a featured image are displayed with a default thumbnail. Optimized css and font delivery for better performance. Static files (css and js) are minifed. Ideal for any type of blog or portfolio website.
 
 # License
 
@@ -95,7 +95,7 @@ Change theme colors such as the header, the headings and the primary menu
 
 Specify which menu to use in the menu location. This website supports two menus - Top menu and Social Links Menu. 
 
-* **Top Menu** - You can create the primary menu from here or you can also go to dashboard > menu. Click on create menu and give it a name, then drag or add the pages you want to it. After that, from the menu locations section, select Top Menu checkbox 
+* **Top Menu** - You can create the primary menu from the theme customizer or you can also go to dashboard > menu. Click on create menu and give it a name, then drag or add the pages you want to it. After that, from the menu locations section, select Top Menu checkbox. This theme supports as many sub-menus as you want and it is also working on mobile version.
 
 * **Social Links Menu** - The theme uses font awesome classes to show social media icons. To build the social menu in the way it is shown in the theme's screenshot you need to add custom links. 
 

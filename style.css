@@ -3,11 +3,11 @@ Theme Name: Nasio
 Theme URI: https://github.com/yonkov/nasio/
 Author: Atanas Yonkov
 Author URI: http://yonkov.github.io/
-Description: Extremely lightweight WordPress theme developed by Atanas Yonkov in 2019. Suitable for blogs and portfolio websites. The theme is optimized for speed and better performance in google search results. 
+Description: Extremely lightweight WordPress theme without any frameworks developed by Atanas Yonkov in 2020. Suitable for blogs and portfolio websites. The theme is optimized for speed and better performance in google search results. 
 The theme does not use Bootstrap or any other css framework (only custom css!) to provide unique and high-quality user experience. It has fully responsive 2-column grid layout. Option to use a static Homepage. Beautiful pagination. Option to change logo, site icon and theme accent colors from the customizer. 
 The theme supports nested dropdown sub menus and it is optimized for accessibility. The theme extends the Recent Posts widget to include post thumbnail images. Posts without a featured image are displayed with a default thumbnail.
 Optimized for speed. Optimized css and font delivery for better performance. Static files (css and js) are minified. Extremely fast and SEO friendly. Ideal for any type of blog or portfolio website.
-Version: 1.0371
+Version: 1.0373
 
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -1370,9 +1370,20 @@ img {
   overflow-x: hidden;
 }
 
-
 .widget-column.footer-widget-2>section:first-child {
   margin-right: 3em;
+}
+
+@media (min-width: 767px){
+  .col-md-6{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.col-md-6 {
+	padding-left: 15px
 }
 
 .border-t {
