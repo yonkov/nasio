@@ -19,7 +19,7 @@ get_header(); ?>
     <section class="site-section py-sm">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="column<?php echo (is_sticky()) ?  ' sticky' : ''; ?>">
                     <?php
 				the_archive_title( '<h2 class="mb-4">', '</h1>' );
 				the_archive_description( '<div class="taxonomy-description">', '</div>' );

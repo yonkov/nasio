@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Nasio\n"
-"POT-Creation-Date: 2019-08-19 22:41+0300\n"
-"PO-Revision-Date: 2019-08-19 22:41+0300\n"
+"POT-Creation-Date: 2019-08-30 21:20+0300\n"
+"PO-Revision-Date: 2019-08-30 21:20+0300\n"
 "Last-Translator: \n"
 "Language-Team: Yonkov, yonkov.atanas@gmail.com\n"
 "Language: en_GB\n"
@@ -102,6 +102,10 @@ msgstr ""
 msgid "%s ago"
 msgstr ""
 
+#: functions.php:276
+msgid "edit"
+msgstr ""
+
 #: functions.php:280
 msgid "Your comment is awaiting moderation."
 msgstr ""
@@ -110,27 +114,38 @@ msgstr ""
 msgid "..."
 msgstr ""
 
-#: functions.php:421
+#: functions.php:415
+msgid "Homepage"
+msgstr ""
+
+#: functions.php:416
+msgid ""
+"Welcome to your site! This is your homepage, which is what most visitors "
+"will see when they come to your site for the first time. Use the customizer "
+"to choose between a static homepage or display the latest posts in a "
+"beautiful 2-column layout instead."
+msgstr ""
+
+#: functions.php:420
 msgid "About"
 msgstr ""
 
-#: functions.php:423
+#: functions.php:422
 msgid ""
 "Welcome on board! This is your about page, which is what most visitors will "
 "check to find out more information about yourself. Write here about your "
 "hobbies, work and passion."
 msgstr ""
 
-#: functions.php:427
-msgid "Homepage"
+#: functions.php:426
+msgid "Contacts"
 msgstr ""
 
-#: functions.php:428
+#: functions.php:427
 msgid ""
-"Welcome to your site! This is your homepage, which is what most visitors "
-"will see when they come to your site for the first time. Use the customizer "
-"to choose between a static homepage or display the latest posts in a "
-"beautiful 2-column layout instead."
+"This is a good place to add some basic contact information, such as an "
+"address and a phone number. You can also add a contact form with contact "
+"form 7 or another plugin"
 msgstr ""
 
 #: header.php:38
@@ -145,38 +160,6 @@ msgstr ""
 msgid "Headings Text Color"
 msgstr ""
 
-#: inc/customizer.php:48
-msgid "Body Text Color"
-msgstr ""
-
-#: inc/customizer.php:60
-msgid "Links Text Color"
-msgstr ""
-
-#: inc/customizer.php:135
-msgid "Typography"
-msgstr ""
-
-#: inc/customizer.php:160
-msgid "Body Font Size"
-msgstr ""
-
-#: inc/customizer.php:209 template-parts/footer-widgets.php:1
-msgid "Footer"
-msgstr ""
-
-#: inc/customizer.php:210
-msgid "Set editable text for certain content."
-msgstr ""
-
-#: inc/customizer.php:213
-msgid "Edit Footer Credits"
-msgstr ""
-
-#: inc/customizer.php:225
-msgid "Footer Text"
-msgstr ""
-
 #: index.php:8
 msgid "Latest Posts"
 msgstr ""
@@ -185,8 +168,16 @@ msgstr ""
 msgid "There are no posts!"
 msgstr ""
 
+#: search.php:18
+msgid "Search Results"
+msgstr ""
+
 #: searchform.php:8
 msgid "Search"
+msgstr ""
+
+#: template-parts/footer-widgets.php:1
+msgid "Footer"
 msgstr ""
 
 #: template-parts/footer-widgets.php:7

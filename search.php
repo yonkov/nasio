@@ -14,8 +14,8 @@
     <section class="site-section py-sm">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <h2 class="mb-4"><?php echo _e('Search Results', 'nasio')?></h2>
+                <div class="column">
+                    <h2 class="mb-4"><?php _e('Search Results', 'nasio')?></h2>
                 </div>
             </div>
             <div class="row blog-entries">
@@ -55,4 +55,4 @@
     </section>
 </div>
 
-<?php get_footer(); ?>
+<?php get_footer();

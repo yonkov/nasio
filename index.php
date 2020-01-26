@@ -1,32 +1,40 @@
 <?php get_header(); ?>
-<div>
     <!-- Start of main-content -->
-    <section class="site-section py-sm">
+    <section id="content" class="site-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <h3 class="mb-4"><?php echo _e( 'Latest Posts', 'nasio'); ?></h3>
+                <div class="column">
+                    <h3 class="mb-4"><?php _e( 'Latest Posts', 'nasio'); ?></h3>
                 </div>
             </div>
             <div class="row blog-entries">
-                <div class="col-md-12 col-lg-8 main-content">
+                <div class="main-content">
                     <div class="row">
                         <?php
                     //Dynamic content here
                     if (have_posts() ) :
                         while (have_posts() ) : the_post(); ?>
-                        <div class="col-md-6">
+                        <div class="column<?php echo (is_sticky()) ?  ' sticky' : ''; ?>"> <?php
+                        if ( has_post_thumbnail() ): ?>
                             <a class="blog-entry" href="<?php the_permalink() ?>">
                                 <?php the_post_thumbnail() ?>
                                 <div class="blog-content-body">
                                     <h2><?php the_title() ?></h2>
                                 </div>
                             </a>
+                            <?php else : ?>
+                            <a class="blog-entry no-image" href="<?php the_permalink() ?>">
+                                <?php the_post_thumbnail() ?>
+                                <div class="blog-content-body">
+                                    <h2><?php the_title() ?></h2>
+                                </div>
+                            </a>
+                            <?php endif; ?>
                         </div>
                         <?php endwhile;
                     nasio_numeric_posts_nav();
                     else :
-                        echo _e( 'There are no posts!', 'nasio');                
+                        _e( 'There are no posts!', 'nasio');                
                     endif;
                     ?>
                     </div>
@@ -37,6 +45,5 @@
             </div>
         </div>
     </section>
-</div>
 
 <?php get_footer(); ?>

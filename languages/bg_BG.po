@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Nasio\n"
-"POT-Creation-Date: 2019-08-20 00:02+0300\n"
-"PO-Revision-Date: 2019-08-20 00:02+0300\n"
+"POT-Creation-Date: 2019-08-30 21:20+0300\n"
+"PO-Revision-Date: 2019-08-30 21:21+0300\n"
 "Last-Translator: \n"
 "Language-Team: Yonkov, yonkov.atanas@gmail.com\n"
 "Language: bg_BG\n"
@@ -71,7 +71,7 @@ msgstr "Добавете джаджи тук, които да се появят 
 
 #: functions.php:74
 msgid "Footer 1"
-msgstr ""
+msgstr "Футър 1"
 
 #: functions.php:76 functions.php:86
 msgid "Add widgets here to appear in your footer."
@@ -79,7 +79,7 @@ msgstr "Добавете джаджи тук, които да се появят 
 
 #: functions.php:84
 msgid "Footer 2"
-msgstr ""
+msgstr "Футър 2"
 
 #: functions.php:144
 msgid "Sticky"
@@ -104,6 +104,10 @@ msgstr "%s <span class=\"says\">казва:</span>"
 msgid "%s ago"
 msgstr ""
 
+#: functions.php:276
+msgid "edit"
+msgstr ""
+
 #: functions.php:280
 msgid "Your comment is awaiting moderation."
 msgstr "Вашият коментар ще бъде модериран скоро."
@@ -113,25 +117,10 @@ msgid "..."
 msgstr ""
 
 #: functions.php:415
-msgid "About"
-msgstr "За мен"
-
-#: functions.php:417
-msgid ""
-"Welcome on board! This is your about page, which is what most visitors will "
-"check to find out more information about yourself. Write here about your "
-"hobbies, work and passion."
-msgstr ""
-"Добре дошли! Това е страница „За мен“, която повечето от вашите посетители "
-"ще проверят, за да намерят повече информация за вас и вашата дейност. "
-"Споделете тук какво сте учили, с какво се занимавате и как обичате да "
-"прекарвате свободното си време."
-
-#: functions.php:421
 msgid "Homepage"
 msgstr "Начална страница"
 
-#: functions.php:422
+#: functions.php:416
 msgid ""
 "Welcome to your site! This is your homepage, which is what most visitors "
 "will see when they come to your site for the first time. Use the customizer "
@@ -144,25 +133,46 @@ msgstr ""
 "начална страница или страница с най-новите публикации с красиво оформление в "
 "две колони."
 
+#: functions.php:420
+msgid "About"
+msgstr "За мен"
+
+#: functions.php:422
+msgid ""
+"Welcome on board! This is your about page, which is what most visitors will "
+"check to find out more information about yourself. Write here about your "
+"hobbies, work and passion."
+msgstr ""
+"Добре дошли! Това е страница „За мен“, която повечето от вашите посетители "
+"ще проверят, за да намерят повече информация за вас и вашата дейност. "
+"Споделете тук какво сте учили, с какво се занимавате и как обичате да "
+"прекарвате свободното си време."
+
+#: functions.php:426
+msgid "Contacts"
+msgstr "Контакти"
+
+#: functions.php:427
+msgid ""
+"This is a good place to add some basic contact information, such as an "
+"address and a phone number. You can also add a contact form with contact "
+"form 7 or another plugin"
+msgstr ""
+"Това е отлично място да добавите информация как Вашите читатели могат да се "
+"свържат с Вас. Добавете адрес, телефон и имейл. Можете също да добавите "
+"контактна форма с плъгина contact form 7"
+
 #: header.php:38
 msgid "Footer Social Links Menu"
 msgstr ""
 
 #: inc/customizer.php:25
 msgid "Top Menu Text Color"
-msgstr ""
+msgstr "Цвят на основното меню"
 
 #: inc/customizer.php:36
 msgid "Headings Text Color"
-msgstr ""
-
-#: inc/customizer.php:48
-msgid "Body Text Color"
-msgstr ""
-
-#: inc/customizer.php:60
-msgid "Links Text Color"
-msgstr ""
+msgstr "Цвят на заглавията"
 
 #: index.php:8
 msgid "Latest Posts"

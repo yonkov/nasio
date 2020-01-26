@@ -15,15 +15,11 @@
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
-
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="profile" href="http://gmpg.org/xfn/11">
-
     <?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
     <?php if ( function_exists( 'wp_body_open' ) ) { wp_body_open();} /*wp_body_open hook since WordPress 5.2 */ ?>
     <main id="root" class="wrap">
@@ -32,6 +28,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-9 social">
+                        <a class="screen-reader-text skip-link" href="#site-navigation"><?php _e( 'Skip to main menu', 'nasio'); ?></a>
+                        <a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'nasio'); ?></a>
                             <?php
                 if ( has_nav_menu( 'social' ) ) : ?>
                             <nav class="social-navigation" role="navigation"
@@ -44,11 +42,6 @@
                     ) ); ?>
                             </nav><!-- .social-navigation -->
 
-                            <?php else: ?>
-                            <a href="/#"><span class="fa fa-twitter"></span></a>
-                            <a href="/#"><span class="fa fa-facebook"></span></a>
-                            <a href="/#"><span class="fa fa-instagram"></span></a>
-                            <a href="/#"><span class="fa fa-youtube-play"></span></a>
                             <?php endif; ?>
                         </div>
                     </div>
@@ -56,19 +49,19 @@
             </div>
 
             <div class="header-wrapper">
-                <div class="row pt-5 header-image" <?php if ( has_custom_header() ) : ?>
+                <div class="row header-image" <?php if ( has_custom_header() ) : ?>
                     style="background-image:url(<?php echo header_image(); ?>);" <?php endif ?>>
-                    <div class="col-12 text-center">
-                        <a href class="absolute-toggle d-block d-md-none" data-toggle="collapse"
+                    <div class="header-wrapper text-center">
+                        <div class="toggle-icon absolute-toggle d-block d-md-none" data-toggle="collapse"
                             data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
-                            aria-label="Toggle navigation" role="button" aria-expanded="true"
-                            aria-controls="navbarMenu"><span class="burger-lines" /></a>
+                            aria-label="<?php esc_attr_e( 'Toggle navigation', 'nasio' );?>" role="button" aria-expanded="true"
+                            aria-controls="navbarMenu"><span class="burger-lines" /></div>
                         <?php 
                 //display theme logo as starter content
               if ( !has_custom_logo() ) : ?>
                         <img class="custom_logo"
                             src="<?php echo esc_url( get_template_directory_uri()); ?>/images/nasio-logo.png"
-                            alt="react-logo" />
+                            alt="<?php echo esc_attr('nasio theme logo')?>" />
                         <?php else: ?>
                         <?php
                 //allow the user to upload his own logo and replace theme logo

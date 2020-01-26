@@ -18,7 +18,7 @@
     <br>
     <br> 
     <?php if( get_theme_mod( 'footer_text_block') != "" ) : ?> 
-    <?php get_theme_mod( 'footer_text_block'); ?>
+    <?php esc_attr(get_theme_mod( 'footer_text_block')); ?>
     
     <?php else : ?>
             <a href="<?php echo esc_url( __( 'https://yonkov.github.io/', 'nasio' ) ); ?>" class="imprint">
@@ -30,9 +30,4 @@
             </a>
     <?php endif ?>
 
-    <?php if( get_theme_mod( 'footer_text_block') != "" ): ?>
-    <p class="footer-text">
-        <?php echo get_theme_mod( 'footer_text_block'); ?>
-    </p>
-    <?php endif ?>
 </div>

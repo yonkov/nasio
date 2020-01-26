@@ -9,15 +9,10 @@
  */
 
 ?>
-<nav id="site-navigation" class="navbar navbar-expand-lg navbar-light bg-light nav" role="navigation"
+<nav id="site-navigation" class="navbar navbar-expand-lg nav" role="navigation"
     aria-label="<?php esc_attr_e( 'Top Menu', 'nasio' ); ?>">
     <div class="container">
         <div class="navbar-collapse collapse" id="navbarMenu">
-            <?php
-				//_e( 'Menu', 'nasio' );
-			?>
-
-
             <?php wp_nav_menu( array(
 		'container' => '',
 		'theme_location' => 'top',

@@ -7,7 +7,7 @@ function nasio_customize_colors( $wp_customize ) {
 	$wp_customize->add_setting('header_background_color', array(
 		'default'        => '#61DBFB',
 		'transport'   => 'refresh',
-		'sanitize_callback' => 'esc_attr',
+		'sanitize_callback' => 'wp_kses_post',
 	   ) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'header_background_color', array(
 	   'label'   => 'Header Background Color',
@@ -17,7 +17,7 @@ function nasio_customize_colors( $wp_customize ) {
 	$wp_customize->add_setting( 'menu_text_color' , array(
 		'default'     => "rgba(0,0,0,.5)",
 		'transport'   => 'refresh',
-		'sanitize_callback' => 'esc_attr',
+		'sanitize_callback' => 'wp_kses_post',
 	) );
 	
 
@@ -29,7 +29,7 @@ function nasio_customize_colors( $wp_customize ) {
 	$wp_customize->add_setting( 'header_textcolor' , array(
         'default'     => "#000000",
 		'transport'   => 'refresh',
-		'sanitize_callback' => 'esc_attr',
+		'sanitize_callback' => 'wp_kses_post',
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'header_textcolor', array(
@@ -44,29 +44,20 @@ function nasio_customize_css() {
     ?>
     <style type="text/css">
     h1,h2,h3 {
-        color: #<?php echo get_theme_mod('header_textcolor', "#000000");
+        color: #<?php echo esc_attr(get_theme_mod('header_textcolor', "#000000"));
         ?>;
     }
 
     .top-bar {
-        background-color: <?php echo get_theme_mod('header_background_color', "#61DBFB");
+        background-color: <?php echo esc_attr(get_theme_mod('header_background_color', "#61DBFB"));
         ?>;
     }
 
     header .navbar a {
-        color: <?php echo get_theme_mod('menu_text_color', "rgba(0,0,0,.5)");
+        color: <?php echo esc_attr(get_theme_mod('menu_text_color', "rgba(0,0,0,.5)"));
         ?>
 	}
-	
-	body {
-		color: <?php echo get_theme_mod('body_text_color', "#333");
-		?>;
-	}
 
-	a {
-		color: <?php echo get_theme_mod('links_text_color', "#58b4e2");
-		?>;
-	}
     </style>
     <?php
 }

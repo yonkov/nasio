@@ -5,7 +5,7 @@
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage Nasio
  * @since 1.0
  * @version 1.2
  */
@@ -45,21 +45,7 @@
     </header><!-- .entry-header -->
 
     <div class="entry-content">
-        <?php
-		/* translators: %s: Name of current post */
-		the_content( sprintf(
-			__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'nasio' ),
-			get_the_title()
-		) );
-
-		// wp_link_pages( array(
-		// 	'before'      => '<div class="page-links">' . __( 'Pages:', 'nasio' ),
-		// 	'after'       => '</div>',
-		// 	'link_before' => '<span class="page-number">',
-		// 	'link_after'  => '</span>',
-		// ) );
-		?>
+        <?php the_content();?>
     </div><!-- .entry-content -->
-
 
 </article><!-- #post-## -->

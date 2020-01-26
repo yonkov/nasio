@@ -25,19 +25,6 @@ function nasio_setup() {
 		'caption',
 	) );
 
-
-	 // Enable support for Post Formats.
-
-	add_theme_support( 'post-formats', array(
-		'aside',
-		'image',
-		'video',
-		'quote',
-		'link',
-		'gallery',
-		'audio',
-	) );
-
 	// Add theme support for Custom Logo.
 	add_theme_support( 'custom-logo', array(
 		'height'      => 250,
@@ -49,13 +36,12 @@ function nasio_setup() {
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
 
-	
 }
 
 add_action( 'after_setup_theme', 'nasio_setup' );
 
 if (isset( $content_width ))
-    $content_width = 900;
+    $nasio_content_width = 900;
 
 //Register widget area.
 
@@ -93,17 +79,14 @@ function nasio_widgets_init() {
 }
 add_action( 'widgets_init', 'nasio_widgets_init' );
 
-
 /**
  * Enqueue scripts and styles.
  */
 function nasio_styles() {
-	//Bootstrap
-	wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/public/css/bootstrap.min.css');
-    wp_enqueue_script( 'bootstrap-js-popper', get_template_directory_uri() . '/public/js/popper.min.js', array( 'jquery' ),'',true );
-    wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/public/js/bootstrap.min.js');
+	//Theme Navigation 
+	wp_enqueue_script( 'navigation', get_template_directory_uri() . '/assets/js/navigation-min.js', array( 'jquery' ),'',true);
 	//Theme stylesheet.
-    wp_enqueue_style( 'nasio-css', get_stylesheet_uri() );
+    wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style-min.css' );
 }
 
 add_action( 'wp_enqueue_scripts', 'nasio_styles' );
@@ -120,7 +103,6 @@ function nasio_fonts() {
 	wp_enqueue_style( 'OpenSans', '//fonts.googleapis.com/css?family=Open+Sans' ); 
 }
 add_action( 'wp_footer', 'nasio_fonts' ); 
-
 
 //Remove default width and height attributes from image tags
 
@@ -145,13 +127,13 @@ function nasio_posted_on() {
 	}
 
 	// Set up and print post meta information.
-	printf( '<span class="mr-2"><a href="%1$s" rel="bookmark"><time class="entry-date" datetime="%2$s">%3$s</time></a></span> •
+	printf( '<span class="mr-2"><a href="%1$s" rel="bookmark"><time class="entry-date" datetime="%2$s">%3$s</time></a></span> 
 	<span class="author mr-2"> <a class="url fn n" href="%4$s" rel="author">%5$s</a></span>',
 			esc_url( get_permalink() ),
 			esc_attr( get_the_date( 'c' ) ),
 			esc_html( get_the_date() ),
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-			get_the_author()
+			esc_attr(get_the_author())
 	);
 }
 
@@ -161,11 +143,33 @@ function nasio_get_category(){
 	$output = '';
 	if ( ! empty( $categories ) ) {
 		foreach( $categories as $category ) {
-			$output .= ' • <span><a class="category-meta-field" href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'nasio' ), $category->name ) ) . '">' . esc_html( $category->name ) . '</a></span>' . $separator;
+			$output .= '<span><a class="category-meta-field" href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'nasio' ), $category->name ) ) . '">' . esc_html( $category->name ) . '</a></span>' . $separator;
 		}
 	echo trim( $output, $separator );
 	}
 }
+
+//Make drop down menu accessible by screen readers
+
+/**
+ * WCAG 2.0 Attributes for Dropdown Menus
+ *
+ * Adjustments to menu attributes tot support WCAG 2.0 recommendations
+ * for flyout and dropdown menus.
+ *
+ * @ref https://www.w3.org/WAI/tutorials/menus/flyout/
+ */
+function nasio_nav_menu_link_attributes( $atts, $item, $args, $depth ) {
+
+    // Add [aria-haspopup] and [aria-expanded] to menu items that have children
+    $item_has_children = in_array( 'menu-item-has-children', $item->classes );
+    if ( $item_has_children ) {
+        $atts['aria-haspopup'] = "true";
+        $atts['aria-expanded'] = "false";
+    }
+    return $atts;
+}
+add_filter( 'nav_menu_link_attributes', 'nasio_nav_menu_link_attributes', 10, 4 );
 
 /**
  * Extend Recent Posts Widget 
@@ -200,6 +204,8 @@ Class Nasio_Recent_Posts_Widget extends WP_Widget_Recent_Posts {
 		 *
 		 * @param array $args An array of arguments used to retrieve the recent posts.
 		 */
+
+
 		$r = new WP_Query( apply_filters( 'widget_posts_args', array(
 			'posts_per_page'      => $number,
 			'no_found_rows'       => true,
@@ -208,41 +214,38 @@ Class Nasio_Recent_Posts_Widget extends WP_Widget_Recent_Posts {
 		) ) );
 
 		if ($r->have_posts()) :
-		?>
-<?php echo $args['before_widget']; ?>
-<?php if ( $title ) {
-			echo $args['before_title'] . $title . $args['after_title'];
-		} ?>
-<ul>
-    <?php while ( $r->have_posts() ) : $r->the_post(); ?>
-    <li>
-        <?php $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) );
-            if  ( ! empty( $featured_image_url ) ) {
-                the_post_thumbnail();
-			}
-			else{ 
-			?> <img class="default-image" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-image.png"
-            alt="<?php the_title(); ?>" />
-        <?php
-				} ?>
-        <a href="<?php the_permalink(); ?>"><?php get_the_title() ? the_title() : the_ID(); ?></a>
-        <?php if ( $show_date ) : ?>
-        <span class="post-date"><?php echo get_the_date(); ?></span>
-        <?php endif; ?>
-    </li>
-    <?php endwhile; ?>
-</ul>
-<?php echo $args['after_widget']; ?>
-<?php
-		// Reset the global $the_post as this query will have stomped on it
-		wp_reset_postdata();
-
+			echo $args['before_widget']; ?>
+			<?php if ( $title ) {
+				echo $args['before_title'] . $title . $args['after_title'];
+			} ?>
+			<ul>
+			<?php while ( $r->have_posts() ) : $r->the_post(); ?>
+				<li>
+				<?php $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) );
+					if  ( ! empty( $featured_image_url ) ) {
+							the_post_thumbnail();
+					}
+					else{ 
+						?> <img class="default-image" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-image.png"
+						alt="<?php the_title(); ?>" /> <?php
+					} ?>
+					<a href="<?php esc_url(the_permalink()); ?>"><?php esc_attr(get_the_title()) ? the_title() : the_ID(); ?></a>
+					<?php if ( $show_date ) : ?>
+						<span class="post-date"><?php echo esc_attr(get_the_date()); ?></span>
+					<?php endif; ?>
+				</li>
+			<?php endwhile; ?>
+			</ul>
+			<?php echo $args['after_widget']; ?>
+			<?php
+			// Reset the global $the_post as this query will have stomped on it
+			wp_reset_postdata();
 		endif;
 	}
 }
+
 function nasio_recent_widget_registration() {
-unregister_widget('WP_Widget_Recent_Posts');
-register_widget('Nasio_Recent_Posts_Widget');
+	register_widget('Nasio_Recent_Posts_Widget');
 }
 add_action('widgets_init', 'nasio_recent_widget_registration');
 
@@ -273,7 +276,7 @@ function nasio_modify_comment_output( $comment, $depth, $args ) {
 						?>
                     </time>
                 </a>
-                <?php edit_comment_link( __( '', 'nasio' ), '<span class="edit-link">', '</span>' ); ?>
+                <?php edit_comment_link( __( 'edit', 'nasio' ), '<span class="edit-link">', '</span>' ); ?>
             </div><!-- .comment-metadata -->
 
             <?php if ( '0' == $comment->comment_approved ) : ?>
@@ -302,11 +305,11 @@ function nasio_truncate_string($phrase, $max_words) {
 	
 }
 
-// Add options to theme customizer
+// ADD OPTIONS TO THEME CUSTOMIZER
 
 require get_parent_theme_file_path( '/inc/customizer.php' );
 
-// Numbered Pagination
+// PAGINATION
 function nasio_numeric_posts_nav() {
  
     if( is_singular() )
@@ -349,7 +352,7 @@ function nasio_numeric_posts_nav() {
         printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( 1 ) ), '1' );
  
         if ( ! in_array( 2, $links ) )
-            echo '<li>…</li>';
+            echo '<li>...</li>';
     }
  
     /** Link to current page, plus 2 pages in either direction if necessary */
@@ -362,7 +365,7 @@ function nasio_numeric_posts_nav() {
     /** Link to last page, plus ellipses if necessary */
     if ( ! in_array( $max, $links ) ) {
         if ( ! in_array( $max - 1, $links ) )
-            echo '<li>…</li>' . "\n";
+            echo '<li>...</li>' . "\n";
  
         $class = $paged == $max ? ' class="active"' : '';
         printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $max ) ), $max );
@@ -376,55 +379,3 @@ function nasio_numeric_posts_nav() {
  
 }
 
-	/* Since WP 4.7 Add starter content for fresh WordPress installments. Predefined content is good for user experience. */
-	
-	add_theme_support( 'starter-content', array(
-		'widgets' => array(
-			//Add items to the right sidebar
-			'sidebar-1' => array(
-				'search',
-				'recent-posts',
-				'recent-comments',
-				'meta_custom' => array( 'text_about', array(
-					'title' => 'Custom text widget.',
-					'text' => 'My awesome text'
-				) ),
-			),
-			//Add items to the footer
-			'sidebar-2' => array(
-				'text_about',
-			),
-			'sidebar-3' => array(
-				'recent-posts',
-				'search',
-	
-		),
-	),
-		'attachments' => array(
-			'featured-image-about' => array(
-				'post_title' => 'Attachment Title',
-				'post_content' => 'Attachment Description',
-				'post_excerpt' => 'Attachment Caption',
-				'file' => '/images/about.jpg',
-			),
-		),
-		'posts' => array(
-			//Add pages
-			'about' => array(
-				'post_type' => 'page', 
-				'post_title' => _x( 'About', 'Theme starter content', 'nasio' ),
-				'thumbnail' => '{{featured-image-about}}',
-				'post_content' => _x( 'Welcome on board! This is your about page, which is what most visitors will check to find out more information about yourself. Write here about your hobbies, work and passion.', 'Theme starter content', 'nasio' ),
-			),
-			'contacts' => array(
-				'post_type' => 'page', 
-				'post_title' => _x( 'Contacts', 'Theme starter content', 'nasio' ),
-				'post_content' => _x( 'This is a good place to add some basic contact information, such as an address and a phone number. You can also add a contact form with contact form 7 or another plugin', 'Theme starter content', 'nasio' ),
-			),
-			'home' => array(
-				'post_type' => 'page', 
-				'post_title' => _x( 'Homepage', 'Theme starter content', 'nasio' ),
-				'post_content' => _x( 'Welcome to your site! This is your homepage, which is what most visitors will see when they come to your site for the first time. Use the customizer to choose between a static homepage or display the latest posts in a beautiful 2-column layout instead.', 'Theme starter content', 'nasio' ),
-			),
-		),
-	));
