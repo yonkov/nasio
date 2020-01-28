@@ -24,13 +24,11 @@ Nasio has been fully optimised for small screen display. Your content will look 
 ## Translation-ready
 Nasio is a translation-ready theme and it comes with two default languages - English and Bulgarian. You can easily use poedit or any other translation plugin to translate it to any language you need.
 
-## Theme Hook Alliance
-Nasio fully supports the [Theme Hook Alliance](https://github.com/zamoose/themehookalliance).
-
 ## Typography
 All aspects of typography are set up in accordance to a Modular Scale ensuring consistent typographical hierarchy.
 
 # Theme Documentation
+The following documentation will provide you with all the necessary information to get started as soon as possible. The aim of this document is to provide help not only to WordPress developers but also to people with little or no coding experience at all. If you need any further assistance, do not hesitate to contact me by [email](mailto:yonkov.atanas@gmail.com).
 
 ## Right Sidebar Layout
 The theme supports a right sidebar and you can add as many widgets as you want there. The theme works best with the search widget, recent posts widget and recent comments widget. The theme extends the default WordPress recent posts widget to include post thumbnails. This is done for better user experience. By default, the theme shows default text in the right sidebar (search widget and recent posts widget) but you can change it through the dashboard > widgets. If, for some reason, you do not want to have right sidebar at all, in your theme customizer => additional css, you can remove it with the following css code:
