@@ -49,27 +49,27 @@
             </div>
 
             <div class="header-wrapper">
-                <div class="row header-image" <?php if ( has_custom_header() ) : ?>
-                    style="background-image:url(<?php echo header_image(); ?>);" <?php endif ?>>
+                <div class="row header-image">
                     <div class="header-wrapper text-center">
                         <div class="toggle-icon absolute-toggle d-block d-md-none" data-toggle="collapse"
                             data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
                             aria-label="<?php esc_attr_e( 'Toggle navigation', 'nasio' );?>" role="button" aria-expanded="true"
-                            aria-controls="navbarMenu"><span class="burger-lines" /></div>
-                        <?php 
-                //display theme logo as starter content
+                            aria-controls="navbarMenu"><span class="burger-lines" />
+                        </div>
+            <?php
+            //display theme logo as starter content
               if ( !has_custom_logo() ) : ?>
-                        <img class="custom_logo"
-                            src="<?php echo esc_url( get_template_directory_uri()); ?>/images/nasio-logo.png"
-                            alt="<?php echo esc_attr('nasio theme logo')?>" />
-                        <?php else: ?>
+                <img class="custom_logo"
+                    src="<?php echo esc_url( get_template_directory_uri()); ?>/images/nasio-logo.png"
+                    alt="<?php echo esc_attr('nasio theme logo')?>" />
+              <?php else: ?>
                         <?php
                 //allow the user to upload his own logo and replace theme logo
-              $custom_logo_id = get_theme_mod( 'custom_logo' );
-              $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
-              echo '<img class="custom_logo" src="' . esc_url( $custom_logo_url ) . '" alt="nasio-logo" />';              
-              ?>
-                        <?php endif; ?>
+                $custom_logo_id = get_theme_mod( 'custom_logo' );
+                $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
+                echo '<img class="custom_logo" src="' . esc_url( $custom_logo_url ) . '" alt="nasio-logo" />';              
+                ?>
+              <?php endif; ?>
                         <h1 class="site-title"><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
                     </div>
                 </div>

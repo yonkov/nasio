@@ -86,7 +86,7 @@ function nasio_styles() {
 	//Theme Navigation 
 	wp_enqueue_script( 'navigation', get_template_directory_uri() . '/assets/js/navigation-min.js', array( 'jquery' ),'',true);
 	//Theme stylesheet.
-    wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style-min.css', '', '1.0.1' );
+    wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style-min.css', '', '1.0.3' );
 }
 
 add_action( 'wp_enqueue_scripts', 'nasio_styles' );
@@ -226,7 +226,7 @@ Class Nasio_Recent_Posts_Widget extends WP_Widget_Recent_Posts {
 							the_post_thumbnail();
 					}
 					else{ 
-						?> <img class="default-image" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-image.png"
+						?> <img class="default-image" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-image.jpg"
 						alt="<?php the_title(); ?>" /> <?php
 					} ?>
 					<a href="<?php esc_url(the_permalink()); ?>"><?php esc_attr(get_the_title()) ? the_title() : the_ID(); ?></a>
@@ -306,8 +306,12 @@ function nasio_truncate_string($phrase, $max_words) {
 }
 
 // ADD OPTIONS TO THEME CUSTOMIZER
-
-require get_parent_theme_file_path( '/inc/customizer.php' );
+if ( function_exists( 'get_parent_theme_file_path' ) ){ // Since WordPress 4.7
+	require get_parent_theme_file_path( '/inc/customizer.php' );
+}
+else{
+	require get_template_directory() . '/inc/customizer.php';
+}
 
 // PAGINATION
 function nasio_numeric_posts_nav() {
@@ -378,4 +382,3 @@ function nasio_numeric_posts_nav() {
     echo '</ul></div>' . "\n";
  
 }
-

@@ -1,10 +1,11 @@
 === Nasio ===
 Contributors: nravota12
-Requires at least: WordPress 4.7
+Author URI: http://yonkov.github.io/
+Requires at least: WordPress 4.5
 Tested up to: WordPress 5.3
 Requires PHP: 5.2.4
-Version: 1.0373
-Stable tag: 1.0373
+Version: 1.0376
+Stable tag: 1.0376
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, portfolio, photography, two-columns, right-sidebar, custom-colors, custom-menu, custom-logo, featured-images, footer-widgets, theme-options, threaded-comments, translation-ready
@@ -31,7 +32,7 @@ You can read the Theme Instructions at https://github.com/yonkov/nasio in the Re
 
 == Copyright ==
 
-Nasio WordPress Theme, Copyright 2019 Atanas Yonkov
+Nasio WordPress Theme, Copyright 2020 Atanas Yonkov
 Nasio is distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
@@ -69,6 +70,8 @@ Footer image, Ben Urcan
 License: CC0 1.0 Universal (CC0 1.0)
 Source: https://stocksnap.io/photo/S1W0TNEVKY
 
+* Image icon is GPL developed by risethemes.com
+
 == Attribution ==
 
 Theme structure is based on Twenty Seventeen https://wordpress.org/themes/twentyseventeen/,
@@ -76,6 +79,30 @@ Theme structure is based on Twenty Seventeen https://wordpress.org/themes/twenty
 License: GNU General Public License v2 or later
 
 == Changelog ==
+
+= 1.0376 =
+* Released: January, 2020
+* Improve pagination CSS, right sidebar and add docs about right sidebar and full-width layout.
+
+= 1.0375 =
+* Released: January, 2020
+* Improve CSS and docs.
+
+= 1.0374 =
+* Released: January, 2020
+* Update and fix backward compatibility. Fix css on custom footer widgets.
+
+= 1.0373 =
+* Released: January, 2020
+* Set up style.css version
+
+= 1.0372 =
+* Released: January, 2020
+* Update menu styles
+
+= 1.0371 =
+* Released: January, 2020
+* Update escaping for HTML attributes
 
 = 1.0363 =
 * Released: January, 2020

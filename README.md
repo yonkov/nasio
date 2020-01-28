@@ -32,10 +32,14 @@ All aspects of typography are set up in accordance to a Modular Scale ensuring c
 
 # Theme Documentation
 
-## Sidebar Widgets
-The theme supports a right sidebar and you can add as many widgets as you want there. The theme works best with the search widget, recent posts widget and recent comments widget. The theme extends the default WordPress recent posts widget to include post thumbnails. This is done for better user experience. 
+## Right Sidebar Layout
+The theme supports a right sidebar and you can add as many widgets as you want there. The theme works best with the search widget, recent posts widget and recent comments widget. The theme extends the default WordPress recent posts widget to include post thumbnails. This is done for better user experience. By default, the theme shows default text in the right sidebar (search widget and recent posts widget) but you can change it through the dashboard > widgets. If, for some reason, you do not want to have right sidebar at all, in your theme customizer => additional css, you can remove it with the following css code:
 
-In your dashboard go to widgets and you will see a list of all the available widgets. Feel free to play around with them. Here is a custom html widget to display info about the webmaster just like on the theme's screenshot:
+    .sidebar {
+        display: none
+    }
+
+Now, let's set up some widgets in the right sidebar and remove the default ones! In your dashboard, go to widgets and you will see a list of all the available widgets. Feel free to play around with them. Here is a custom html widget to display info about the webmaster just like on the theme's screenshot:
 
     <div class="bio text-center"><img src="/wp-content/themes/nasio/images/wordpress-wizard.jpg" alt="webmaster pic" class="img-fluid">
         <div class="bio-body">
@@ -48,8 +52,33 @@ In your dashboard go to widgets and you will see a list of all the available wid
 
 Pick a custom html widget and drag it to the right sidebar. Paste the above html code there. Now, when you visit the website, you should be able to see a beautiful block with info about the webmaster. Feel free to modify the text and the code as much as you can!
 
+## Full-width Layout (No Sidebar)
+
+The theme does not support full-width layout out of the box, but you can easily achieve this with just a bit of css code. Place the following css in appearance > customize > additional css:
+
+    .main-content {
+        max-width: 100% !important;
+        flex: 100% !important;
+    }
+
+    .blog-entries .blog-entry img {
+        width: 100% !important;
+    }
+
+    @media (min-width:1200px) {
+        .container {
+        max-width:940px !important
+        }
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+This code wil remove the right sidebar and center the theme content.
+
 ## Footer Widgets
-By default, the theme shows default text in the footer but you can change it through the dashboard > widgets. In addition to the right sidebar you can add widgets to two defined regions in the footer. They are named "Footer 1" and "Footer 2". These will be arranged in a beautiful multi-column layout. The theme works best if you add just one widget  in Footer 1 and two widgets in Footer 2. In this way you should have 3 widgets in the footer in total. If you want, you can use and modify the text of the theme's default text widgets. Here is the code for them:
+ In addition to the right sidebar you can add widgets to two defined regions in the footer. They are named "Footer 1" and "Footer 2". These will be arranged in a beautiful multi-column layout. The theme works best if you add just one widget in Footer 1 and two widgets in Footer 2. In this way, you should have 3 widgets in the footer in total. If you want, you can use and modify the text of the theme's default text widgets. Here is the code for them:
     
     <!-- About me widget-->
     <h3 class="heading">About me</h3><p class="mb-4"><img src="/wp-content/themes/nasio/images/about.jpg" alt="placeholder" class="img-fluid"></p><p>This is a good place to introduce yourself. Write about your work, hobbies and passion.<a href="/about"> Read More</a></p>

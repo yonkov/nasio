@@ -3,11 +3,8 @@ Theme Name: Nasio
 Theme URI: https://github.com/yonkov/nasio/
 Author: Atanas Yonkov
 Author URI: http://yonkov.github.io/
-Description: Extremely lightweight WordPress theme without any frameworks developed by Atanas Yonkov in 2020. Suitable for blogs and portfolio websites. The theme is optimized for speed and better performance in google search results. 
-The theme does not use Bootstrap or any other css framework (only custom css!) to provide unique and high-quality user experience. It has fully responsive 2-column grid layout. Option to use a static Homepage. Beautiful pagination. Option to change logo, site icon and theme accent colors from the customizer. 
-The theme supports nested dropdown sub menus and it is optimized for accessibility. The theme extends the Recent Posts widget to include post thumbnail images. Posts without a featured image are displayed with a default thumbnail.
-Optimized for speed. Optimized css and font delivery for better performance. Static files (css and js) are minified. Extremely fast and SEO friendly. Ideal for any type of blog or portfolio website.
-Version: 1.0373
+Description: Extremely lightweight WordPress theme without any frameworks developed by Atanas Yonkov in 2020. Suitable for blogs and portfolio websites. The theme is optimized for speed and better performance in google search results. It does not use Bootstrap or any other css framework (only custom css!) to provide unique and high-quality user experience. It has fully responsive 2-column grid layout. Option to use a static Homepage. Beautiful pagination. Option to change logo, site icon and theme accent colors from the customizer. The theme supports nested dropdown sub menus. It extends the Recent Posts widget to include post thumbnail images. Posts without a featured image are displayed with a default thumbnail. Optimized for speed. Optimized css and font delivery for better performance. Static files (css and js) are minified. Extremely fast and SEO friendly. Ideal for any type of blog or portfolio website. Detailed theme documentation is provided in the Readme.md file. Live example: http://phototravelworld.com/
+Version: 1.0376
 
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -223,7 +220,7 @@ ul {
 
 blockquote {
   background: #f9f9f9;
-  border-left: 5px solid rgba(153, 153, 255, .7);
+  border-left: 5px solid rgba(121, 121, 253, 0.5);
   padding: 1px 10px;
 }
 
@@ -772,12 +769,6 @@ code {
 
 .navbar .container>div {
   border-bottom: 1px solid #e6e6e6;
-}
-
-@media (max-width: 767.98px) {
-  .navbar .container>div {
-    border-bottom: none;
-  }
 }
 
 .category-meta-field {
@@ -1364,14 +1355,10 @@ img {
   content: "\f122";
   position: absolute;
 }
-
-.overflow {
-  position: relative;
-  overflow-x: hidden;
-}
-
-.widget-column.footer-widget-2>section:first-child {
-  margin-right: 3em;
+@media (min-width: 994px){
+  .widget-column.footer-widget-2>section:first-child {
+      margin-right: calc(4vw + 10px);
+  }
 }
 
 @media (min-width: 767px){
@@ -1381,9 +1368,10 @@ img {
     max-width: 50%;
   }
 }
-
-.col-md-6 {
-	padding-left: 15px
+@media (max-width: 993px){
+  .col-md-6 {
+    padding-left: 15px
+  }
 }
 
 .border-t {
@@ -1637,13 +1625,6 @@ textarea.form-control {
   padding-bottom: 10px;
 }
 
-@media (min-width: 767.98px) {
-  .single-post .main-content {
-    display: block;
-    margin: 0 auto;
-  }
-}
-
 @media (min-width: 992px) {
   .main-content {
     -ms-flex: 0 0 66.666667%;
@@ -1659,6 +1640,10 @@ textarea.form-control {
   padding-right: 15px;
   padding-left: 15px;
   text-align: justify;
+}
+
+.main-content h2 {
+	text-align: left;
 }
 
 /* Sidebar */
@@ -1742,13 +1727,9 @@ section[id*="recent-comments"] h2 {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding: 5em 0 0.1em;
+  padding: 1em 0 0.1em;
   background: #262626;
   color: #999999;
-}
-
-.site-footer p {
-  font-size: 16px;
 }
 
 .site-footer .form-group {
@@ -1786,10 +1767,11 @@ section[id*="recent-comments"] h2 {
 
 .site-footer p {
   color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
 }
 
 .site-footer ul>li a {
-  font-size: 14px;
+  font-size: .8em;
 }
 
 @media screen and (min-width: 994px) {
@@ -1859,6 +1841,10 @@ section[id*="recent-comments"] h2 {
 }
 
 /* Pagination */
+.navigation{
+  flex: 100%;
+}
+
 .navigation li a,
 .navigation li a:hover,
 .navigation li.active a,
@@ -1872,7 +1858,29 @@ section[id*="recent-comments"] h2 {
 }
 
 .navigation li a {
-  font-size: 15px;
+  font-size: 14px;
+}
+
+@media (max-width: 468px){  
+	.navigation ul li a {
+		font-size: 10px;
+  }
+  .navigation ul {
+    padding: 2em;
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 400px){  
+	.navigation ul li a {
+		font-size: 9px;
+	}
+}
+
+@media (max-width: 370px){  
+	.navigation ul li a {
+		font-size: 8px;
+	}
 }
 
 .navigation li a,
