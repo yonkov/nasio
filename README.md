@@ -31,7 +31,7 @@ All aspects of typography are set up in accordance to a Modular Scale ensuring c
 The following documentation will provide you with all the necessary information to get started as soon as possible. The aim of this document is to provide help not only to WordPress developers but also to people with little or no coding experience at all. If you need any further assistance, do not hesitate to contact me by [email](mailto:yonkov.atanas@gmail.com).
 
 ## Right Sidebar Layout
-The theme supports a right sidebar and you can add as many widgets as you want there. The theme works best with the search widget, recent posts widget and recent comments widget. The theme extends the default WordPress recent posts widget to include post thumbnails. This is done for better user experience. By default, the theme shows default text in the right sidebar (search widget and recent posts widget) but you can change it through the dashboard > widgets. If, for some reason, you do not want to have right sidebar at all, in your theme customizer => additional css, you can remove it with the following css code:
+The theme supports a right sidebar and you can add as many widgets as you want there. The theme works best with the search widget, recent posts widget and recent comments widget. The theme extends the default WordPress recent posts widget to include post thumbnails. This is done for better user experience. By default, the theme shows default text in the right sidebar (search widget and recent posts widget) but you can add your own widgets through dashboard > widgets. If, for some reason, you do not want to have right sidebar at all, in your theme customizer => additional css, you can remove it with the following css code:
 
     .sidebar {
         display: none
@@ -48,7 +48,7 @@ Now, let's set up some widgets in the right sidebar and remove the default ones!
         </div>
     </div>
 
-Pick a custom html widget and drag it to the right sidebar. Paste the above html code there. Now, when you visit the website, you should be able to see a beautiful block with info about the webmaster. Feel free to modify the text and the code as much as you can!
+Pick a custom html widget and drag it to the right sidebar. Paste the above html code there. Do not forget to add the correct urls to the different social media inside the anchor tags. Now, when you visit the website, you should be able to see a beautiful block with info about the webmaster. Feel free to modify the text and the code as much as you can!
 
 ## Full-width Layout (No Sidebar)
 
