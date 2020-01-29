@@ -3,8 +3,8 @@ Theme Name: Nasio
 Theme URI: https://github.com/yonkov/nasio/
 Author: Atanas Yonkov
 Author URI: http://yonkov.github.io/
-Description: Extremely lightweight WordPress theme without any frameworks developed by Atanas Yonkov in 2020. Suitable for blogs and portfolio websites. The theme is optimized for speed and better performance in google search results. It does not use Bootstrap or any other css framework (only custom css!) to provide unique and high-quality user experience. It has fully responsive 2-column grid layout. Option to use a static Homepage. Beautiful pagination. Option to change logo, site icon and theme accent colors from the customizer. The theme supports nested dropdown sub menus. It extends the Recent Posts widget to include post thumbnail images. Posts without a featured image are displayed with a default thumbnail. Optimized for speed. Optimized css and font delivery for better performance. Static files (css and js) are minified. Extremely fast and SEO friendly. Ideal for any type of blog or portfolio website. Detailed theme documentation is provided in the Readme.md file. Live example: http://phototravelworld.com/
-Version: 1.0376
+Description: Extremely lightweight WordPress theme without any frameworks developed by Atanas Yonkov in 2020. Suitable for blogs and portfolio websites. The theme is optimized for speed and better performance in google search results. It does not use Bootstrap or any other css framework (only custom css!) to provide unique and high-quality user experience. As a result, the whole theme's zip file size is less than 300KB! It has fully responsive 2-column grid layout. Option to use a static Homepage. Beautiful pagination. Option to change logo, site icon and theme accent colors from the customizer. The theme supports nested dropdown sub menus. It extends the Recent Posts widget to include post thumbnail images. Posts without a featured image are displayed with a default thumbnail. Optimized for speed. Optimized css and font delivery for better performance. Static files (css and js) are minified. Extremely fast and SEO friendly. Ideal for any type of blog or portfolio website. Fully compatible with Gutenberg but also supports the good old Classic editor. Detailed theme documentation: https://github.com/yonkov/nasio. Live example: http://phototravelworld.com/
+Version: 1.0380
 
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -397,10 +397,6 @@ label {
   }
 }
 
-.comment-content {
-  padding-top: 1rem;
-}
-
 .wrap {
   max-width: 100%;
   margin: 0 auto;
@@ -411,6 +407,10 @@ label {
 
 a {
   color: rgba(0, 123, 255, .8);
+}
+
+fieldset {
+  min-width: 0;
 }
 
 header {
@@ -471,7 +471,7 @@ header .navbar a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 3rem !important;
+  padding-top: 3em !important;
 }
 
 pre,
@@ -550,10 +550,10 @@ code {
   }
   #top-menu{
     border-top: 3px solid #61dbfb;
-    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,.1);
-    -moz-box-shadow: 0 2px 5px rgba(0,0,0,.1);
-    box-shadow: 0 2px 5px
-    rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,.2);
+    box-shadow: 0 0 10px
+    rgba(0,0,0,.2);
   }
 
   #top-menu .sub-menu {
@@ -587,8 +587,7 @@ code {
 /* Mobile menu */
 .absolute-toggle {
   position: absolute;
-  left: 15px;
-  top: 7em;
+  top: 9rem;
 }
 
 .absolute-toggle:hover {
@@ -679,7 +678,6 @@ code {
 }
 
 @media (max-width: 991.98px) {
-
   .navbar-expand-lg>.container,
   .navbar-expand-lg>.container-fluid {
     padding-right: 0;
@@ -692,29 +690,24 @@ code {
     -ms-flex-direction: row;
     flex-direction: row
   }
-
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute
   }
-
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: .5rem;
     padding-left: .5rem
   }
-
   .navbar-expand-lg>.container,
   .navbar-expand-lg>.container-fluid {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap
   }
-
   .navbar-expand-lg .navbar-collapse {
     display: -ms-flexbox !important;
     display: flex !important;
     -ms-flex-preferred-size: auto;
     flex-basis: auto
   }
-
   .navbar-expand-lg .navbar-toggler {
     display: none
   }
@@ -734,6 +727,7 @@ code {
 .top-bar {
   background: rgb(97, 219, 251);
   padding: 10px 0;
+  min-height: 40px;
 }
 
 .top-bar .social a,
@@ -762,8 +756,8 @@ code {
 
 @media screen and (max-width: 695px) {
   .custom_logo {
-    height: 100px !important;
     margin-bottom: 10px;
+    height: 140px;
   }
 }
 
@@ -1240,6 +1234,10 @@ img {
   font-size: 15px;
 }
 
+.comment-content p {
+  font-size: 17px;
+}
+
 #commentform {
   background-color: #f8f9fa !important;
   padding: 3rem;
@@ -1282,6 +1280,9 @@ img {
 
 .comment-list li .vcard img {
   border-radius: 50%;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 2px;
 }
 
 .comment-list li .comment-body h3 {
@@ -1295,12 +1296,15 @@ img {
   color: #ccc;
 }
 
+.comment-body {
+  background: #f8f9fa;
+  padding: 15px;
+  font-size: .9em;
+}
+
 .comment-list li .comment-body .reply {
-  padding: 5px 10px;
-  background: #e6e6e6;
-  color: #000;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .comment-list li .comment-body .reply:hover {
@@ -1642,7 +1646,7 @@ textarea.form-control {
   text-align: justify;
 }
 
-.main-content h2 {
+.main-content h2, .main-content h1 {
 	text-align: left;
 }
 
@@ -1704,10 +1708,6 @@ section[id*="recent-comments"] h2 {
 }
 
 /* Single post Comments */
-
-.comment-list li .comment-body .reply {
-  background: transparent;
-}
 
 .comment-reply-link {
   background-color: rgb(227, 227, 227);
@@ -1797,6 +1797,10 @@ section[id*="recent-comments"] h2 {
   }
 }
 
+.site-footer .widget-column {
+  padding-top: 4em;
+}
+
 @media screen and (max-width: 898px) {
   .row .d-md-none {
     display: block !important;
@@ -1812,20 +1816,16 @@ section[id*="recent-comments"] h2 {
 }
 
 @media (min-width: 992.98px) {
-
   .widget-area {
     display: flex;
   }
-
   .widget-column {
     display: flex;
     width: 100%;
   }
-
   .sidebar-box .footer-widget-2 {
     display: flex;
   }
-
 }
 
 /* Social menu */
@@ -1861,25 +1861,9 @@ section[id*="recent-comments"] h2 {
   font-size: 14px;
 }
 
-@media (max-width: 468px){  
-	.navigation ul li a {
-		font-size: 10px;
-  }
-  .navigation ul {
-    padding: 2em;
-    font-size: 8px;
-  }
-}
-
-@media (max-width: 400px){  
-	.navigation ul li a {
-		font-size: 9px;
-	}
-}
-
 @media (max-width: 370px){  
 	.navigation ul li a {
-		font-size: 8px;
+		font-size: 12px;
 	}
 }
 

@@ -1,8 +1,8 @@
 # Nasio
 
-Nasio is a lightweight WordPress theme developed by Atanas Yonkov in 2020. Suitable for blogs and portfolio websites. Nasio is optimized for speed and high performance in Google search results. With its minimalistic and clean design, it's divine purpose is to showcase high quality content.
+Nasio is an extremely lightweight WordPress theme without any frameworks developed by Atanas Yonkov in 2020. Suitable for blogs and portfolio websites. Nasio is optimized for speed and high performance in Google search results. With its minimalistic and clean design, it's divine purpose is to showcase high quality content.
 
-Nasio does not use Bootstrap or any other css framework (only custom css!) to provide first-class user experience. It has fully responsive 3-column grid layout. It supports nested menu items. Option to use a static Homepage. Beautiful pagination. Option to add custom logo, site icon and change the theme accent colors from the customizer.
+Nasio does not use Bootstrap or any other css framework (only custom css!) to provide first-class user experience. As a result, the whole theme's zip file size is less than 300KB! It has fully responsive 3-column grid layout. It supports nested menu items. Option to use a static Homepage. Beautiful pagination. Option to add custom logo, site icon and change the theme accent colors from the customizer.
 
 The theme extends the Recent Posts widget to include beautiful post thumbnail images in the right sidebar. Posts without a featured image are displayed with a default thumbnail. Optimized css and font delivery for better performance. Static files (css and js) are minifed. Ideal for any type of blog or portfolio website.
 

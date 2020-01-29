@@ -37,7 +37,7 @@ if (post_password_required()) {
         'style' => 'ul',
         'class' => 'comment-list',
         'short_ping' => true,
-        'avatar_size' => 60,
+        'avatar_size' => 70,
     ));
     ?>
     </ul><!-- .comment-list -->

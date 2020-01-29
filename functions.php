@@ -86,7 +86,7 @@ function nasio_styles() {
 	//Theme Navigation 
 	wp_enqueue_script( 'navigation', get_template_directory_uri() . '/assets/js/navigation-min.js', array( 'jquery' ),'',true);
 	//Theme stylesheet.
-    wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style-min.css', '', '1.0.3' );
+    wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style-min.css', '', '1.0.5' );
 }
 
 add_action( 'wp_enqueue_scripts', 'nasio_styles' );
@@ -347,7 +347,7 @@ function nasio_numeric_posts_nav() {
  
     /** Previous Post Link */
     if ( get_previous_posts_link() )
-        printf( '<li>%s</li>' . "\n", get_previous_posts_link() );
+        printf( '<li>%s</li>' . "\n", get_previous_posts_link('&#x00AB') );
  
     /** Link to first page, plus ellipses if necessary */
     if ( ! in_array( 1, $links ) ) {
@@ -377,7 +377,7 @@ function nasio_numeric_posts_nav() {
  
     /** Next Post Link */
     if ( get_next_posts_link() )
-        printf( '<li>%s</li>' . "\n", get_next_posts_link() );
+        printf( '<li>%s</li>' . "\n", get_next_posts_link('&#x00BB') );
  
     echo '</ul></div>' . "\n";
  

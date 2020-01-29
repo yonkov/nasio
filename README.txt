@@ -4,8 +4,8 @@ Author URI: http://yonkov.github.io/
 Requires at least: WordPress 4.5
 Tested up to: WordPress 5.3
 Requires PHP: 5.2.4
-Version: 1.0376
-Stable tag: 1.0376
+Version: 1.0380
+Stable tag: 1.0380
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, portfolio, photography, two-columns, right-sidebar, custom-colors, custom-menu, custom-logo, featured-images, footer-widgets, theme-options, threaded-comments, translation-ready
@@ -70,7 +70,7 @@ Footer image, Ben Urcan
 License: CC0 1.0 Universal (CC0 1.0)
 Source: https://stocksnap.io/photo/S1W0TNEVKY
 
-* Image icon is GPL developed by risethemes.com
+Image icon is GPL developed by risethemes.com
 
 == Attribution ==
 
@@ -79,6 +79,14 @@ Theme structure is based on Twenty Seventeen https://wordpress.org/themes/twenty
 License: GNU General Public License v2 or later
 
 == Changelog ==
+
+= 1.0380 =
+* Released: January, 2020
+Ad unicode chars on pagination
+
+= 1.0379 =
+* Released: January, 2020
+* Fix responsive issues on fieldset
 
 = 1.0376 =
 * Released: January, 2020
