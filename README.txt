@@ -1,19 +1,19 @@
 === Nasio ===
 Contributors: nravota12
 Author URI: http://yonkov.github.io/
-Requires at least: WordPress 4.5
+Requires at least: WordPress 4.4
 Tested up to: WordPress 5.3
 Requires PHP: 5.2.4
-Version: 1.0380
-Stable tag: 1.0380
+Version: 1.0390
+Stable tag: 1.0390
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: blog, portfolio, photography, two-columns, right-sidebar, custom-colors, custom-menu, custom-logo, featured-images, footer-widgets, theme-options, threaded-comments, translation-ready
+Tags: blog, portfolio, photography, two-columns, right-sidebar, custom-colors, custom-menu, custom-logo, custom-header, featured-images, footer-widgets, theme-options, threaded-comments, translation-ready
 
 == Description ==
 
 Extremely lightweight WordPress blog theme without any frameworks developed by Atanas Yonkov in 2020. Suitable for blogs and portfolio websites. The theme is optimized for speed and and better performance in google search results. It has fully responsive 2-column grid layout. 
-It does not use any frameworks. Option to use a static Homepage. Beautiful pagination. Option to change logo, site icon and theme accent colors from the customizer. The theme supports nested dropdown sub menus and it is optimized for accessibility.
+It does not use any frameworks. Option to use a static Homepage. Beautiful pagination. Option to change logo, site icon, header image and theme accent colors from the customizer. The theme supports nested dropdown sub menus and it is optimized for accessibility.
 The theme extends the Recent Posts widget to include post thumbnail images. Posts without a featured image are displayed with a default thumbnail.
 Optimized for speed. Optimized css and font delivery for better performance. Static files (css and js) are minified. Extremely fast and SEO friendly. Ideal for any type of blog or portfolio website.
 
@@ -80,9 +80,17 @@ License: GNU General Public License v2 or later
 
 == Changelog ==
 
+= 1.0390 =
+* Released: February, 2020
+Add option to include backgound header image from the customizer
+
+= 1.0381 =
+* Released: January, 2020
+Improve footer widgets css on mobile
+
 = 1.0380 =
 * Released: January, 2020
-Ad unicode chars on pagination
+Add unicode chars on pagination
 
 = 1.0379 =
 * Released: January, 2020

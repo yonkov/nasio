@@ -3,13 +3,13 @@ Theme Name: Nasio
 Theme URI: https://github.com/yonkov/nasio/
 Author: Atanas Yonkov
 Author URI: http://yonkov.github.io/
-Description: Extremely lightweight WordPress theme without any frameworks developed by Atanas Yonkov in 2020. Suitable for blogs and portfolio websites. The theme is optimized for speed and better performance in google search results. It does not use Bootstrap or any other css framework (only custom css!) to provide unique and high-quality user experience. As a result, the whole theme's zip file size is less than 300KB! It has fully responsive 2-column grid layout. Option to use a static Homepage. Beautiful pagination. Option to change logo, site icon and theme accent colors from the customizer. The theme supports nested dropdown sub menus. It extends the Recent Posts widget to include post thumbnail images. Posts without a featured image are displayed with a default thumbnail. Optimized for speed. Optimized css and font delivery for better performance. Static files (css and js) are minified. Extremely fast and SEO friendly. Ideal for any type of blog or portfolio website. Fully compatible with Gutenberg but also supports the good old Classic editor. Detailed theme documentation: https://github.com/yonkov/nasio. Live example: http://phototravelworld.com/
-Version: 1.0380
+Description: Extremely lightweight WordPress theme without any frameworks developed by Atanas Yonkov in 2020. Suitable for blogs and portfolio websites. The theme is optimized for speed and better performance in google search results. It does not use Bootstrap or any other css framework (only custom css!) to provide unique and high-quality user experience. As a result, the whole theme's zip file size is less than 300KB. It has fully responsive 2-column grid layout. Option to use a static Homepage. Beautiful pagination. Option to add custom logo, site icon, header image and change theme accent colors from the theme customizer. The theme supports nested dropdown sub menus. It extends the Recent Posts widget to include post thumbnail images. Posts without a featured image are displayed with a default thumbnail. Optimized for speed. Optimized css and font delivery for better performance. Extremely fast and SEO friendly. Static files (css and js) are minified. Ideal for any type of blog or portfolio website. Fully compatible with Gutenberg but also supports the good old Classic editor. Detailed theme documentation: https://github.com/yonkov/nasio. Live example: http://phototravelworld.com/
+Version: 1.0390
 
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Tags: blog, portfolio, photography, two-columns, right-sidebar, custom-colors, custom-menu, custom-logo, featured-images, footer-widgets, theme-options, threaded-comments, translation-ready
+Tags: blog, portfolio, photography, two-columns, right-sidebar, custom-colors, custom-menu, custom-logo, custom-header, featured-images, footer-widgets, theme-options, threaded-comments, translation-ready
 Text Domain: nasio
 
 This theme, like WordPress, is licensed under the GPL.
@@ -420,7 +420,6 @@ header {
   width: 100%;
   z-index: 5;
   font-weight: 400;
-  background: #fff !important;
 }
 
 header .navbar-brand {
@@ -441,7 +440,7 @@ header .navbar {
 }
 
 header .navbar a {
-  font-size: 14px;
+  font-size: 15px;
 }
 #top-menu ul {
   list-style: none;
@@ -468,9 +467,6 @@ header .navbar a:hover {
 }
 
 .header-image {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   padding-top: 3em !important;
 }
 
@@ -714,7 +710,6 @@ code {
 }
 
 .site-title a {
-  color: #333;
   font-size: 70px;
 }
 
@@ -1232,6 +1227,7 @@ img {
 /* Comments */
 .comment-content {
   font-size: 15px;
+  padding-top: 2rem;
 }
 
 .comment-content p {
@@ -1312,7 +1308,6 @@ img {
 }
 
 .search-form-wrap {
-  margin-bottom: 5em;
   display: block;
 }
 
@@ -1359,9 +1354,10 @@ img {
   content: "\f122";
   position: absolute;
 }
-@media (min-width: 994px){
+@media (min-width: 1025px){
   .widget-column.footer-widget-2>section:first-child {
-      margin-right: calc(4vw + 10px);
+      min-width: 250px;
+      margin-right: calc(2.5vw + 10px);
   }
 }
 
@@ -1796,9 +1792,14 @@ section[id*="recent-comments"] h2 {
     padding-top: 20px;
   }
 }
+.site-footer .widget-column {
+  padding-top: 1em;
+}
 
+@media (min-width: 994px) {
 .site-footer .widget-column {
   padding-top: 4em;
+  }
 }
 
 @media screen and (max-width: 898px) {
@@ -1843,6 +1844,7 @@ section[id*="recent-comments"] h2 {
 /* Pagination */
 .navigation{
   flex: 100%;
+  margin: 1em 0;
 }
 
 .navigation li a,

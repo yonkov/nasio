@@ -4,7 +4,7 @@ Nasio is an extremely lightweight WordPress theme without any frameworks develop
 
 Nasio does not use Bootstrap or any other css framework (only custom css!) to provide first-class user experience. As a result, the whole theme's zip file size is less than 300KB! It has fully responsive 3-column grid layout. It supports nested menu items. Option to use a static Homepage. Beautiful pagination. Option to add custom logo, site icon and change the theme accent colors from the customizer.
 
-The theme extends the Recent Posts widget to include beautiful post thumbnail images in the right sidebar. Posts without a featured image are displayed with a default thumbnail. Optimized css and font delivery for better performance. Static files (css and js) are minifed. Ideal for any type of blog or portfolio website.
+The theme extends the Recent Posts widget to include beautiful post thumbnail images in the right sidebar. Posts without a featured image are displayed with a default thumbnail. Optimized css and font delivery for better performance. Static files (css and js) are minifed. Fully compatible with Gutenberg but also supports the good old Classic editor. Minimum required WordPress version: 4.4. Ideal for any type of blog or portfolio website.
 
 # License
 
@@ -100,6 +100,9 @@ For the above code you will need to use two custom html widgets. Drag them to th
 Use the theme customizer to customize the theme to taste. There are just enough options to make your site unique. You can change the header background color, the headings text color and the primary menu text color. 
 
 To use the theme's customizer log in to your dashboard and navigate to Appearance > Customize. You can also access the customizer from the admin bar on the top of the page.
+
+### Header Image:
+Since v. 1.039, the theme supports the option to add custom header image via the theme customizer. Go to Appearance > Customize > Header Image and upload a header image from your PC. As simple as that. As a general recommendation, I would suggest to always compress the images that you upload, otherwise the site performace may deteriorate with time. Read more about that [here](https://rawinfopages.co.uk/squash-images-with-squoosh-to-improve-website-performance/).
 
 ### Site identity:
 

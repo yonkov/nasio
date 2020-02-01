@@ -86,7 +86,7 @@ function nasio_styles() {
 	//Theme Navigation 
 	wp_enqueue_script( 'navigation', get_template_directory_uri() . '/assets/js/navigation-min.js', array( 'jquery' ),'',true);
 	//Theme stylesheet.
-    wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style-min.css', '', '1.0.5' );
+	wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style-min.css', '', '1.0.7' );
 }
 
 add_action( 'wp_enqueue_scripts', 'nasio_styles' );
@@ -305,12 +305,16 @@ function nasio_truncate_string($phrase, $max_words) {
 	
 }
 
-// ADD OPTIONS TO THEME CUSTOMIZER
 if ( function_exists( 'get_parent_theme_file_path' ) ){ // Since WordPress 4.7
+	// ADD OPTIONS TO THEME CUSTOMIZER
 	require get_parent_theme_file_path( '/inc/customizer.php' );
+	 
+	//IMPLEMENT CUSTOM HEADER FEATURE.
+ 	require get_parent_theme_file_path( '/inc/custom-header.php' );
 }
 else{
 	require get_template_directory() . '/inc/customizer.php';
+	require get_template_directory() . '/inc/custom-header.php';
 }
 
 // PAGINATION
