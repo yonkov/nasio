@@ -86,7 +86,7 @@ function nasio_styles() {
 	//Theme Navigation 
 	wp_enqueue_script( 'navigation', get_template_directory_uri() . '/assets/js/navigation-min.js', array( 'jquery' ),'',true);
 	//Theme stylesheet.
-	wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style-min.css', '', '1.0.7' );
+	wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style-min.css', '', '1.0.8' );
 }
 
 add_action( 'wp_enqueue_scripts', 'nasio_styles' );

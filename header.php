@@ -22,7 +22,7 @@
 </head>
 <body <?php body_class(); ?>>
     <?php if ( function_exists( 'wp_body_open' ) ) { wp_body_open();} /*wp_body_open hook since WordPress 5.2 */ ?>
-    <main id="root" class="wrap">
+    <main id="root" class="wrap" >
         <header role="banner">
             <div class="top-bar">
                 <div class="container">

@@ -2,18 +2,13 @@
 
 Nasio is an extremely lightweight WordPress theme without any frameworks developed by Atanas Yonkov in 2020. Suitable for blogs and portfolio websites. Nasio is optimized for speed and high performance in Google search results. With its minimalistic and clean design, it's divine purpose is to showcase high quality content.
 
-Nasio does not use Bootstrap or any other css framework (only custom css!) to provide first-class user experience. As a result, the whole theme's zip file size is less than 300KB! It has fully responsive 3-column grid layout. It supports nested menu items. Option to use a static Homepage. Beautiful pagination. Option to add custom logo, site icon and change the theme accent colors from the customizer.
+Nasio does not use Bootstrap or any other css framework (only custom css!) to provide first-class user experience. As a result, the whole theme's zip file is less than 300KB. It has fully responsive 3-column grid layout. It supports nested menu items. Option to use a static Homepage. Beautiful pagination. Option to add custom header, custom logo, site icon and change the theme accent colors from the customizer.
 
-The theme extends the Recent Posts widget to include beautiful post thumbnail images in the right sidebar. Posts without a featured image are displayed with a default thumbnail. Optimized css and font delivery for better performance. Static files (css and js) are minifed. Fully compatible with Gutenberg but also supports the good old Classic editor. Minimum required WordPress version: 4.4. Ideal for any type of blog or portfolio website.
+The theme extends the Recent Posts widget to include beautiful post thumbnail images in the right sidebar. Posts without a featured image are displayed with a default thumbnail. Optimized css and font delivery for better performance. Static files (css and js) are minifed. Fully compatible with Gutenberg but also supports the good old Classic editor. Ideal for any type of blog or portfolio website.
 
-# License
-
-* License: [GNU General Public License v2.0](http://www.gnu.org/licenses/gpl-2.0.html)
+Live example: http://phototravelworld.com/
 
 # Features
-
-## Developer Friendly
-Loads of hooks and filters to extend and customise Nasio via plugin and/or child theme.
 
 ## Lightweight
 The theme is optimized for speed. It loads all the fonts and most of the css in the footer. In this way it limits the render blocking of css and other static resources. All the images are highly optimized.
@@ -23,6 +18,9 @@ Nasio has been fully optimised for small screen display. Your content will look 
 
 ## Translation-ready
 Nasio is a translation-ready theme and it comes with two default languages - English and Bulgarian. You can easily use poedit or any other translation plugin to translate it to any language you need.
+
+## Developer Friendly
+Loads of hooks and filters to extend and customise Nasio via plugin and/or child theme.
 
 ## Typography
 All aspects of typography are set up in accordance to a Modular Scale ensuring consistent typographical hierarchy.
@@ -156,5 +154,9 @@ This section is for more advanced users who want to write custom css to override
 
 ## Further customisation
 If you want to customise Nasio beyond the included options, I strongly recommend that you do so via a [child theme](http://codex.wordpress.org/Child_Themes).
+
+# License
+
+* License: [GNU General Public License v2.0](http://www.gnu.org/licenses/gpl-2.0.html)
 
 Happy blogging!
