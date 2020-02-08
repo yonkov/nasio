@@ -10,7 +10,7 @@ function nasio_customize_colors( $wp_customize ) {
 		'sanitize_callback' => 'wp_kses_post',
 	   ) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'header_background_color', array(
-	   'label'   => 'Header Background Color',
+	   'label'   => __('Header Background Color', 'nasio'),
 	   'section' => 'colors',
 		)));
 

@@ -3,8 +3,8 @@ Theme Name: Nasio
 Theme URI: https://github.com/yonkov/nasio/
 Author: Atanas Yonkov
 Author URI: http://yonkov.github.io/
-Description: Extremely lightweight WordPress theme without any frameworks developed by Atanas Yonkov in 2020. Suitable for blogs and portfolio websites. Very easy to set up thanks to its extensive documentation. The theme is optimized for speed and better performance in google search results. It does not use Bootstrap or any other css framework (only custom css!) to provide unique and high-quality user experience. As a result, the whole theme's zip file size is less than 300KB. It has fully responsive 2-column grid layout. Option to use a static Homepage. Beautiful pagination. Option to add custom logo, site icon, header image and change theme accent colors from the theme customizer. The theme supports nested dropdown sub menus. It extends the Recent Posts widget to include post thumbnail images. Posts without a featured image are displayed with a default thumbnail. Optimized for speed. Optimized css and font delivery for better performance. Extremely fast and SEO friendly. Static files (css and js) are minified. Ideal for any type of blog or portfolio website. Fully compatible with Gutenberg but also supports the good old Classic editor. Detailed theme documentation: https://github.com/yonkov/nasio. Live example: http://phototravelworld.com/
-Version: 1.0391
+Description: Extremely lightweight WordPress theme without any frameworks developed by Atanas Yonkov in 2020. Ideal for blogs and portfolio websites. Very easy to set up even for beginners thanks to its extensive documentation. The theme is optimized for speed and better performance in google search results. It does not use Bootstrap or any other css framework (only custom css!) to provide unique and high-quality user experience. As a result, the whole theme's zip file size is less than 300KB. It has fully responsive 3-column grid layout. Option to use a static Homepage. Beautiful pagination. Option to add custom logo, header image, site icon and change theme accent colors from the theme customizer. The theme supports nested dropdown sub menus. It extends the Recent Posts widget to include thumbnail images. Posts without a featured image are displayed with a default thumbnail. Optimized for speed. Optimized css and font delivery for better performance. Extremely fast and SEO friendly. Static files (css and js) are minified. Fully compatible with Gutenberg but also supports the good old Classic editor. How to set it up: https://github.com/yonkov/nasio. Live example: http://phototravelworld.com/
+Version: 1.0392
 
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -505,7 +505,7 @@ code {
   #top-menu .sub-menu li a {
     display: inline-block;
     width: 150px;
-    padding: 0.5rem 0.6rem;
+    padding: .9rem 1rem;
   }
 
   #top-menu .sub-menu {
@@ -547,10 +547,9 @@ code {
   }
   #top-menu{
     border-top: 3px solid #61dbfb;
-    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.2);
-    -moz-box-shadow: 0 0 10px rgba(0,0,0,.2);
-    box-shadow: 0 0 10px
-    rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 0 1px rgba(0,0,0,.2);
+    box-shadow: 0 0 1px rgba(0,0,0,.2);
   }
 
   #top-menu .sub-menu {
