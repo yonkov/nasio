@@ -1,6 +1,6 @@
 # Nasio
 
-Nasio is an extremely lightweight WordPress theme without any frameworks developed by Atanas Yonkov in 2020. Ideal for blogs and portfolio websites. Very easy to set up even for people without coding experience thanks to its extensive documentation. Nasio is optimized for speed and high performance in Google search results. With its minimalistic and clean design, it's divine purpose is to showcase high quality content.
+Nasio is an extremely lightweight WordPress theme without any frameworks developed by Atanas Yonkov in 2020. Ideal for blogs and portfolio websites. Very easy to set up even for people without coding experience thanks to its extensive documentation and generous theme options. Nasio is optimized for speed and high performance in Google search results. With its minimalistic and clean design, it's divine purpose is to showcase high quality content.
 
 Nasio does not use Bootstrap or any other css framework (only custom css!) to provide first-class user experience. As a result, the whole theme's zip file is less than 300KB. It has fully responsive 3-column grid layout. It supports nested menu items. Option to use a static Homepage. Beautiful pagination. Option to add custom header, custom logo, site icon and change the theme accent colors from the customizer.
 
@@ -47,8 +47,6 @@ Pick a custom html widget and drag it to the right sidebar. Paste the above html
 ## Full-width Layout (No Sidebar)
 
 Since version 1.04, the the theme support full-width layout out of the box. You just need to go to Appearance > Customize > Page Layout and click on the "full-width" radio box and the right sidebar will be hidden.
-
-This code wil remove the right sidebar and center the theme content.
 
 ## Footer Widgets
  In addition to the right sidebar you can add widgets to two defined regions in the footer. They are named "Footer 1" and "Footer 2". These will be arranged in a beautiful multi-column layout. The theme works best if you add just one widget in Footer 1 and two widgets in Footer 2. In this way, you should have 3 widgets in the footer in total. If you want, you can use and modify the text of the theme's default text widgets. Here is the code for them:
