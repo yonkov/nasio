@@ -29,11 +29,7 @@ All aspects of typography are set up in accordance to a Modular Scale ensuring c
 The following documentation will provide you with all the necessary information to get started as soon as possible. The aim of this document is to provide help not only to WordPress developers but also to people with little or no coding experience at all. If you need any further assistance, do not hesitate to contact me by [email](mailto:yonkov.atanas@gmail.com).
 
 ## Right Sidebar Layout
-The theme supports a right sidebar and you can add as many widgets as you want there. The theme works best with the search widget, recent posts widget and recent comments widget. The theme extends the default WordPress recent posts widget to include post thumbnails. This is done for better user experience. By default, the theme shows default text in the right sidebar (search widget and recent posts widget) but you can add your own widgets through dashboard > widgets. We will get to that in a minute. If, for some reason, you do not want to have right sidebar at all, in your theme customizer => additional css, you can remove it with the following css code:
-
-    .sidebar {
-        display: none
-    }
+The theme supports a right sidebar and you can add as many widgets as you want there. The theme works best with the search widget, recent posts widget and recent comments widget. The theme extends the default WordPress recent posts widget to include post thumbnails. This is done for better user experience. By default, the theme shows default text in the right sidebar (search widget and recent posts widget) but you can add your own widgets through dashboard > widgets. We will get to that in a minute.
 
 Now, let's set up some widgets in the right sidebar and remove the default ones! In your dashboard, go to widgets and you will see a list of all the available widgets. Feel free to play around with them. Here is a custom html widget to display info about the webmaster just like on the theme's screenshot:
 
@@ -50,26 +46,7 @@ Pick a custom html widget and drag it to the right sidebar. Paste the above html
 
 ## Full-width Layout (No Sidebar)
 
-The theme does not support full-width layout out of the box, but you can easily achieve this with just a bit of css code. Place the following css in appearance > customize > additional css:
-
-    .main-content {
-        max-width: 100% !important;
-        flex: 100% !important;
-    }
-
-    .blog-entries .blog-entry img {
-        width: 100% !important;
-    }
-
-    @media (min-width:1200px) {
-        .container {
-        max-width:940px !important
-        }
-    }
-
-    .sidebar {
-        display: none;
-    }
+Since version 1.04, the the theme support full-width layout out of the box. You just need to go to Appearance > Customize > Page Layout and click on the "full-width" radio box and the right sidebar will be hidden.
 
 This code wil remove the right sidebar and center the theme content.
 
@@ -156,7 +133,10 @@ This section is for more advanced users who want to write custom css to override
 If you want to customise Nasio beyond the included options, I strongly recommend that you do so via a [child theme](http://codex.wordpress.org/Child_Themes).
 
 # License
-
-* License: [GNU General Public License v2.0](http://www.gnu.org/licenses/gpl-2.0.html)
+This theme, like WordPress, is licensed under the GPL.
+It is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+[GNU General Public License v 2.0](http://www.gnu.org/licenses/gpl-2.0.html) for more details.
 
 Happy blogging!

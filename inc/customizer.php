@@ -7,7 +7,7 @@ function nasio_customize_colors( $wp_customize ) {
 	$wp_customize->add_setting('header_background_color', array(
 		'default'        => '#61DBFB',
 		'transport'   => 'refresh',
-		'sanitize_callback' => 'wp_kses_post',
+		'sanitize_callback' => 'sanitize_hex_color',
 	   ) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'header_background_color', array(
 	   'label'   => __('Header Background Color', 'nasio'),
@@ -18,7 +18,7 @@ function nasio_customize_colors( $wp_customize ) {
 	$wp_customize->add_setting( 'site_title_textcolor' , array(
         'default'     => "#333",
 		'transport'   => 'refresh',
-		'sanitize_callback' => 'wp_kses_post',
+		'sanitize_callback' => 'sanitize_hex_color',
     ) );
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'site_title_textcolor', array(
 		'label'        => __( 'Site Title Color', 'nasio' ),
@@ -29,7 +29,7 @@ function nasio_customize_colors( $wp_customize ) {
 	$wp_customize->add_setting( 'menu_text_color' , array(
 		'default'     => "rgba(0,0,0,.5)",
 		'transport'   => 'refresh',
-		'sanitize_callback' => 'wp_kses_post',
+		'sanitize_callback' => 'sanitize_hex_color',
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'menu_text_color', array(
 		'label'        => __( 'Top Menu Text Color', 'nasio' ),
@@ -40,7 +40,7 @@ function nasio_customize_colors( $wp_customize ) {
 	$wp_customize->add_setting( 'header_textcolor' , array(
         'default'     => "#000000",
 		'transport'   => 'refresh',
-		'sanitize_callback' => 'wp_kses_post',
+		'sanitize_callback' => 'sanitize_hex_color',
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'header_textcolor', array(
@@ -71,3 +71,70 @@ function nasio_customize_css() {
     <?php
 }
 add_action( 'wp_footer', 'nasio_customize_css');
+
+/*
+**Allow users to change page layout (Right sidebar or Fullwidth) via Theme Customizer
+*/
+
+function nasio_register_full_width_customizer($wp_customize) {
+
+    $wp_customize->add_section('layout_options', array(
+        'title' => esc_html__('Page Layout', 'kickstarter'),
+        'description' => esc_html__( 'Change the layout of the whole website. You can choose to display or to hide the right sidebar.', 'kickstarter' )
+    ));
+
+    $wp_customize->add_setting('page_layout', array(
+        'default' => 'one',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Control(
+        $wp_customize,
+        'layout_options',
+        array(
+            'label' => esc_html__('Page Layout', 'kickstarter'),
+            'section' => 'layout_options',
+            'settings' => 'page_layout',
+            'type' => 'radio',
+            'choices' => array(
+                'one' => esc_html__('Right Sidebar', 'kickstarter'),
+                'two' => esc_html__('Full-width', 'kickstarter'),
+                ),
+            'transport'   => 'refresh'
+            )
+        )
+    );
+}
+
+add_action('customize_register', 'nasio_register_full_width_customizer');
+
+function nasio_full_width_css() {
+
+    $layout = get_theme_mod('page_layout');
+
+    if ($layout == 'two'): ?>
+
+	<style type="text/css">
+	body .main-content {
+		max-width: 100%;
+		flex: 100%;
+	}
+	@media (min-width:768px){
+		body .blog-entries .blog-entry img {
+			width: 100%;
+			min-height: 260px;
+		}	
+	}
+	@media (min-width:1200px) {
+		body .container {
+			max-width:940px
+		}
+	}
+	.sidebar {
+		display: none
+	}
+	</style>
+
+    <?php endif;
+}
+add_action('wp_footer', 'nasio_full_width_css');
