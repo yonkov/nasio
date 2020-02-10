@@ -4,8 +4,8 @@ Author URI: http://yonkov.github.io/
 Requires at least: WordPress 4.4
 Tested up to: WordPress 5.3
 Requires PHP: 5.2.4
-Version: 1.040
-Stable tag: 1.040
+Version: 1.0403
+Stable tag: 1.0403
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, portfolio, photography, two-columns, right-sidebar, custom-colors, custom-menu, custom-logo, custom-header, featured-images, footer-widgets, theme-options, threaded-comments, translation-ready
@@ -80,7 +80,15 @@ License: GNU General Public License v2 or later
 
 == Changelog ==
 
-= 1.040 =
+= 1.0403 =
+* Released: February, 2020
+Fix text domain
+
+= 1.0401 =
+* Released: February, 2020
+Fix headings customizer settings
+
+= 1.0400 =
 * Released: February, 2020
 Add full-width layout support
 

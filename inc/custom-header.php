@@ -1,7 +1,6 @@
 <?php
 function nasio_custom_header_setup() {
     $args = array(
-        'default-image'      => get_template_directory_uri() . '/images/header.jpg',
         'default-text-color' => '000',
         'flex-width'         => true,
         'flex-height'        => true,
