@@ -13,16 +13,6 @@ function nasio_customize_colors( $wp_customize ) {
 	   'section' => 'colors',
 		)));
 
-	//Site title color
-	$wp_customize->add_setting( 'site_title_textcolor' , array(
-        'default'     => "#333",
-		'sanitize_callback' => 'sanitize_hex_color',
-    ) );
-    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'site_title_textcolor', array(
-		'label'        => __( 'Site Title Color', 'nasio' ),
-        'section'    => 'colors',
-	) ) );
-
 	//Primary menu text color
 	$wp_customize->add_setting( 'menu_text_color' , array(
 		'default'     => "rgba(0,0,0,.5)",
@@ -47,6 +37,8 @@ function nasio_customize_colors( $wp_customize ) {
 add_action( 'customize_register', 'nasio_customize_colors' );
 
 function nasio_customize_css() {
+	$header_text_color = get_theme_mod('header_textcolor');
+	$default_text_color = '333333';
     ?>
     <style type="text/css">
     h1, h2, h3 {
@@ -55,9 +47,11 @@ function nasio_customize_css() {
     .top-bar {
         background-color: <?php echo esc_attr(get_theme_mod('header_background_color', "#61DBFB")); ?>;
 	}
+	<?php if( $header_text_color!==$default_text_color) : ?>
 	.site-title a {
-		color: <?php echo esc_attr(get_theme_mod('site_title_textcolor', "#333")); ?>;
+		color: #<?php echo esc_attr(get_theme_mod('header_textcolor', '333')); ?>;
 	}
+	<?php endif; ?>
     header .navbar a {
         color: <?php echo esc_attr(get_theme_mod('menu_text_color', "rgba(0,0,0,.5)")); ?>
 	}
@@ -74,9 +68,9 @@ add_action( 'wp_footer', 'nasio_customize_css');
 function nasio_register_full_width_customizer($wp_customize) {
 
     $wp_customize->add_section('layout_options', array(
-        'title' => esc_html__('Page Layout', 'nasio'),
-        'description' => esc_html__( 'Change the layout of the whole website. You can choose to display or to hide the right sidebar.', 'nasio' )
-    ));
+        'title' => esc_html(__('Page Layout', 'nasio')),
+        'description' => esc_html(__('Change the layout of the whole website. You can choose to display or to hide the right sidebar.', 'nasio' )
+    )));
 
     $wp_customize->add_setting('page_layout', array(
         'default' => 'one',
@@ -87,13 +81,13 @@ function nasio_register_full_width_customizer($wp_customize) {
         $wp_customize,
         'layout_options',
         array(
-            'label' => esc_html__('Page Layout', 'nasio'),
+            'label' => esc_html(__('Page Layout', 'nasio')),
             'section' => 'layout_options',
             'settings' => 'page_layout',
             'type' => 'radio',
             'choices' => array(
-                'one' => esc_html__('Right Sidebar', 'nasio'),
-                'two' => esc_html__('Full-width', 'nasio'),
+                'one' => esc_html(__('Right Sidebar', 'nasio')),
+                'two' => esc_html(__('Full-width', 'nasio')),
                 )
             )
         )

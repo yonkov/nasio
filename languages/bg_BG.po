@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Nasio\n"
-"POT-Creation-Date: 2019-08-30 21:20+0300\n"
-"PO-Revision-Date: 2019-08-30 21:21+0300\n"
+"POT-Creation-Date: 2020-02-12 15:52+0200\n"
+"PO-Revision-Date: 2020-02-12 15:55+0200\n"
 "Last-Translator: \n"
 "Language-Team: Yonkov, yonkov.atanas@gmail.com\n"
 "Language: bg_BG\n"
@@ -31,24 +31,19 @@ msgid ""
 msgstr ""
 "Съжаляваме, но не намерихме нищо. Моля опитайте отново с различно търсене."
 
-#: comments.php:34
-#, php-format
-msgid "One thought on &ldquo;%s&rdquo;"
-msgstr ""
+#: comments.php:29
+msgid "Comments"
+msgstr "Коментари"
 
-#: comments.php:73
-msgid "Comments are closed."
-msgstr "Коментарите са затворени."
-
-#: comments.php:80
+#: comments.php:52
 msgid "Leave a Comment"
 msgstr "Оставете коментар"
 
-#: comments.php:83
+#: comments.php:54
 msgid "Submit Query"
 msgstr "Изпрати заявка"
 
-#: comments.php:85
+#: comments.php:56
 msgid "Message"
 msgstr "Съобщение"
 
@@ -60,125 +55,115 @@ msgstr "Основно меню"
 msgid "Social Links Menu"
 msgstr "Социални медии"
 
-#: functions.php:64 sidebar.php:17
+#: functions.php:50 inc/customizer.php:85 sidebar.php:15 sidebar.php:20
 msgid "Right Sidebar"
 msgstr "Дясна странична лента"
 
-#: functions.php:66
+#: functions.php:52
 msgid ""
 "Add widgets here to appear in your sidebar on blog posts and archive pages."
 msgstr "Добавете джаджи тук, които да се появят в страничната лента."
 
-#: functions.php:74
+#: functions.php:60
 msgid "Footer 1"
-msgstr "Футър 1"
+msgstr "Долен колонтитул 1"
 
-#: functions.php:76 functions.php:86
-msgid "Add widgets here to appear in your footer."
-msgstr "Добавете джаджи тук, които да се появят във футъра."
+#: functions.php:62
+msgid "Add 1 widget here to appear in your footer."
+msgstr "Добавете една джаджа тук, които да се появи във футъра."
 
-#: functions.php:84
+#: functions.php:70
 msgid "Footer 2"
-msgstr "Футър 2"
+msgstr "Долен колонтитул 2"
 
-#: functions.php:144
+#: functions.php:72
+msgid "Add 2 widgets here to appear in your footer."
+msgstr "Добавете две джаджи тук, които да се появят във футъра."
+
+#: functions.php:126
 msgid "Sticky"
-msgstr ""
+msgstr "Залепен"
 
-#: functions.php:164
+#: functions.php:146
 #, php-format
 msgid "View all posts in %s"
 msgstr "Вижте всички постове в %s"
 
-#: functions.php:184
+#: functions.php:188
 msgid "Recent Posts"
 msgstr "Последни публикации"
 
-#: functions.php:262
+#: functions.php:265
 #, php-format
 msgid "%s <span class=\"says\">says:</span>"
 msgstr "%s <span class=\"says\">казва:</span>"
 
-#: functions.php:272
+#: functions.php:275
 #, php-format
 msgid "%s ago"
 msgstr ""
 
-#: functions.php:276
+#: functions.php:279
 msgid "edit"
-msgstr ""
+msgstr "редактирай"
 
-#: functions.php:280
+#: functions.php:283
 msgid "Your comment is awaiting moderation."
 msgstr "Вашият коментар ще бъде модериран скоро."
 
-#: functions.php:299
+#: functions.php:302
 msgid "..."
 msgstr ""
 
-#: functions.php:415
-msgid "Homepage"
-msgstr "Начална страница"
+#: header.php:31
+msgid "Skip to main menu"
+msgstr "Към основното меню"
 
-#: functions.php:416
-msgid ""
-"Welcome to your site! This is your homepage, which is what most visitors "
-"will see when they come to your site for the first time. Use the customizer "
-"to choose between a static homepage or display the latest posts in a "
-"beautiful 2-column layout instead."
-msgstr ""
-"Добре дошли на вашия сайт! Това е вашата начална страница. Tова е "
-"страницата, която повечето посетители ще видят, когато влязат в сайта за "
-"първи път. Използвайте настройките на темата , за да изберете между статична "
-"начална страница или страница с най-новите публикации с красиво оформление в "
-"две колони."
+#: header.php:32
+msgid "Skip to content"
+msgstr "Към статиите"
 
-#: functions.php:420
-msgid "About"
-msgstr "За мен"
-
-#: functions.php:422
-msgid ""
-"Welcome on board! This is your about page, which is what most visitors will "
-"check to find out more information about yourself. Write here about your "
-"hobbies, work and passion."
-msgstr ""
-"Добре дошли! Това е страница „За мен“, която повечето от вашите посетители "
-"ще проверят, за да намерят повече информация за вас и вашата дейност. "
-"Споделете тук какво сте учили, с какво се занимавате и как обичате да "
-"прекарвате свободното си време."
-
-#: functions.php:426
-msgid "Contacts"
-msgstr "Контакти"
-
-#: functions.php:427
-msgid ""
-"This is a good place to add some basic contact information, such as an "
-"address and a phone number. You can also add a contact form with contact "
-"form 7 or another plugin"
-msgstr ""
-"Това е отлично място да добавите информация как Вашите читатели могат да се "
-"свържат с Вас. Добавете адрес, телефон и имейл. Можете също да добавите "
-"контактна форма с плъгина contact form 7"
-
-#: header.php:38
+#: header.php:36
 msgid "Footer Social Links Menu"
 msgstr ""
 
-#: inc/customizer.php:25
+#: header.php:57
+msgid "Toggle navigation"
+msgstr "Мобилна навигация"
+
+#: inc/customizer.php:12
+msgid "Header Background Color"
+msgstr "Цвят на горната лента"
+
+#: inc/customizer.php:22
 msgid "Top Menu Text Color"
 msgstr "Цвят на основното меню"
 
-#: inc/customizer.php:36
+#: inc/customizer.php:33
 msgid "Headings Text Color"
 msgstr "Цвят на заглавията"
 
-#: index.php:8
+#: inc/customizer.php:67 inc/customizer.php:80
+msgid "Page Layout"
+msgstr "Разположение"
+
+#: inc/customizer.php:68
+msgid ""
+"Change the layout of the whole website. You can choose to display or to hide "
+"the right sidebar."
+msgstr ""
+"Променете разположението на страниците на уебсайта. Можете да изберете да "
+"покажете или да скриете дясната странична лента."
+
+#: inc/customizer.php:86
+msgid "Full-width"
+msgstr "Цяла страница"
+
+#: index.php:7
 msgid "Latest Posts"
 msgstr "Последни публикации"
 
-#: index.php:29
+#: index.php:37
 msgid "There are no posts!"
 msgstr "Няма публикации!"
 
@@ -194,48 +179,77 @@ msgstr "Търсене"
 msgid "Footer"
 msgstr "Футър"
 
-#: template-parts/footer-widgets.php:7
-msgid "About me"
-msgstr "За мен"
-
-#: template-parts/footer-widgets.php:11
-msgid ""
-"This is a good place to introduce yourself. Write about your work, hobbies "
-"and passion."
-msgstr ""
-"Това е добро място да се представите. Напишете с какво се занимавате и какви "
-"са Вашите хобита и интереси."
-
-#: template-parts/footer-widgets.php:12
-msgid "Read more"
-msgstr "Вижте повече"
-
-#: template-parts/footer-widgets.php:22
-msgid "Get Social"
-msgstr "Социализирай се"
-
-#: template-parts/post/content.php:51
-#, php-format
-msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr "Вижте повече<span class=\"screen-reader-text\"> \"%s\"</span>"
-
-#: template-parts/site-info.php:24
-msgid "https://yonkov.github.io/"
-msgstr ""
-
 #: template-parts/site-info.php:25
 #, php-format
 msgid "Designed by %s"
 msgstr "Направен от %s"
 
-#: template-parts/site-info.php:28
-msgid "https://wordpress.org/"
-msgstr ""
-
 #: template-parts/site-info.php:29
 #, php-format
 msgid "Powered by %s"
 msgstr "Задвижван от %s"
+
+#~ msgid "Comments are closed."
+#~ msgstr "Коментарите са затворени."
+
+#~ msgid "Homepage"
+#~ msgstr "Начална страница"
+
+#~ msgid ""
+#~ "Welcome to your site! This is your homepage, which is what most visitors "
+#~ "will see when they come to your site for the first time. Use the "
+#~ "customizer to choose between a static homepage or display the latest "
+#~ "posts in a beautiful 2-column layout instead."
+#~ msgstr ""
+#~ "Добре дошли на вашия сайт! Това е вашата начална страница. Tова е "
+#~ "страницата, която повечето посетители ще видят, когато влязат в сайта за "
+#~ "първи път. Използвайте настройките на темата , за да изберете между "
+#~ "статична начална страница или страница с най-новите публикации с красиво "
+#~ "оформление в две колони."
+
+#~ msgid "About"
+#~ msgstr "За мен"
+
+#~ msgid ""
+#~ "Welcome on board! This is your about page, which is what most visitors "
+#~ "will check to find out more information about yourself. Write here about "
+#~ "your hobbies, work and passion."
+#~ msgstr ""
+#~ "Добре дошли! Това е страница „За мен“, която повечето от вашите "
+#~ "посетители ще проверят, за да намерят повече информация за вас и вашата "
+#~ "дейност. Споделете тук какво сте учили, с какво се занимавате и как "
+#~ "обичате да прекарвате свободното си време."
+
+#~ msgid "Contacts"
+#~ msgstr "Контакти"
+
+#~ msgid ""
+#~ "This is a good place to add some basic contact information, such as an "
+#~ "address and a phone number. You can also add a contact form with contact "
+#~ "form 7 or another plugin"
+#~ msgstr ""
+#~ "Това е отлично място да добавите информация как Вашите читатели могат да "
+#~ "се свържат с Вас. Добавете адрес, телефон и имейл. Можете също да "
+#~ "добавите контактна форма с плъгина contact form 7"
+
+#~ msgid "About me"
+#~ msgstr "За мен"
+
+#~ msgid ""
+#~ "This is a good place to introduce yourself. Write about your work, "
+#~ "hobbies and passion."
+#~ msgstr ""
+#~ "Това е добро място да се представите. Напишете с какво се занимавате и "
+#~ "какви са Вашите хобита и интереси."
+
+#~ msgid "Read more"
+#~ msgstr "Вижте повече"
+
+#~ msgid "Get Social"
+#~ msgstr "Социализирай се"
+
+#~ msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+#~ msgstr "Вижте повече<span class=\"screen-reader-text\"> \"%s\"</span>"
 
 #~ msgid "Typography"
 #~ msgstr "Шрифтове"

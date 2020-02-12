@@ -21,11 +21,11 @@
     <?php esc_attr(get_theme_mod( 'footer_text_block')); ?>
     
     <?php else : ?>
-            <a href="<?php echo esc_url( __( 'https://yonkov.github.io/', 'nasio' ) ); ?>" class="imprint">
+            <a href="<?php echo esc_url( 'https://yonkov.github.io/' ); ?>" class="imprint">
                 <?php printf( __( 'Designed by %s', 'nasio' ), 'Atanas Yonkov' );?>
             </a>
             <span> || </span>
-            <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'nasio' ) ); ?>" class="imprint">
+            <a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>" class="imprint">
                 <?php printf( __( 'Powered by %s', 'nasio' ), 'WordPress' ); ?>
             </a>
     <?php endif ?>

@@ -59,7 +59,7 @@ function nasio_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Footer 1', 'nasio' ),
 		'id'            => 'sidebar-2',
-		'description'   => __( 'Add widgets here to appear in your footer.', 'nasio' ),
+		'description'   => __( 'Add 1 widget here to appear in your footer.', 'nasio' ),
 		'before_widget' => '<section id="%1$s" class="col-md-9">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h3 class="heading">',
@@ -69,7 +69,7 @@ function nasio_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Footer 2', 'nasio' ),
 		'id'            => 'sidebar-3',
-		'description'   => __( 'Add widgets here to appear in your footer.', 'nasio' ),
+		'description'   => __( 'Add 2 widgets here to appear in your footer.', 'nasio' ),
 		'before_widget' => '<section id="%1$s" class="col-md-6">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h3 class="widget-title">',
@@ -86,7 +86,7 @@ function nasio_styles() {
 	//Theme Navigation 
 	wp_enqueue_script( 'navigation', get_template_directory_uri() . '/assets/js/navigation-min.js', array( 'jquery' ),'',true);
 	//Theme stylesheet.
-	wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style-min.css', '', '1.0.8' );
+	wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style-min.css', '', '1.0.9' );
 }
 
 add_action( 'wp_enqueue_scripts', 'nasio_styles' );

@@ -1,7 +1,9 @@
 <?php
 function nasio_custom_header_setup() {
     $args = array(
-        'default-text-color' => '000',
+        'default-text-color' => '333',
+        'width'              => 2000,
+		'height'             => 330,
         'flex-width'         => true,
         'flex-height'        => true,
         'wp-head-callback'   => 'nasio_header_image_css',
