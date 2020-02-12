@@ -1,8 +1,8 @@
 # Nasio
 
-Nasio is an extremely lightweight WordPress theme without any frameworks developed by Atanas Yonkov in 2020. Ideal for blogs and portfolio websites. Very easy to set up even for people without coding experience thanks to its extensive documentation and generous theme options. Nasio is optimized for speed and high performance in Google search results. With its minimalistic and clean design, it's divine purpose is to showcase high quality content.
+Nasio is an extremely lightweight WordPress theme without any frameworks developed by Atanas Yonkov in 2020. Ideal for blogs and portfolio websites. Very easy to set up even for people without coding experience thanks to its extensive documentation and generous theme options. Nasio is optimized for speed and high performance in Google search results. With its minimalistic and clean design, its divine purpose is to showcase high quality content.
 
-Nasio does not use Bootstrap or any other css framework (only custom css!) to provide first-class user experience. As a result, the whole theme's zip file is less than 300KB. It has fully responsive 3-column grid layout. It supports nested menu items. Option to use a static Homepage. Beautiful pagination. Option to add custom header, custom logo, site icon and change the theme accent colors from the customizer.
+Nasio does not use Bootstrap or any other css framework (only custom css!) to provide first-class user experience. As a result, the whole theme's zip file is less than 300KB. It has fully responsive 3-column grid layout. It supports nested menu items. Option to use a static Homepage. Beautiful pagination. Option to add custom header, custom logo, site icon and change the theme accent colors from the customizer. Option to switch between right sidebar layout and full-width layout.
 
 The theme extends the Recent Posts widget to include beautiful post thumbnail images in the right sidebar. Posts without a featured image are displayed with a default thumbnail. Optimized css and font delivery for better performance. Static files (css and js) are minifed. Fully compatible with Gutenberg but also supports the good old Classic editor.
 
