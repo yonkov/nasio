@@ -109,7 +109,7 @@ Specify which menu to use in the menu location. This website supports two menus 
 
 * **Top Menu** - You can create the primary menu from the theme customizer or you can also go to dashboard > menu. Click on create menu and give it a name, then drag or add the pages you want to it. After that, from the menu locations section, select Top Menu checkbox. This theme supports as many sub-menus as you want and it is also working on mobile version.
 
-* **Social Links Menu** - The theme uses font awesome classes to show social media icons. To build the social menu in the way it is shown in the theme's screenshot you need to add custom links. 
+* **Social Links Menu** - The theme uses font awesome classes to show social media icons. To build the social menu in the way it is shown in the theme's screenshot you need to add custom links. Don't worry, it is very easy.
 
 After you create the Social Links menu, click on add items > custom links and in the navigation label add the following html code: 
 
