@@ -52,7 +52,7 @@ Since version 1.04, the the theme support full-width layout out of the box. You 
  In addition to the right sidebar you can add widgets to two defined regions in the footer. They are named "Footer 1" and "Footer 2". These will be arranged in a beautiful multi-column layout. The theme works best if you add just one widget in Footer 1 and two widgets in Footer 2. In this way, you should have 3 widgets in the footer in total. If you want, you can use and modify the text of the theme's default text widgets. Here is the code for them:
     
     <!-- About me widget-->
-    <h3 class="heading">About me</h3><p class="mb-4"><img src="/wp-content/themes/nasio/images/about.jpg" alt="placeholder" class="img-fluid"></p><p>This is a good place to introduce yourself. Write about your work, hobbies and passion.<a href="/about"> Read More</a></p>
+    <h3 class="heading">About me</h3><p class="page-title"><img src="/wp-content/themes/nasio/images/about.jpg" alt="placeholder" class="img-fluid"></p><p>This is a good place to introduce yourself. Write about your work, hobbies and passion.<a href="/about"> Read More</a></p>
 
     <!--Get Social Widget-->
     <h3 class="widget-title">Get Social</h3>
@@ -75,11 +75,20 @@ Use the theme customizer to customize the theme to taste. There are just enough 
 To use the theme's customizer log in to your dashboard and navigate to Appearance > Customize. You can also access the customizer from the admin bar on the top of the page.
 
 ### Header Image:
-Since v. 1.039, the theme supports the option to add custom header image via the theme customizer. Go to Appearance > Customize > Header Image and upload a header image from your PC. As simple as that. As a general recommendation, I would suggest to always compress the images that you upload, otherwise the site performace may deteriorate with time. Read more about that [here](https://rawinfopages.co.uk/squash-images-with-squoosh-to-improve-website-performance/).
+Since v. 1.04, the theme supports the option to add custom header image via the theme customizer. Go to Appearance > Customize > Header Image and upload a header image from your PC. As simple as that. As a general recommendation, I would suggest to always compress the images that you upload, otherwise the site performace may deteriorate with time. Read more about that [here](https://rawinfopages.co.uk/squash-images-with-squoosh-to-improve-website-performance/).
+
+In some occasions, you might want to remove the light blue header bar on top of each page. You can remove it with the following css code. In the theme customizer, navigate to "Additional css" tab in the customizer (the last one tab):
+  
+```/* CSS code to remove top bar */
+    .top-bar {
+        display: none;
+    }
+```
+Please note that this is also the place to put social media icons, so do not remove the top bar if you plan to add social icons later there.
 
 ### Site identity:
 
-* **Change default logo** - you have the option to upload your own logo that will display in the site's heafer. If you do not specify any logo, the theme's default logo is used. You can hide it with adding the following code to the additional css tab in the customizer (the last one tab):
+* **Change default logo** - you have the option to upload your own logo that will display in the site's heafer. If you do not specify any logo, the theme's default logo is used. You can hide it with adding the following code to the additional css tab in the customizer:
   
 ```/* CSS code to hide the theme's logo */
     .custom_logo {

@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="column">
-                    <h3 class="mb-4"><?php _e( 'Latest Posts', 'nasio'); ?></h3>
+                    <h3 class="page-title"><?php _e( 'Latest Posts', 'nasio'); ?></h3>
                 </div>
             </div>
             <div class="row blog-entries">

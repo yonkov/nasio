@@ -12,11 +12,11 @@
 
 get_header(); ?>
 
-<section class="site-section py-sm">
+<section class="site-section">
     <div class="container">
         <div class="row blog-entries">
-            <div class="col-md-12 col-lg-8 main-content">
-                <h2 class="mb-4"><?php _e( 'Oops! That page can&rsquo;t be found.', 'nasio' ); ?></h2>
+            <div class="main-content">
+                <h2 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'nasio' ); ?></h2>
 
                 <div class="row">
                     <p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'nasio' ); ?>

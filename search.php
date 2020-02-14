@@ -11,15 +11,15 @@
 <?php get_header(); ?>
 <div>
     <!-- Start of main-content -->
-    <section class="site-section py-sm">
+    <section class="site-section">
         <div class="container">
             <div class="row">
                 <div class="column">
-                    <h2 class="mb-4"><?php _e('Search Results', 'nasio')?></h2>
+                    <h2 class="page-title"><?php _e('Search Results', 'nasio')?></h2>
                 </div>
             </div>
             <div class="row blog-entries">
-                <div class="col-md-12 col-lg-8 main-content">
+                <div class="main-content">
                     <div>
                         <?php
                 if ( have_posts() ) :
