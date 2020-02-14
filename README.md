@@ -80,9 +80,9 @@ Since v. 1.04, the theme supports the option to add custom header image via the 
 In some occasions, you might want to remove the light blue header bar on top of each page. You can remove it with the following css code. In the theme customizer, navigate to "Additional css" tab in the customizer (the last one tab):
   
 ```/* CSS code to remove top bar */
-    .top-bar {
-        display: none;
-    }
+.top-bar {
+    display: none;
+}
 ```
 Please note that this is also the place to put social media icons, so do not remove the top bar if you plan to add social icons later there.
 
@@ -91,9 +91,9 @@ Please note that this is also the place to put social media icons, so do not rem
 * **Change default logo** - you have the option to upload your own logo that will display in the site's heafer. If you do not specify any logo, the theme's default logo is used. You can hide it with adding the following code to the additional css tab in the customizer:
   
 ```/* CSS code to hide the theme's logo */
-    .custom_logo {
-        visibility: hidden;
-    }
+.custom_logo {
+    visibility: hidden;
+}
 ```
 Please keep in mind that in this way you will not be able to show any logos on the frontend.
 
