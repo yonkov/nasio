@@ -82,11 +82,12 @@ add_action( 'widgets_init', 'nasio_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
+
 function nasio_styles() {
 	//Theme Navigation 
 	wp_enqueue_script( 'navigation', get_template_directory_uri() . '/assets/js/navigation-min.js', array( 'jquery' ),'',true);
 	//Theme stylesheet.
-	wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style-min.css', '', '1.0.9' );
+	wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style-min.css', '', '1.1.0' );
 }
 
 add_action( 'wp_enqueue_scripts', 'nasio_styles' );
@@ -160,15 +161,15 @@ function nasio_get_category(){
  * @ref https://www.w3.org/WAI/tutorials/menus/flyout/
  */
 function nasio_nav_menu_link_attributes( $atts, $item, $args, $depth ) {
-
     // Add [aria-haspopup] and [aria-expanded] to menu items that have children
     $item_has_children = in_array( 'menu-item-has-children', $item->classes );
     if ( $item_has_children ) {
         $atts['aria-haspopup'] = "true";
         $atts['aria-expanded'] = "false";
     }
-    return $atts;
+	return $atts;
 }
+
 add_filter( 'nav_menu_link_attributes', 'nasio_nav_menu_link_attributes', 10, 4 );
 
 /**
