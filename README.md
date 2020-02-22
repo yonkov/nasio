@@ -19,6 +19,10 @@ Nasio has been fully optimised for small screen display. Your content will look 
 ## Translation-ready
 Nasio is a translation-ready theme and it comes with two default languages - English and Bulgarian. You can easily use poedit or any other translation plugin to translate it to any language you need.
 
+## RTL Language support
+
+Since v. 2.0.2, Nasio fully supports languages that are read from right to left. It automatically rotates the layout if the user switches to any rtl language. You only need to pick a site language from Settings> General> Site Language and the rest is automatically done for you.
+
 ## Developer Friendly
 Loads of hooks and filters to extend and customise Nasio via plugin and/or child theme.
 
@@ -111,7 +115,7 @@ Specify which menu to use in the menu location. This website supports two menus 
 
 * **Social Links Menu** - The theme uses font awesome classes to show social media icons. To build the social menu in the way it is shown in the theme's screenshot you need to add custom links. Don't worry, it is very easy.
 
-After you create the Social Links menu, click on add items > custom links and in the navigation label add the following html code: 
+After you create the Social Links menu, click on add items > custom links and in the link text tab add the following html code: 
 
 ```<span class="fa fa-facebook"></span>```
 

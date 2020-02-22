@@ -3,13 +3,13 @@ Theme Name: Nasio
 Theme URI: https://github.com/yonkov/nasio/
 Author: Atanas Yonkov
 Author URI: http://yonkov.github.io/
-Description: Extremely lightweight WordPress theme without any frameworks developed by Atanas Yonkov in 2020. Ideal for blogs and portfolio websites. Very easy to set up even for people with no coding experience thanks to its extensive documentation and generous theme options. The theme is optimized for speed and better performance in google search results. It does not use Bootstrap or any other css framework (only custom css!) to provide unique and high-quality user experience. As a result, the whole theme's zip file size is less than 300KB. It has fully responsive 3-column grid layout. Option to use a static Homepage. Beautiful pagination. Option to add header image, custom logo, site icon and change theme accent colors from the theme customizer. Option to switch between right sidebar layout and full-width layout. The theme supports nested dropdown sub menus. It extends the Recent Posts widget to include thumbnail images. Posts without a featured image are displayed with a default thumbnail. Optimized for speed. Optimized css and font delivery for better performance. Extremely fast and SEO friendly. Static files (css and js) are minified. Fully compatible with Gutenberg but also supports the good old Classic editor. How to set it up: https://github.com/yonkov/nasio. Live example: http://phototravelworld.com/
-Version: 2.0.1
+Description: Extremely lightweight WordPress theme without any frameworks developed by Atanas Yonkov in 2020. Ideal for blogs and portfolio websites. Very easy to set up even for people with no coding experience thanks to its extensive documentation and generous theme options. The theme is optimized for speed and better performance in google search results. It does not use Bootstrap or any other css framework (only custom css!) to provide unique and high-quality user experience. As a result, the whole theme's zip file size is less than 300KB. It has fully responsive 2-column grid layout. Option to use a static Homepage. Beautiful pagination. Option to add header image, custom logo, site icon and change theme accent colors from the theme customizer. Option to switch between right sidebar layout and full-width layout. The theme supports nested dropdown sub menus. It extends the Recent Posts widget to include thumbnail images. Posts without a featured image are displayed with a default thumbnail. Optimized for speed. Optimized css and font delivery for better performance. Extremely fast and SEO friendly. Static files (css and js) are minified. Fully compatible with Gutenberg but also supports the good old Classic editor. How to set it up: https://github.com/yonkov/nasio. Live example: http://phototravelworld.com/
+Version: 2.0.2
 
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Tags: blog, portfolio, photography, two-columns, right-sidebar, custom-colors, custom-menu, custom-logo, custom-header, featured-images, footer-widgets, theme-options, threaded-comments, translation-ready
+Tags: blog, portfolio, photography, two-columns, right-sidebar, full-width-template, custom-colors, custom-menu, custom-logo, custom-header, featured-images, footer-widgets, theme-options, threaded-comments, translation-ready, rtl-language-support
 Text Domain: nasio
 
 This theme, like WordPress, is licensed under the GPL.
@@ -189,10 +189,17 @@ a:hover {
 }
 
 .site-title a {
-  color:#333
+  color: #333
 }
 
-h1, h2, h3, h4, h5, h6, aside a, footer a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+aside a,
+footer a {
   word-break: break-word
 }
 
@@ -438,13 +445,14 @@ header .navbar {
 header .navbar a {
   font-size: 15px
 }
+
 #top-menu ul {
   list-style: none;
   padding: 0
 }
 
-@media (min-width: 992px){
-  header .navbar #top-menu > li {
+@media (min-width: 992px) {
+  header .navbar #top-menu>li {
     padding: 0 .7rem
   }
 }
@@ -513,7 +521,7 @@ code {
   }
 
   #top-menu .sub-menu li:hover {
-    background: rgba(0,0,0,.1)
+    background: rgba(0, 0, 0, .1)
   }
 
   #top-menu .sub-menu .sub-menu {
@@ -541,16 +549,18 @@ code {
     display: block;
     padding-left: 0
   }
-  #top-menu{
+
+  #top-menu {
     border-top: 3px solid #61dbfb;
-    -webkit-box-shadow: 0 0 1px rgba(0,0,0,.2);
-    -moz-box-shadow: 0 0 1px rgba(0,0,0,.2);
-    box-shadow: 0 0 1px rgba(0,0,0,.2)
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .2)
   }
 
   #top-menu .sub-menu {
     padding-left: 0
   }
+
   header .navbar a {
     padding: 1.7rem 1rem
   }
@@ -573,7 +583,12 @@ code {
 }
 
 #top-menu li.menu-item-has-children li a:focus {
-  background-color: rgba(0,0,0,.03)
+  background-color: rgba(0, 0, 0, .03)
+}
+
+/* Add keyboard navigation for post meta */
+.post-meta a:focus {
+  outline: 1px dotted #212121;
 }
 
 /* Mobile menu */
@@ -633,24 +648,30 @@ code {
 
 /* Add padding to sub menu items on mobile */
 @media (max-width: 991.98px) {
-  #top-menu li .sub-menu, #top-menu .children { 
+
+  #top-menu li .sub-menu,
+  #top-menu .children {
     padding-left: .6em;
   }
+
   header .navbar a {
     font-size: 14px;
     display: block;
     padding: 10px 5%;
-    border-bottom: 1px solid rgba(0,0,0,.2);
-    color:#666;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    color: #666;
     text-align: left
   }
-  header .navbar a:hover{
-    background-color: rgba(0,0,0,.3)
+
+  header .navbar a:hover {
+    background-color: rgba(0, 0, 0, .3)
   }
+
   #site-navigation .container {
     max-width: unset;
     background: #f5f5f5
   }
+
   .navbar-nav {
     display: -ms-flexbox;
     display: flex;
@@ -673,6 +694,7 @@ code {
 }
 
 @media (max-width: 991.98px) {
+
   .navbar-expand-lg>.container,
   .navbar-expand-lg>.container-fluid {
     padding-right: 0;
@@ -685,24 +707,29 @@ code {
     -ms-flex-direction: row;
     flex-direction: row
   }
+
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute
   }
+
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: .5rem;
     padding-left: .5rem
   }
+
   .navbar-expand-lg>.container,
   .navbar-expand-lg>.container-fluid {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap
   }
+
   .navbar-expand-lg .navbar-collapse {
     display: -ms-flexbox !important;
     display: flex !important;
     -ms-flex-preferred-size: auto;
     flex-basis: auto
   }
+
   .navbar-expand-lg .navbar-toggler {
     display: none
   }
@@ -789,7 +816,6 @@ code {
   color: #fff !important;
   margin-right: 5px;
   letter-spacing: .2em
-
 }
 
 .entry-date:hover {
@@ -811,92 +837,6 @@ code {
 
 .url.fn.n:hover {
   background: rgba(255, 51, 51, 1)
-}
-
-.a-block {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  padding: 30px 80px;
-  position: relative;
-  margin-bottom: 30px;
-  height: 300px
-}
-
-.a-block.sm {
-  padding: 30px 30px
-}
-
-@media (max-width: 767.98px) {
-  .a-block {
-    padding: 30px
-  }
-}
-
-.a-block.height-lg {
-  height: 500px
-}
-
-.a-block.height-md {
-  height: 400px
-}
-
-.a-block:before {
-  background: #000;
-  position: absolute;
-  content: "";
-  z-index: 1;
-  opacity: .3;
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0
-}
-
-.a-block .text {
-  position: relative;
-  z-index: 2;
-  max-width: 100%
-}
-
-.a-block .text.half-to-full {
-  max-width: 50%
-}
-
-@media (max-width: 767.98px) {
-  .a-block .text.half-to-full {
-    max-width: 100%
-  }
-}
-
-.a-block .text .post-meta {
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  font-size: 13px;
-  margin-bottom: 30px
-}
-
-.a-block .text .post-meta .author img {
-  width: 30px;
-  border-radius: 50%;
-  display: inline-block
-}
-
-.a-block .text h3 {
-  color: #fff;
-  border: 1px solidi red
-}
-
-.a-block .text p {
-  color: #fff
-}
-
-.a-block:hover:before {
-  opacity: .4
 }
 
 .bio {
@@ -1025,7 +965,6 @@ code {
   text-align: center;
   transition: all .6s;
   z-index: -1
-
 }
 
 .blog-entry:hover::before {
@@ -1353,21 +1292,23 @@ img {
   content: "\f122";
   position: absolute
 }
-@media (min-width: 1025px){
+
+@media (min-width: 1025px) {
   .widget-column.footer-widget-2>section:first-child {
-      min-width: 250px;
-      margin-right: calc(2.5vw + 10px)
+    min-width: 250px;
+    margin-right: calc(2.5vw + 10px)
   }
 }
 
-@media (min-width: 767px){
-  .col-md-6{
+@media (min-width: 767px) {
+  .col-md-6 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%
   }
 }
-@media (max-width: 993px){
+
+@media (max-width: 993px) {
   .col-md-6 {
     padding-left: 15px
   }
@@ -1389,7 +1330,6 @@ img {
   color: #fff;
   background-color: rgb(0, 123, 255);
   border-color: rgb(0, 123, 255)
-
 }
 
 /* Submit forms */
@@ -1604,7 +1544,7 @@ textarea.form-control {
   max-height: 100%
 }
 
-.page .entry-header > .wp-post-image {
+.page .entry-header>.wp-post-image {
   padding-bottom: 15px
 }
 
@@ -1634,8 +1574,9 @@ textarea.form-control {
   text-align: justify
 }
 
-.main-content h2, .main-content h1 {
-	text-align: left
+.main-content h2,
+.main-content h1 {
+  text-align: left
 }
 
 /* Sidebar */
@@ -1784,13 +1725,14 @@ section[id*="recent-comments"] h2 {
     padding-top: 20px
   }
 }
+
 .site-footer .widget-column {
   padding-top: 1em
 }
 
 @media (min-width: 994px) {
-.site-footer .widget-column {
-  padding-top: 4em
+  .site-footer .widget-column {
+    padding-top: 4em
   }
 }
 
@@ -1806,10 +1748,12 @@ section[id*="recent-comments"] h2 {
   .widget-area {
     display: flex
   }
+
   .widget-column {
     display: flex;
     width: 100%
   }
+
   .sidebar-box .footer-widget-2 {
     display: flex
   }
@@ -1828,7 +1772,7 @@ section[id*="recent-comments"] h2 {
 }
 
 /* Pagination */
-.navigation{
+.navigation {
   flex: 100%;
   margin: 1em 0
 }
@@ -1849,10 +1793,10 @@ section[id*="recent-comments"] h2 {
   font-size: 14px
 }
 
-@media (max-width: 370px){  
-	.navigation ul li a {
-		font-size: 12px
-	}
+@media (max-width: 370px) {
+  .navigation ul li a {
+    font-size: 12px
+  }
 }
 
 .navigation li a,

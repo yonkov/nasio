@@ -27,7 +27,7 @@
             <div class="top-bar">
                 <div class="container">
                     <div class="row">
-                        <div class="col-9 social">
+                        <div class="social">
                         <a class="screen-reader-text skip-link" href="#site-navigation"><?php _e( 'Skip to main menu', 'nasio'); ?></a>
                         <a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'nasio'); ?></a>
                             <?php
