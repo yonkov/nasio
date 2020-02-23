@@ -54,8 +54,7 @@
                     <div class="header-wrapper text-center">
                         <div class="toggle-icon absolute-toggle d-block" data-toggle="collapse"
                             data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
-                            aria-label="<?php esc_attr_e( 'Toggle navigation', 'nasio' );?>" role="button" aria-expanded="true"
-                            aria-controls="navbarMenu"><span class="burger-lines">
+                            aria-label="<?php esc_attr_e( 'Toggle navigation', 'nasio' );?>" role="button"><span class="burger-lines"></span>
                         </div>
             <?php
             /*
