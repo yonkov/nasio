@@ -80,6 +80,10 @@ License: GNU General Public License v2 or later
 
 == Changelog ==
 
+= 2.0.6 =
+* Released: March, 2020
+Improve footer css
+
 = 2.0.5 =
 * Released: March, 2020
 Improve footer widgets css. Add icons to post meta data. Add two-column layout for archive pages.
