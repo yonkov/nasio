@@ -4,7 +4,7 @@ Theme URI: https://github.com/yonkov/nasio/
 Author: Atanas Yonkov
 Author URI: http://yonkov.github.io/
 Description: Extremely lightweight WordPress theme without any frameworks developed by Atanas Yonkov in 2020. Ideal for blogs and portfolio websites. Very easy to set up even for people with no coding experience thanks to its extensive documentation and generous theme options. The theme is optimized for speed and better performance in google search results. It does not use Bootstrap or any other css framework (only custom css!) to provide unique and high-quality user experience. As a result, the whole theme's zip file size is less than 300KB. It has fully responsive 2-column grid layout. Option to use a static Homepage. Beautiful pagination. Option to add header image, custom logo, site icon and change theme accent colors from the theme customizer. Option to switch between right sidebar layout and full-width layout. The theme supports nested dropdown sub menus. It extends the Recent Posts widget to include thumbnail images. Posts without a featured image are displayed with a default thumbnail. Optimized for speed. Optimized css and font delivery for better performance. Extremely fast and SEO friendly. Static files (css and js) are minified. Fully compatible with Gutenberg but also supports the good old Classic editor. How to set it up: https://github.com/yonkov/nasio. Live example: http://phototravelworld.com/
-Version: 2.0.4
+Version: 2.0.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, portfolio, photography, two-columns, right-sidebar, full-width-template, custom-colors, custom-menu, custom-logo, custom-header, featured-images, footer-widgets, theme-options, threaded-comments, translation-ready, rtl-language-support
@@ -322,10 +322,9 @@ label {
 }
 
 @media (min-width: 768px) {
-  .col-md-9 {
+  .col-footer {
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
-    max-width: 75%
   }
 }
 
@@ -371,13 +370,16 @@ label {
 }
 
 .column,
-.col-md-9,
+.col-footer,
 .sidebar-wrapper {
   position: relative;
   width: 100%;
-  min-height: 1px;
+  min-height: 1px
+}
+
+.column, .sidebar-wrapper{
+  padding-left: 15px;
   padding-right: 15px;
-  padding-left: 15px
 }
 
 @media (min-width: 768px) {
@@ -451,6 +453,16 @@ header .navbar a {
   header .navbar #top-menu>li {
     padding: 0 .7rem
   }
+}
+
+/* Menu widgets in sidebar or footer */
+
+.menu-primary-container ul > li a, .menu-all-pages-container ul ul li a {
+	padding-left: .6em;
+}
+
+.menu-primary-container ul ul ul li a, .menu-all-pages-container ul ul ul li a {
+	padding-left: 1.2em;
 }
 
 header .navbar a:hover {
@@ -701,10 +713,6 @@ code {
   }
 }
 
-.menu-item-has-children>ul {
-  padding-left: 50px
-}
-
 @media (max-width: 991.98px) {
 
   .navbar-expand-lg>.container,
@@ -798,17 +806,20 @@ code {
   border-bottom: 1px solid #e6e6e6
 }
 
-.category-meta-field {
+.post-meta span a{
   display: inline-block;
-  background: rgb(97, 219, 251);
-  padding: 2px 8px;
+  padding: 3px 8px;
   line-height: 1.5;
   font-size: 12px;
   border-radius: 4px;
   text-transform: uppercase;
   color: #fff !important;
-  margin-right: 10px;
+  margin-right: 12px;
   letter-spacing: .2em
+}
+
+.category-meta-field {
+  background: rgb(97, 219, 251);
 }
 
 .category-meta-field:hover {
@@ -816,39 +827,41 @@ code {
   background: #007bff
 }
 
-.entry-date {
+.category-meta-field:before{
+  content: "\f114";
+  font-family: 'FontAwesome';
+  right: 3px;
+  position: relative;
+}
 
-  display: inline-block;
+.entry-date {
   background: rgba(153, 153, 255, .8);
-  padding: 4px 8px 2px;
-  line-height: 1.5;
-  font-size: 12px;
-  border-radius: 4px;
-  text-transform: uppercase;
-  color: #fff !important;
-  margin-right: 5px;
-  letter-spacing: .2em
 }
 
 .entry-date:hover {
   background: rgba(153, 153, 255, 1)
 }
 
-.url.fn.n {
-  display: inline-block;
-  background: rgba(255, 51, 51, .6);
-  padding: 4px 8px 2px;
-  line-height: 1.5;
-  font-size: 12px;
-  border-radius: 4px;
-  text-transform: uppercase;
-  color: #fff !important;
-  margin-right: 5px;
-  letter-spacing: .2em
+.entry-date::before {
+  content: "\f073";
+  font-family: 'FontAwesome';
+  right: 3px;
+  position: relative;
 }
 
-.url.fn.n:hover {
+.author-meta-field {
+  background: rgba(255, 51, 51, .6);
+}
+
+.author-meta-field:hover {
   background: rgba(255, 51, 51, 1)
+}
+
+.author-meta-field:before{
+  content: "\f007";
+  font-family: 'FontAwesome';
+  right: 3px;
+  position: relative
 }
 
 .bio {
@@ -1136,8 +1149,7 @@ img {
   border-bottom: 1px solid #e6e6e6
 }
 
-.sidebar-box ul,
-.col-md-7 ul {
+.sidebar-box ul {
   padding-left: 0em
 }
 
@@ -1303,27 +1315,6 @@ img {
   font-family: "Ionicons";
   content: "\f122";
   position: absolute
-}
-
-@media (min-width: 1025px) {
-  .widget-column.footer-widget-2>section:first-child {
-    min-width: 250px;
-    margin-right: calc(2.5vw + 10px)
-  }
-}
-
-@media (min-width: 767px) {
-  .col-md-6 {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%
-  }
-}
-
-@media (max-width: 993px) {
-  .col-md-6 {
-    padding-left: 15px
-  }
 }
 
 .border-t {
@@ -1601,11 +1592,6 @@ aside .wp-post-image,
   margin: 0 5px 10px 0
 }
 
-section[id*="recent-posts"] ul,
-section[id*="recent-comments"] ul {
-  padding: 0
-}
-
 section[id*="recent-posts"] li {
   position: relative;
   list-style: none;
@@ -1657,6 +1643,10 @@ section[id*="recent-comments"] h2 {
 
 /* Footer */
 
+.widget-column ul {
+	padding: 0
+}
+
 .site-footer section[id*="recent-posts"] h2,
 .site-footer section[id*="recent-comments"] h2 {
   font-size: 14px;
@@ -1668,7 +1658,7 @@ section[id*="recent-comments"] h2 {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding: 1em 0 .1em;
+  padding: 0 0 .1em;
   background: #262626;
   color: #999999
 }
@@ -1715,12 +1705,6 @@ section[id*="recent-comments"] h2 {
   font-size: .8em
 }
 
-@media screen and (min-width: 994px) {
-  .site-footer .search-form-wrap {
-    width: 70%
-  }
-}
-
 .blog-entry-footer .post-meta {
   color: white;
   font-size: 15px
@@ -1735,6 +1719,11 @@ section[id*="recent-comments"] h2 {
 @media screen and (max-width: 993px) {
   .widget-column.footer-widget-2 section {
     padding-top: 20px
+  }
+
+  .widget-column section {
+    display: flex;
+    flex-direction: column
   }
 }
 
@@ -1758,16 +1747,39 @@ section[id*="recent-comments"] h2 {
 
 @media (min-width: 992.98px) {
   .widget-area {
-    display: flex
+    display: flex;
+    flex-wrap: wrap;
+    width:100%
   }
 
   .widget-column {
     display: flex;
-    width: 100%
+    width: 50%;
+    flex-wrap: wrap;
+    align-self: flex-start
+  }
+
+  .widget-column.footer-widget-2 {
+    justify-content: space-between;
+  }
+
+  .widget-column section[id*="recent-posts"] ul,
+  .widget-column section[id*="recent-comments"] ul {
+    min-width: 260px;
+    width: 20vh;
+  }
+
+  .widget-column .tagcloud {
+    min-width: 260px;
+    width: 20vh;
   }
 
   .sidebar-box .footer-widget-2 {
     display: flex
+  }
+
+  .site-footer .search-form-wrap {
+    width: 80%;
   }
 }
 
@@ -1793,7 +1805,6 @@ section[id*="recent-comments"] h2 {
 .navigation li a:hover,
 .navigation li.active a,
 .navigation li.disabled {
-  color: #fff;
   text-decoration: none
 }
 
@@ -1815,7 +1826,6 @@ section[id*="recent-comments"] h2 {
 .navigation li a:hover,
 .navigation li.active a,
 .navigation li.disabled {
-  background-color: rgb(97, 219, 251);
   border-radius: 25px;
   cursor: pointer;
   padding: .7rem
@@ -1823,5 +1833,5 @@ section[id*="recent-comments"] h2 {
 
 .navigation li a:hover,
 .navigation li.active a {
-  background-color: rgba(0, 123, 255, .8)
+  color: #0056b3
 }

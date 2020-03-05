@@ -60,7 +60,7 @@ function nasio_widgets_init() {
 		'name'          => __( 'Footer 1', 'nasio' ),
 		'id'            => 'sidebar-2',
 		'description'   => __( 'Add 1 widget here to appear in your footer.', 'nasio' ),
-		'before_widget' => '<section id="%1$s" class="col-md-9">',
+		'before_widget' => '<section id="%1$s" class="col-footer">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h3 class="heading">',
 		'after_title'   => '</h3>',
@@ -70,7 +70,7 @@ function nasio_widgets_init() {
 		'name'          => __( 'Footer 2', 'nasio' ),
 		'id'            => 'sidebar-3',
 		'description'   => __( 'Add 2 widgets here to appear in your footer.', 'nasio' ),
-		'before_widget' => '<section id="%1$s" class="col-md-6">',
+		'before_widget' => '<section id="%1$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
@@ -87,7 +87,7 @@ function nasio_styles() {
 	//Theme Navigation 
 	wp_enqueue_script( 'navigation', get_template_directory_uri() . '/assets/js/navigation-min.js', array( 'jquery' ),'',true);
 	//Theme stylesheet.
-	wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style-min.css', '', '1.1.3' );
+	wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style.min.css', '', '1.1.4' );
 }
 
 add_action( 'wp_enqueue_scripts', 'nasio_styles' );
@@ -128,7 +128,7 @@ function nasio_posted_on() {
 	}
 
 	// Set up and print post meta information.
-	printf('<span><a href="%1$s" rel="bookmark"><time class="entry-date" datetime="%2$s">%3$s</time></a></span><span><a class="url fn n" href="%4$s" rel="author">%5$s</a></span>',
+	printf('<span><a href="%1$s" rel="bookmark" class="entry-date" datetime="%2$s">%3$s</a></span><span><a class="author-meta-field" href="%4$s" rel="author">%5$s</a></span>',
 		esc_url( get_permalink() ),
 		esc_attr( get_the_date( 'c' ) ),
 		esc_html( get_the_date() ),

@@ -60,7 +60,7 @@ Since version 1.04, the the theme support full-width layout out of the box. You 
 
     <!--Get Social Widget-->
     <h3 class="widget-title">Get Social</h3>
-    <div class="textwidget custom-html-widget">
+    <div class="textwidget custom-html-widget col-footer">
         <ul class="list-unstyled footer-social">
             <li><a href="/#"><span class="fa fa-twitter"></span> Twitter</a></li>
             <li><a href="/#"><span class="fa fa-facebook"></span> Facebook</a></li>

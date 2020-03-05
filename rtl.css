@@ -66,12 +66,32 @@ header {
 }
 
 @media (min-width: 992px) {
-
     #top-menu .sub-menu {
         padding-right: 0px;
         text-align: right
     }
+    
+    #top-menu ul {
+        left: 999em;
+    }
 
+    #top-menu ul ul {
+        left: 999em;
+    }
+    
+    #top-menu li:hover>ul,
+    #top-menu li.focus>ul,
+    #top-menu li.show>ul {
+        left: auto;
+        padding: 0;
+    }
+    
+    /* Keyboard navigation */
+    #top-menu ul ul li:hover>ul,
+    #top-menu ul ul li.focus>ul,
+    #top-menu ul ul li.show>ul {
+        left: 0%
+    }
 }
 
 /*Add font-awesome arrow for menu items that contain sub menus */
@@ -184,8 +204,7 @@ header {
     float: right
 }
 
-.sidebar-box ul,
-.col-md-7 ul {
+.sidebar-box ul{
     padding-right: 0em
 }
 
@@ -235,12 +254,6 @@ header {
 
 .list-unstyled.check li:before {
     right: 0;
-}
-
-@media (min-width: 1025px) {
-    .widget-column.footer-widget-2>section:first-child {
-        margin-left: calc(2.5vw + 10px)
-    }
 }
 
 @media (min-width: 767px) {
