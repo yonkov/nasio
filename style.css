@@ -457,11 +457,14 @@ header .navbar a {
 
 /* Menu widgets in sidebar or footer */
 
-.menu-primary-container ul > li a, .menu-all-pages-container ul ul li a {
-	padding-left: .6em;
+.menu-primary-container .menu-item-has-children .sub-menu, 
+.page_item_has_children .children {
+  padding-left: .6em;
+  margin-bottom: 0
 }
 
-.menu-primary-container ul ul ul li a, .menu-all-pages-container ul ul ul li a {
+.menu-primary-container .menu-item-has-children .sub-menu .sub-menu, 
+.page_item_has_children .children .children {
 	padding-left: 1.2em;
 }
 
@@ -534,25 +537,24 @@ code {
   }
 
   #top-menu ul {
-    left: -999em;
+    left: -999em
   }
 
   #top-menu ul ul {
-    left: -999em;
+    left: -999em
   }
 
   #top-menu li:hover>ul,
   #top-menu li.focus>ul,
   #top-menu li.show>ul {
-    left: auto;
-    padding: 0;
+    left: auto
   }
 
   /* Keyboard navigation */
   #top-menu ul ul li:hover>ul,
   #top-menu ul ul li.focus>ul,
   #top-menu ul ul li.show>ul {
-      left: 100%;
+      left: 100%
     }
 
 }
@@ -670,11 +672,15 @@ code {
   align-items: center
 }
 
+/* Add padding to pagelist items */
+#top-menu .children {
+  padding-left: .6em;
+}
+
 /* Add padding to sub menu items on mobile */
 @media (max-width: 991.98px) {
 
-  #top-menu li .sub-menu,
-  #top-menu .children {
+  #top-menu li .sub-menu {
     padding-left: .6em;
   }
 
@@ -1767,7 +1773,7 @@ section[id*="recent-comments"] h2 {
   }
 
   .widget-column.footer-widget-2 > section {
-    width: 45%;
+    width: 42%;
   }
 
   .sidebar-box .footer-widget-2 {

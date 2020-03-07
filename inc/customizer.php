@@ -110,12 +110,12 @@ function nasio_full_width_css() {
 	@media (min-width:768px){
 		body .blog-entries .blog-entry img {
 			width: 100%;
-			min-height: 260px;
+			min-height: 280px;
 		}	
 	}
 	@media (min-width:1200px) {
 		body .container {
-			max-width:940px
+			max-width:980px
 		}
 	}
 	.sidebar {

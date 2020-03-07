@@ -83,7 +83,6 @@ header {
     #top-menu li.focus>ul,
     #top-menu li.show>ul {
         left: auto;
-        padding: 0;
     }
     
     /* Keyboard navigation */
@@ -99,6 +98,11 @@ header {
 #top-menu li.menu-item-has-children>a::after {
     vertical-align: 1px;
     padding-right: 5px;
+}
+
+#top-menu .children {
+    padding-left: 0;
+    padding-right: .6em;
 }
 
 @media (max-width: 991.98px) {
