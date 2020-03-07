@@ -72,17 +72,17 @@ header {
     }
     
     #top-menu ul {
-        left: 999em;
+        left: 999em
     }
 
     #top-menu ul ul {
-        left: 999em;
+        left: 999em
     }
     
     #top-menu li:hover>ul,
     #top-menu li.focus>ul,
     #top-menu li.show>ul {
-        left: auto;
+        left: auto
     }
     
     /* Keyboard navigation */
@@ -97,12 +97,12 @@ header {
 #top-menu li.page_item_has_children>a::after,
 #top-menu li.menu-item-has-children>a::after {
     vertical-align: 1px;
-    padding-right: 5px;
+    padding-right: 5px
 }
 
 #top-menu .children {
     padding-left: 0;
-    padding-right: .6em;
+    padding-right: .6em
 }
 
 @media (max-width: 991.98px) {
@@ -134,7 +134,7 @@ header {
 @media (max-width: 991.98px) {
     #top-menu li .sub-menu,
     #top-menu .children {
-        padding-right: .6em;
+        padding-right: .6em
     }
 
     header .navbar a {
@@ -142,7 +142,7 @@ header {
     }
 
     .navbar-nav {
-        padding-right: 0;
+        padding-right: 0
     }
 }
 
@@ -159,20 +159,20 @@ header {
 }
 
 .category-meta-field {
-    margin-left: 10px;
+    margin-left: 10px
 }
 
 .entry-date {
-    margin-left: 5px;
+    margin-left: 5px
 }
 
 .url.fn.n {
-    margin-left: 5px;
+    margin-left: 5px
 }
 
 .bio img {
     -webkit-box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .4);
-    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .4);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .4)
 }
 
 .section-cover {
@@ -186,7 +186,7 @@ header {
 }
 
 .blog-entry::before {
-    right: 50%;
+    right: 50%
 }
 
 /* Sidebar */
@@ -230,11 +230,11 @@ header {
 
 .comment-list li {
     margin: 0 0 30px 0;
-    float: right;
+    float: right
 }
 
 .comment-list li .vcard img {
-    margin-left: 5px;
+    margin-left: 5px
 }
 
 /* Search */
