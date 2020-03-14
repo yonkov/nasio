@@ -82,7 +82,7 @@ License: GNU General Public License v2 or later
 
 = 2.0.6 =
 * Released: March, 2020
-Improve footer css
+Improve footer css, fix page list items and rtl layout
 
 = 2.0.5 =
 * Released: March, 2020
