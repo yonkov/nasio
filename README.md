@@ -8,7 +8,7 @@ The theme extends the Recent Posts widget to include beautiful post thumbnail im
 
 Live example: https://phototravelworld.com/
 
-Table of Contents
+**Table of Contents**
 - [Nasio](#nasio)
 - [Features](#features)
   - [Lightweight](#lightweight)
