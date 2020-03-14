@@ -8,6 +8,30 @@ The theme extends the Recent Posts widget to include beautiful post thumbnail im
 
 Live example: https://phototravelworld.com/
 
+Table of Contents
+- [Nasio](#nasio)
+- [Features](#features)
+  - [Lightweight](#lightweight)
+  - [Responsive](#responsive)
+  - [Translation-ready](#translation-ready)
+  - [RTL Language support](#rtl-language-support)
+  - [Developer Friendly](#developer-friendly)
+  - [Typography](#typography)
+- [Theme Documentation](#theme-documentation)
+  - [Right Sidebar Layout](#right-sidebar-layout)
+  - [Full-width Layout (No Sidebar)](#full-width-layout-no-sidebar)
+  - [Footer Widgets](#footer-widgets)
+  - [Theme Customizer](#theme-customizer)
+    - [Header Image:](#header-image)
+    - [Site identity:](#site-identity)
+    - [Colors:](#colors)
+    - [Menus:](#menus)
+    - [Widgets:](#widgets)
+    - [Homepage Settings:](#homepage-settings)
+    - [Additional CSS:](#additional-css)
+  - [Further Customisation](#further-customisation)
+- [License](#license)
+
 # Features
 
 ## Lightweight
@@ -140,7 +164,7 @@ Optionally specify a static front page.
 ### Additional CSS:
 This section is for more advanced users who want to write custom css to override the default theme's styles.
 
-## Further customisation
+## Further Customisation
 If you want to customise Nasio beyond the included options, I strongly recommend that you do so via a [child theme](http://codex.wordpress.org/Child_Themes). Here is a [premade child theme](https://github.com/yonkov/nasio-child-theme) of the Nasio theme that you can use.
 
 # License
