@@ -165,13 +165,13 @@ Optionally specify a static front page.
 This section is for more advanced users who want to write custom css to override the default theme's styles.
 
 ## Further Customisation
-If you want to customise Nasio beyond the included options, I strongly recommend that you do so via a [child theme](http://codex.wordpress.org/Child_Themes). Here is a [premade child theme](https://github.com/yonkov/nasio-child-theme) of the Nasio theme that you can use.
+If you want to customise Nasio beyond the included options, I strongly recommend that you do so via a [child theme](http://codex.wordpress.org/Child_Themes). Here is a [premade child theme](https://github.com/yonkov/nasio-child-theme) of the Nasio theme that you can use to get started.
 
 # License
 This theme, like WordPress, is licensed under the GPL.
 It is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+but without any warranty; without even the implied warranty of
+merchantability or fitness for a particular purpose. See the
 [GNU General Public License v 2.0](http://www.gnu.org/licenses/gpl-2.0.html) for more details.
 
 Happy blogging!
