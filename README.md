@@ -15,7 +15,6 @@ Live example: https://phototravelworld.com/
   - [Responsive](#responsive)
   - [Translation-ready](#translation-ready)
   - [RTL Language support](#rtl-language-support)
-  - [Developer Friendly](#developer-friendly)
   - [Typography](#typography)
 - [Theme Documentation](#theme-documentation)
   - [Right Sidebar Layout](#right-sidebar-layout)
@@ -46,9 +45,6 @@ Nasio is a translation-ready theme and it comes with two default languages - Eng
 ## RTL Language support
 
 Since v. 2.0.2, Nasio fully supports languages that are read from right to left. It automatically rotates the layout if the user switches to any rtl language. You only need to pick a site language from Settings> General> Site Language and the rest is automatically done for you.
-
-## Developer Friendly
-Loads of hooks and filters to extend and customise Nasio via plugin and/or child theme.
 
 ## Typography
 All aspects of typography are set up in accordance to a Modular Scale ensuring consistent typographical hierarchy.
