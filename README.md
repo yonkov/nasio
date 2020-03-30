@@ -2,7 +2,7 @@
 
 Nasio is an extremely lightweight WordPress theme without any frameworks developed by Atanas Yonkov in 2020. Ideal for blogs and portfolio websites. Very easy to set up even for people without coding experience thanks to its extensive documentation and generous theme options. Nasio is optimized for speed and high performance in Google search results. With its minimalistic and clean design, its divine purpose is to showcase high quality content.
 
-Nasio does not use Bootstrap or any other css framework (only custom css!) to provide first-class user experience. As a result, the whole theme's zip file is less than 300KB. It has fully responsive 3-column grid layout. It supports nested menu items. Option to use a static Homepage. Beautiful pagination. Option to add custom header, custom logo, site icon and change the theme accent colors from the customizer. Option to switch between right sidebar layout and full-width layout.
+Nasio does not use Bootstrap or any other css framework (only custom css!) to provide first-class user experience. As a result, the whole theme's zip file is less than 300KB. It has fully responsive 3-column grid layout. It supports nested menu items. Option to use a static Homepage. Beautiful pagination. Option to add custom header, custom logo, site icon and change the theme accent colors from the customizer. Option to switch between right sidebar layout and full-width layout. The visitors can choose between light and dark theme mode and change their preferences any time.
 
 The theme extends the Recent Posts widget to include beautiful post thumbnail images in the right sidebar. Posts without a featured image are displayed with a default thumbnail. Optimized css and font delivery for better performance. Static files (css and js) are minifed. Fully compatible with Gutenberg but also supports the good old Classic editor.
 
@@ -164,7 +164,7 @@ Optionally specify a static front page.
 
 ### Dark Mode
 
-Protect your visitor's eyes and help them spend more time on your website by allowing them to switch between day and night mode (light and dark layout). To change to dark mode, you need to click on the toggle button in the theme footer. If you wish, you can hide the switch via the theme customizer. You can also change the background color and add custom css to change the main colors of the night mode. For example, if you want to change the link colors, you can use the following css:
+Protect your visitor's eyes and help them spend more time on your website by allowing them to switch between day and night mode (light and dark layout). To change to dark mode, you need to click on the toggle button in the theme footer. If you wish, you can remove the dark mode via the theme customizer. You can also change the background color and add custom css to change the main colors of the night mode. For example, if you want to change the link colors, you can use the following css:
 
     .body .dark-mode {
 	    color: rgb(102, 222, 209) !important;
