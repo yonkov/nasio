@@ -15,6 +15,7 @@ Live example: https://phototravelworld.com/
   - [Responsive](#responsive)
   - [Translation-ready](#translation-ready)
   - [RTL Language support](#rtl-language-support)
+  - [Light and Dark Mode](#light-and-dark-mode)
   - [Typography](#typography)
 - [Theme Documentation](#theme-documentation)
   - [Right Sidebar Layout](#right-sidebar-layout)
@@ -27,6 +28,7 @@ Live example: https://phototravelworld.com/
     - [Menus:](#menus)
     - [Widgets:](#widgets)
     - [Homepage Settings:](#homepage-settings)
+    - [Night Mode](#night-mode)
     - [Additional CSS:](#additional-css)
   - [Further Customisation](#further-customisation)
 - [License](#license)
@@ -46,11 +48,14 @@ Nasio is a translation-ready theme and it comes with two default languages - Eng
 
 Since v. 2.0.2, Nasio fully supports languages that are read from right to left. It automatically rotates the layout if the user switches to any rtl language. You only need to pick a site language from Settings> General> Site Language and the rest is automatically done for you.
 
+## Light and Dark Mode
+Since v. 2.1.1, the theme enables the website visitors to switch website between light and dark theme mode to improve the readability of text, images and videos. Reading website content at night time can be difficult. Enable the dark mode switcher to help your visitors to read more articles, spend more time on your website and protect their eyes from being hurt.
+
 ## Typography
 All aspects of typography are set up in accordance to a Modular Scale ensuring consistent typographical hierarchy.
 
 # Theme Documentation
-The following documentation will provide you with all the necessary information to get started as soon as possible. The aim of this document is to provide help not only to WordPress developers but also to people with little or no coding experience at all. If you need any further assistance, do not hesitate to contact me by [email](mailto:yonkov.atanas@gmail.com).
+The following extensive documentation will provide you with all the necessary information to get started as soon as possible. The aim of this document is to provide help not only to WordPress developers but also to people with little or no coding experience at all. If you need any further assistance, do not hesitate to contact me by [email](mailto:yonkov.atanas@gmail.com).
 
 ## Right Sidebar Layout
 The theme supports a right sidebar and you can add as many widgets as you want there. The theme works best with the search widget, recent posts widget and recent comments widget. The theme extends the default WordPress recent posts widget to include post thumbnails. This is done for better user experience. By default, the theme shows default text in the right sidebar (search widget and recent posts widget) but you can add your own widgets through dashboard > widgets. We will get to that in a minute.
@@ -156,6 +161,14 @@ This is another place where you can customize the right sidebar's widgets as wel
 
 ### Homepage Settings:
 Optionally specify a static front page.
+
+### Night Mode
+
+Protect your visitor's eyes and help them spend more time on your website by allowing them to switch between day and night mode (light and dark layout). It is enabled by default, but if you wish, you can disable it here. You can also change the background color and use custom css to change the main colors of the night mode. For example, if you want to change the link colors, you can use the following css:
+
+    .body .dark-mode {
+	    color: rgb(102, 222, 209) !important;
+    }
 
 ### Additional CSS:
 This section is for more advanced users who want to write custom css to override the default theme's styles.

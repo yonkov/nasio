@@ -86,8 +86,10 @@ add_action( 'widgets_init', 'nasio_widgets_init' );
 function nasio_styles() {
 	//Theme Navigation 
 	wp_enqueue_script( 'navigation', get_template_directory_uri() . '/assets/js/navigation-min.js', array( 'jquery' ),'',true);
+	//Toggle Dark Theme Mode
+    wp_enqueue_script( 'dark-mode', get_template_directory_uri() . '/assets/js/toggleDarkMode.js', array(),'',true);
 	//Theme stylesheet.
-	wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style.min.css', '', '1.1.6' );
+	wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style.css', '', '1.1.8' );
 }
 
 add_action( 'wp_enqueue_scripts', 'nasio_styles' );
@@ -386,3 +388,27 @@ function nasio_numeric_posts_nav() {
     echo '</ul></div>' . "\n";
  
 }
+
+/**
+ * Enable dark theme mode
+ * 
+ * Inspired by https://wordpress.org/plugins/wp-night-mode/
+ * 
+ */
+
+function nasio_dark_mode($classes) {
+
+    $nasio_night_mode = isset( $_COOKIE['nasioNightMode'] ) ? $_COOKIE['nasioNightMode'] : '';
+
+    if ($nasio_night_mode!=='' ) {
+        
+        // Add 'dark-mode' body class
+            return array_merge( $classes, array( 'dark-mode' ) );
+
+    }
+
+    return $classes;
+  
+}
+
+add_filter( 'body_class', 'nasio_dark_mode');

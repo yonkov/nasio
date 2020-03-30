@@ -11,7 +11,7 @@
 <?php get_header(); ?>
 <div>
     <!-- Start of main-content -->
-    <section class="site-section">
+    <section id="content" class="site-section">
         <div class="container">
             <div class="row">
                 <div class="column">

@@ -1,11 +1,10 @@
 === Nasio ===
 Contributors: nravota12
-Author URI: http://yonkov.github.io/
-Requires at least: WordPress 4.4
-Tested up to: WordPress 5.3
+Requires at least: 4.4
+Tested up to: 5.3
 Requires PHP: 5.2.4
-Version: 2.0.7
-Stable tag: 2.0.7
+Version: 2.1.0
+Stable tag: 2.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, portfolio, photography, two-columns, right-sidebar, full-width-template, custom-colors, custom-menu, custom-logo, custom-header, featured-images, footer-widgets, theme-options, threaded-comments, translation-ready, rtl-language-support
@@ -79,6 +78,15 @@ Theme structure is based on Twenty Seventeen https://wordpress.org/themes/twenty
 License: GNU General Public License v2 or later
 
 == Changelog ==
+
+
+= 2.1.1 =
+* Released: March, 2020
+Add Dark Mode
+
+= 2.1.0 =
+* Released: March, 2020
+Fix documentation
 
 = 2.0.7 =
 * Released: March, 2020

@@ -3,6 +3,13 @@
 //Allow users to change theme colors through WordPress Customizer
 
 function nasio_customize_colors( $wp_customize ) {
+
+	$wp_customize->add_section('colors', array(
+        'title' => esc_html__('Colors', 'kickstarter'),
+        'description' => esc_html__('Customze the main colors of the Nasio theme. To customize the dark theme mode, please go to "Night Mode" tab.', 'nasio'),
+        'priority' => 99,
+	));
+	
 	//Social menu background color
 	$wp_customize->add_setting('header_background_color', array(
 		'default'        => '#61DBFB',
@@ -126,3 +133,70 @@ function nasio_full_width_css() {
     <?php endif;
 }
 add_action('wp_footer', 'nasio_full_width_css');
+
+
+//Night Mode
+
+function nasio_night_mode_customizer($wp_customize) {
+
+    $wp_customize->add_section('night_mode', array(
+        'title' => esc_html(__('Night Mode', 'nasio')),
+        'description' => esc_html(__('Customize the dark theme mode. For additional customization, you can use the "dark-mode" body class and add the code to the Additional Css tab', 'nasio' )
+	)));
+	
+	//Enable Dark Mode 
+	$wp_customize->add_setting(
+        'enable_dark_mode',
+        array(
+			'default' => 1,
+			'sanitize_callback' => 'sanitize_text_field',
+        )
+    );
+
+    $wp_customize->add_control(
+        'enable_dark_mode',
+        array(
+            'label' => esc_html__('Enable Dark Mode', 'nasio'),
+            'section' => 'night_mode',
+            'description' => esc_html__('Enable site visitors to switch to dark theme mode.', 'nasio'),
+            'type' => 'checkbox',
+        )
+	);
+	
+	//Change Dark Mode Colors
+
+	//Dark Mode Background
+	$wp_customize->add_setting('dark_mode_background_color', array(
+		'default'        => '#262626',
+		'sanitize_callback' => 'sanitize_hex_color',
+	   ) );
+	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dark_mode_background_color', array(
+	   'label'   => __('Background', 'nasio'),
+	   'section' => 'night_mode'
+		)));
+}
+
+add_action('customize_register', 'nasio_night_mode_customizer');
+
+
+function nasio_customize_night_mode_css() {
+
+	$isDarkMode = get_theme_mod('enable_dark_mode', 1)? 'block': 'none';
+    ?>
+    <style type="text/css">
+    
+	body.dark-mode #content, 
+	body.dark-mode header, 
+	body.dark-mode #content *:not(.post-meta):not(a) {
+        background-color: <?php echo esc_attr(get_theme_mod('dark_mode_background_color', "#262626")); ?>;
+	}
+
+	.wpnm-button{
+		display: <?php echo $isDarkMode;?>
+	}
+
+	</style>
+	
+	<?php
+}
+add_action( 'wp_head', 'nasio_customize_night_mode_css');

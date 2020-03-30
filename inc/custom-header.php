@@ -33,7 +33,7 @@ function nasio_header_image_css() {
         background-size: <?php echo esc_attr( $size ); ?>;
         background-position: <?php echo esc_attr( $background_position ); ?>;
         position: <?php echo esc_attr ($position); ?>;
-        margin-bottom: <?php echo esc_attr( $margin ); ?>;
+        padding-bottom: <?php echo esc_attr( $margin ); ?>;
     }
     .site-title {
         bottom: 5px;
