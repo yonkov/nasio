@@ -425,7 +425,7 @@ function nasio_admin_notice() {
 
 		<div class="notice notice-info">
 			<p>
-				<strong>New!</strong> Try our new dark mode! - <a target="_blank" href="https://docs.olympusthemes.com/kb/nasio-theme/customizer-settings-nasio/?utm_source=notice">Learn More</a>
+				<strong>New!</strong> Try our new dark mode! - <a target="_blank" href="https://github.com/yonkov/nasio#dark-mode">Learn More</a>
 				<span style="float:right">
 					<a href="?nasio_ignore_customizer_notice=0"><?php esc_html_e( 'Hide Notice', 'nasio' ); ?></a>
 				</span>
