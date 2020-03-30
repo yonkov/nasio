@@ -28,7 +28,7 @@ Live example: https://phototravelworld.com/
     - [Menus:](#menus)
     - [Widgets:](#widgets)
     - [Homepage Settings:](#homepage-settings)
-    - [Night Mode](#night-mode)
+    - [Dark Mode](#dark-mode)
     - [Additional CSS:](#additional-css)
   - [Further Customisation](#further-customisation)
 - [License](#license)
@@ -49,7 +49,7 @@ Nasio is a translation-ready theme and it comes with two default languages - Eng
 Since v. 2.0.2, Nasio fully supports languages that are read from right to left. It automatically rotates the layout if the user switches to any rtl language. You only need to pick a site language from Settings> General> Site Language and the rest is automatically done for you.
 
 ## Light and Dark Mode
-Since v. 2.1.1, the theme enables the website visitors to switch website between light and dark theme mode to improve the readability of text, images and videos. Reading website content at night time can be difficult. Enable the dark mode switcher to help your visitors to read more articles, spend more time on your website and protect their eyes from being hurt.
+Since v. 2.1.1, the theme enables the website visitors to switch between light and dark theme mode to improve the readability of text, images and videos. Reading website content at night time can be difficult. Enable the dark mode switcher to help your visitors to read more articles, spend more time on your website and protect their eyes from being hurt.
 
 ## Typography
 All aspects of typography are set up in accordance to a Modular Scale ensuring consistent typographical hierarchy.
@@ -162,7 +162,7 @@ This is another place where you can customize the right sidebar's widgets as wel
 ### Homepage Settings:
 Optionally specify a static front page.
 
-### Night Mode
+### Dark Mode
 
 Protect your visitor's eyes and help them spend more time on your website by allowing them to switch between day and night mode (light and dark layout). It is enabled by default, but if you wish, you can disable it here. You can also change the background color and use custom css to change the main colors of the night mode. For example, if you want to change the link colors, you can use the following css:
 

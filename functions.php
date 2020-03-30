@@ -89,7 +89,7 @@ function nasio_styles() {
 	//Toggle Dark Theme Mode
     wp_enqueue_script( 'dark-mode', get_template_directory_uri() . '/assets/js/toggleDarkMode.js', array(),'',true);
 	//Theme stylesheet.
-	wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style.css', '', '1.1.8' );
+	wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style.min.css', '', '1.1.8' );
 }
 
 add_action( 'wp_enqueue_scripts', 'nasio_styles' );
@@ -412,3 +412,40 @@ function nasio_dark_mode($classes) {
 }
 
 add_filter( 'body_class', 'nasio_dark_mode');
+
+/**
+ * Display the admin notice. Since v. 2.1.1
+ */
+function nasio_admin_notice() {
+	global $current_user;
+	$user_id = $current_user->ID;
+
+	if ( ! get_user_meta( $user_id, 'nasio_ignore_customizer_notice' ) ) {
+		?>
+
+		<div class="notice notice-info">
+			<p>
+				<strong>New!</strong> Try our new dark mode! - <a target="_blank" href="https://docs.olympusthemes.com/kb/nasio-theme/customizer-settings-nasio/?utm_source=notice">Learn More</a>
+				<span style="float:right">
+					<a href="?nasio_ignore_customizer_notice=0"><?php esc_html_e( 'Hide Notice', 'nasio' ); ?></a>
+				</span>
+			</p>
+		</div>
+
+		<?php
+	}
+}
+add_action( 'admin_notices', 'nasio_admin_notice' );
+
+/**
+ * Dismiss the admin notice.
+ */
+function nasio_dismiss_admin_notice() {
+	global $current_user;
+	$user_id = $current_user->ID;
+	/* If user clicks to ignore the notice, add that to their user meta */
+	if ( isset( $_GET['nasio_ignore_customizer_notice'] ) && '0' === $_GET['nasio_ignore_customizer_notice'] ) {
+		add_user_meta( $user_id, 'nasio_ignore_customizer_notice', 'true', true );
+	}
+}
+add_action( 'admin_init', 'nasio_dismiss_admin_notice' );

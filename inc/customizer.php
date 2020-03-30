@@ -188,7 +188,7 @@ function nasio_customize_night_mode_css() {
         background-color: <?php echo esc_attr(get_theme_mod('dark_mode_background_color', "#262626")); ?>;
 	}
 	.wpnm-button{
-		display: <?php echo $isDarkMode;?>
+		display: <?php echo esc_attr($isDarkMode);?>
 	}
 	</style> 
 	
