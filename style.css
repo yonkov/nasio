@@ -492,7 +492,7 @@ label {
 
 @media (min-width:460px){
   .footer-meta{
-    flex: 1
+    flex-grow: 1
   }
 }
 
