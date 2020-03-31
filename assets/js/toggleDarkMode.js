@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-
+	//Create the cookie object
 	var cookieStorage = {
 		setCookie: function setCookie(key, value, time, path) {
 			var expires = new Date();
