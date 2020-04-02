@@ -1,10 +1,10 @@
 === Nasio ===
 Contributors: nravota12
 Requires at least: 4.4
-Tested up to: 5.3
+Tested up to: 5.4
 Requires PHP: 5.2.4
-Version: 2.1.2
-Stable tag: 2.1.2
+Version: 2.1.3
+Stable tag: 2.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, portfolio, photography, two-columns, right-sidebar, full-width-template, custom-colors, custom-menu, custom-logo, custom-header, featured-images, footer-widgets, theme-options, threaded-comments, translation-ready, rtl-language-support
@@ -80,6 +80,9 @@ License: GNU General Public License v2 or later
 
 == Changelog ==
 
+= 2.1.3 =
+* Released: April, 2020
+Update dark mode css
 
 = 2.1.2 =
 * Released: March, 2020
