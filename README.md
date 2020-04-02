@@ -166,7 +166,7 @@ Optionally specify a static front page.
 
 Protect your visitor's eyes and help them spend more time on your website by allowing them to switch between day and night mode (light and dark layout). To change to dark mode, you need to click on the toggle button in the theme footer. If you wish, you can remove the dark mode via the theme customizer. You can also change the background color and add custom css to change the main colors of the night mode. For example, if you want to change the link colors, you can use the following css:
 
-    .body .dark-mode {
+    body.dark-mode a {
 	    color: rgb(102, 222, 209) !important;
     }
 
