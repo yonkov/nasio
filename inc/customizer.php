@@ -165,7 +165,7 @@ function nasio_night_mode_customizer($wp_customize) {
 	//Change Dark Mode Colors
 
 	$wp_customize->add_setting('dark_mode_background_color', array(
-		'default'        => '#262626',
+		'default'        => '#393939',
 		'sanitize_callback' => 'sanitize_hex_color',
 	   ) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dark_mode_background_color', array(
@@ -184,8 +184,9 @@ function nasio_customize_night_mode_css() {
 	<style type="text/css">
 	body.dark-mode #content, 
 	body.dark-mode header, 
-	body.dark-mode #content *:not(.post-meta):not(a) {
-        background-color: <?php echo esc_attr(get_theme_mod('dark_mode_background_color', "#262626")); ?>;
+	body.dark-mode #content *:not(.post-meta):not(a),
+	.site-footer {
+        background-color: <?php echo esc_attr(get_theme_mod('dark_mode_background_color', "#393939")); ?>;
 	}
 	.wpnm-button{
 		display: <?php echo esc_attr($isDarkMode);?>

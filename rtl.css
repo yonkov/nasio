@@ -335,3 +335,9 @@ section[id*="recent-posts"] li a {
 .social-links-menu {
     float: right
 }
+
+/* Dark mode rtl */
+
+body.dark-mode #commentform {
+    padding: 0 15px 0 0;
+  }

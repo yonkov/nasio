@@ -89,7 +89,7 @@ function nasio_styles() {
 	//Toggle Dark Theme Mode
 	wp_enqueue_script( 'dark-mode', get_template_directory_uri() . '/assets/js/toggleDarkMode.js', array(),'',true);
 	//Theme stylesheet.
-	wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style.min.css', '', '1.2.0' );
+	wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style.min.css', '', '1.2.1' );
 }
 
 add_action( 'wp_enqueue_scripts', 'nasio_styles' );
@@ -102,8 +102,8 @@ function nasio_fonts() {
 	//Font Awesome
     wp_enqueue_style('font-awesome', get_template_directory_uri() . '/public/css/font-awesome.min.css');
     //Add google fonts
-	wp_enqueue_style( 'Merriweather', '//fonts.googleapis.com/css?family=Merriweather&display=swap' ); 
-	wp_enqueue_style( 'OpenSans', '//fonts.googleapis.com/css?family=Open+Sans' ); 
+	wp_enqueue_style( 'Merriweather', '//fonts.googleapis.com/css?family=Merriweather&display=swap' );
+	wp_enqueue_style( 'OpenSans', '//fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap' ); 
 }
 add_action( 'wp_footer', 'nasio_fonts' ); 
 
