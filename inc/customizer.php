@@ -22,7 +22,7 @@ function nasio_customize_colors( $wp_customize ) {
 
 	//Primary menu text color
 	$wp_customize->add_setting( 'menu_text_color' , array(
-		'default'     => "rgba(0,0,0,.5)",
+		'default'     => "#545454",
 		'sanitize_callback' => 'sanitize_hex_color'
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'menu_text_color', array(
@@ -60,7 +60,7 @@ function nasio_customize_css() {
 	}
 	<?php endif; ?>
     header .navbar a {
-        color: <?php echo esc_attr(get_theme_mod('menu_text_color', "rgba(0,0,0,.5)")); ?>
+        color: <?php echo esc_attr(get_theme_mod('menu_text_color', "#545454")); ?>
 	}
 
     </style>
@@ -185,7 +185,7 @@ function nasio_customize_night_mode_css() {
 	body.dark-mode #content, 
 	body.dark-mode header, 
 	body.dark-mode #content *:not(.post-meta):not(a),
-	.site-footer {
+	.dark-mode .site-footer {
         background-color: <?php echo esc_attr(get_theme_mod('dark_mode_background_color', "#393939")); ?>;
 	}
 	.wpnm-button{
