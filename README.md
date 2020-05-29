@@ -117,20 +117,13 @@ Please note that this is also the place to put social media icons, so do not rem
 
 ### Site identity:
 
-* **Change default logo** - you have the option to upload your own logo that will display in the site's heafer. If you do not specify any logo, the theme's default logo is used. You can hide it with adding the following code to the additional css tab in the customizer:
-  
-```/* CSS code to hide the theme's logo */
-.custom_logo {
-    visibility: hidden;
-}
-```
-Please keep in mind that in this way you will not be able to show any logos on the frontend.
-
+* **Change default logo** - you have the option to upload your own custom site logo that will display in the site's header. If you do not specify any logo, the theme's default logo will be used. You can disable the default theme logo by removing the tick from `Show Default Theme Logo` button.
 
 * **Change Site Title & Tagline** - you have the option to add a site's name and description
+
 ### Colors:
 
-Change theme colors such as the header, the headings and the primary menu
+Change theme colors such as the header, the headings and the primary menu.
 
 ### Menus:
 

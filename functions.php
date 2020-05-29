@@ -1,4 +1,49 @@
 <?php
+/**
+ * Nasio functions and definitions
+ *
+ * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ *
+ * @package WordPress
+ * @subpackage Nasio
+ * @version 1.0
+ */
+
+/* Freemius analytics code */
+
+if ( ! function_exists( 'nasio_fs' ) ) {
+    // Create a helper function for easy SDK access.
+    function nasio_fs() {
+        global $nasio_fs;
+
+        if ( ! isset( $nasio_fs ) ) {
+            // Include Freemius SDK.
+            require_once dirname(__FILE__) . '/freemius/start.php';
+
+            $nasio_fs = fs_dynamic_init( array(
+                'id'                  => '6221',
+                'slug'                => 'nasio',
+                'type'                => 'theme',
+                'public_key'          => 'pk_dc110697a3d235d53d765b875870d',
+                'is_premium'          => false,
+                'has_addons'          => false,
+                'has_paid_plans'      => false,
+                'menu'                => array(
+                    'account'        => false,
+                    'contact'        => false,
+                    'support'        => false,
+                ),
+            ) );
+        }
+
+        return $nasio_fs;
+    }
+
+    // Init Freemius.
+    nasio_fs();
+    // Signal that SDK was initiated.
+    do_action( 'nasio_fs_loaded' );
+}
 
 function nasio_setup() {
     // Make theme available for translation. 
@@ -412,40 +457,3 @@ function nasio_dark_mode($classes) {
 }
 
 add_filter( 'body_class', 'nasio_dark_mode');
-
-/**
- * Display the admin notice. Since v. 2.1.1
- */
-function nasio_admin_notice() {
-	global $current_user;
-	$user_id = $current_user->ID;
-
-	if ( ! get_user_meta( $user_id, 'nasio_ignore_customizer_notice' ) ) {
-		?>
-
-		<div class="notice notice-info">
-			<p>
-				<strong>New!</strong> Try Nasio's <strong>dark mode</strong>! Reading website content at night time can be difficult. The dark mode helps your visitors to read more articles, spend more time on your website and protects their eyes from being hurt. - <a target="_blank" href="https://github.com/yonkov/nasio#dark-mode">Learn More</a>
-				<span style="float:right">
-					<a href="?nasio_ignore_customizer_notice=0"><?php esc_html_e( 'Hide Notice', 'nasio' ); ?></a>
-				</span>
-			</p>
-		</div>
-
-		<?php
-	}
-}
-add_action( 'admin_notices', 'nasio_admin_notice' );
-
-/**
- * Dismiss the admin notice.
- */
-function nasio_dismiss_admin_notice() {
-	global $current_user;
-	$user_id = $current_user->ID;
-	/* If user clicks to ignore the notice, add that to their user meta */
-	if ( isset( $_GET['nasio_ignore_customizer_notice'] ) && '0' === $_GET['nasio_ignore_customizer_notice'] ) {
-		add_user_meta( $user_id, 'nasio_ignore_customizer_notice', 'true', true );
-	}
-}
-add_action( 'admin_init', 'nasio_dismiss_admin_notice' );

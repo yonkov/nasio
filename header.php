@@ -62,8 +62,8 @@
             * Since WordPress 4.5
             */
             if (function_exists('the_custom_logo')) :
-              if ( !has_custom_logo() ) : //Display theme logo as starter content ?>
-                <img class="custom_logo"
+              if ( !has_custom_logo() ) : //Display default theme logo if no logo is specified ?>
+                <img class="default custom_logo"
                     src="<?php echo esc_url( get_template_directory_uri()); ?>/images/nasio-logo.png"
                     alt="<?php echo esc_attr('nasio theme logo')?>" />
               <?php else: ?>
@@ -72,8 +72,10 @@
                 $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
                 echo '<img class="custom_logo" src="' . esc_url( $custom_logo_url ) . '" alt="nasio-logo" />';              
                 endif;
-            endif; ?>
+            endif; //Show site title
+                    if (display_header_text()==true) : ?>
                         <h1 class="site-title"><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+                    <?php endif; ?>
                     </div>
                 </div>
             </div>

@@ -4,11 +4,7 @@
 
 function nasio_customize_colors( $wp_customize ) {
 
-	$wp_customize->add_section('colors', array(
-        'title' => esc_html__('Colors', 'nasio'),
-        'description' => esc_html__('Customze the main colors of the Nasio theme. To customize the dark theme mode, please go to "Night Mode" tab.', 'nasio'),
-        'priority' => 99,
-	));
+	$wp_customize->get_section('colors')->description = esc_html__( 'Customze the colors of the light theme mode. To customize the dark theme mode, go to the Night Mode section.', 'nasio');
 	
 	//Social menu background color
 	$wp_customize->add_setting('header_background_color', array(
@@ -40,6 +36,7 @@ function nasio_customize_colors( $wp_customize ) {
 		'label'        => __( 'Headings Text Color', 'nasio' ),
         'section'    => 'colors',
 	) ) );
+
 }
 add_action( 'customize_register', 'nasio_customize_colors' );
 
@@ -122,7 +119,7 @@ function nasio_full_width_css() {
 	}
 	@media (min-width:1200px) {
 		body .container {
-			max-width:980px
+			max-width:860px
 		}
 	}
 	.sidebar {
@@ -198,3 +195,51 @@ function nasio_customize_night_mode_css() {
 }
 
 add_action( 'wp_head', 'nasio_customize_night_mode_css');
+
+
+/**
+* Hide default logo
+*/
+function nasio_default_logo_settings($wp_customize) {
+
+	if (function_exists('the_custom_logo')) :
+	
+		$wp_customize->add_setting(
+			'default_theme_logo',
+			array(
+				'default' => 1,
+				'sanitize_callback' => 'sanitize_text_field',
+			)
+		);
+
+		$wp_customize->add_control(
+			'default_theme_logo',
+			array(
+				'label' => esc_html__('Show Default Theme Logo', 'nasio'),
+				'section' => 'title_tagline',
+				'type' => 'checkbox',
+			)
+		);
+
+	endif;
+
+}
+
+add_action('customize_register', 'nasio_default_logo_settings');
+
+function nasio_customize_default_theme_logo_css() {
+
+	$isDefaultLogo = get_theme_mod('default_theme_logo', 1)? 'inline': 'none';
+    ?>
+	
+	<style type="text/css">
+	.default.custom_logo{
+		display: <?php echo esc_attr($isDefaultLogo);?>
+	}
+	</style> 
+	
+	<?php
+
+}
+
+add_action( 'wp_head', 'nasio_customize_default_theme_logo_css');

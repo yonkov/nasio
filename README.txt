@@ -3,16 +3,16 @@ Contributors: nravota12
 Requires at least: 4.4
 Tested up to: 5.4
 Requires PHP: 5.2.4
-Version: 2.1.9
-Stable tag: 2.1.9
+Version: 2.2.1
+Stable tag: 2.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, portfolio, photography, two-columns, right-sidebar, full-width-template, custom-colors, custom-menu, custom-logo, custom-header, featured-images, footer-widgets, theme-options, threaded-comments, translation-ready, rtl-language-support
 
 == Description ==
 
-Extremely lightweight WordPress theme without any frameworks developed by Atanas Yonkov in 2020. Ideal for blogs and portfolio websites. Very easy to set up even for people with no coding experience thanks to its extensive documentation and generous theme options. 
-The theme is optimized for speed and better performance in google search results. It does not use Bootstrap or any other css framework (only custom css!) to provide unique and high-quality user experience. As a result, the whole theme's zip file size is less than 300KB. 
+Extremely lightweight WordPress theme without any frameworks developed by Atanas Yonkov in 2019-2020. Ideal for blogs and portfolio websites. Very easy to set up even for people with no coding experience thanks to its extensive documentation and generous theme options. 
+The theme is optimized for speed and better performance in google search results. It does not use Bootstrap or any other css framework (only custom css!) to provide unique and high-quality user experience. 
 It has fully responsive 2-column grid layout. Option to use a static Homepage. Beautiful pagination. Option to add header image, custom logo, site icon and change theme accent colors from the theme customizer. Option to switch between right sidebar layout and full-width layout. 
 The visitors can choose between light and dark theme mode and change their preferences any time. The theme supports nested dropdown sub menus. It extends the Recent Posts widget to include thumbnail images. Posts without a featured image are displayed with a default thumbnail. Optimized for speed. 
 Optimized css and font delivery for better performance. Extremely fast and SEO friendly. Static files (css and js) are minified. Fully compatible with Gutenberg but also supports the good old Classic editor. How to set it up: https://github.com/yonkov/nasio. Live example: http://phototravelworld.com/
@@ -79,6 +79,14 @@ Theme structure is based on Twenty Seventeen https://wordpress.org/themes/twenty
 License: GNU General Public License v2 or later
 
 == Changelog ==
+
+= 2.2.0 =
+* Released: May, 2020
+Add more options to theme customizer. Improve full width layout.
+
+= 2.2.0 =
+* Released: May, 2020
+Add Freemius data measurement tool
 
 = 2.1.9 =
 * Released: May, 2020
