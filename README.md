@@ -117,9 +117,9 @@ Please note that this is also the place to put social media icons, so do not rem
 
 ### Site identity:
 
-* **Change default logo** - you have the option to upload your own custom site logo that will display in the site's header. If you do not specify any logo, the theme's default logo will be used. You can disable the default theme logo by removing the tick from `Show Default Theme Logo` button.
+* **Change default logo** - you have the option to upload your own custom site logo that will display in the site's header. If you do not specify any logo, the theme's default logo will be used. You also have the option to disable the default theme logo.
 
-* **Change Site Title & Tagline** - you have the option to add a site's name and description
+* **Change Site Title & Tagline** - you have the option to add or remove the site's name.
 
 ### Colors:
 
