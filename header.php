@@ -74,7 +74,7 @@
                 endif;
             endif; //Show site title
                     if (display_header_text()==true) : ?>
-                        <h1 class="site-title"><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+                        <h1 class="site-title"><a href="<?php echo esc_attr(home_url()); ?>"><?php bloginfo( 'name' ); ?></a></h1>
                     <?php endif; ?>
                     </div>
                 </div>

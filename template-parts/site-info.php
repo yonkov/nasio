@@ -29,9 +29,11 @@
             </a>
     <?php endif ?>
     </div>
+    <?php $isDarkMode = get_theme_mod('enable_dark_mode', 1);
+    if ($isDarkMode) : ?>
     <div class="wpnm-button">
         <div class="wpnm-button-inner-left"></div>
         <div class="wpnm-button-inner"></div>
     </div>
-
+    <?php endif; ?>
 </div>

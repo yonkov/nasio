@@ -63,7 +63,7 @@ function nasio_customize_css() {
     </style>
     <?php
 }
-add_action( 'wp_footer', 'nasio_customize_css');
+add_action( 'wp_head', 'nasio_customize_css');
 
 /*
 **Allow users to change page layout (Right sidebar or Fullwidth) via Theme Customizer
@@ -129,7 +129,7 @@ function nasio_full_width_css() {
 
     <?php endif;
 }
-add_action('wp_footer', 'nasio_full_width_css');
+add_action('wp_head', 'nasio_full_width_css');
 
 //Night Mode
 
@@ -174,8 +174,6 @@ function nasio_night_mode_customizer($wp_customize) {
 add_action('customize_register', 'nasio_night_mode_customizer');
 
 function nasio_customize_night_mode_css() {
-
-	$isDarkMode = get_theme_mod('enable_dark_mode', 1)? 'block': 'none';
     ?>
 	
 	<style type="text/css">
@@ -185,13 +183,9 @@ function nasio_customize_night_mode_css() {
 	.dark-mode .site-footer {
         background-color: <?php echo esc_attr(get_theme_mod('dark_mode_background_color', "#393939")); ?>;
 	}
-	.wpnm-button{
-		display: <?php echo esc_attr($isDarkMode);?>
-	}
 	</style> 
 	
 	<?php
-
 }
 
 add_action( 'wp_head', 'nasio_customize_night_mode_css');

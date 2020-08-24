@@ -9,42 +9,6 @@
  * @version 1.0
  */
 
-/* Freemius analytics code */
-
-if ( ! function_exists( 'nasio_fs' ) ) {
-    // Create a helper function for easy SDK access.
-    function nasio_fs() {
-        global $nasio_fs;
-
-        if ( ! isset( $nasio_fs ) ) {
-            // Include Freemius SDK.
-            require_once dirname(__FILE__) . '/freemius/start.php';
-
-            $nasio_fs = fs_dynamic_init( array(
-                'id'                  => '6221',
-                'slug'                => 'nasio',
-                'type'                => 'theme',
-                'public_key'          => 'pk_dc110697a3d235d53d765b875870d',
-                'is_premium'          => false,
-                'has_addons'          => false,
-                'has_paid_plans'      => false,
-                'menu'                => array(
-                    'account'        => false,
-                    'contact'        => false,
-                    'support'        => false,
-                ),
-            ) );
-        }
-
-        return $nasio_fs;
-    }
-
-    // Init Freemius.
-    nasio_fs();
-    // Signal that SDK was initiated.
-    do_action( 'nasio_fs_loaded' );
-}
-
 function nasio_setup() {
     // Make theme available for translation. 
 	load_theme_textdomain( 'nasio', get_template_directory() . '/languages');
@@ -134,7 +98,7 @@ function nasio_styles() {
 	//Toggle Dark Theme Mode
 	wp_enqueue_script( 'dark-mode', get_template_directory_uri() . '/assets/js/toggleDarkMode.min.js', array(),'',true);
 	//Theme stylesheet.
-	wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style.min.css', '', '1.2.3' );
+	wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style.min.css', '', '1.2.4' );
 }
 
 add_action( 'wp_enqueue_scripts', 'nasio_styles' );
@@ -276,9 +240,9 @@ Class Nasio_Recent_Posts_Widget extends WP_Widget_Recent_Posts {
 						?> <img class="default-image" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-image.jpg"
 						alt="<?php the_title(); ?>" /> <?php
 					} ?>
-					<a href="<?php esc_url(the_permalink()); ?>"><?php esc_attr(get_the_title()) ? the_title() : the_ID(); ?></a>
+					<a href="<?php esc_url(the_permalink()); ?>"><?php esc_html(get_the_title()) ? the_title() : the_ID(); ?></a>
 					<?php if ( $show_date ) : ?>
-						<span class="post-date"><?php echo esc_attr(get_the_date()); ?></span>
+						<span class="post-date"><?php echo esc_html(get_the_date()); ?></span>
 					<?php endif; ?>
 				</li>
 			<?php endwhile; ?>

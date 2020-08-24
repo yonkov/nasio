@@ -1,10 +1,10 @@
 ﻿=== Nasio ===
 Contributors: nravota12
 Requires at least: 4.4
-Tested up to: 5.4
+Tested up to: 5.5
 Requires PHP: 5.2.4
-Version: 2.2.1
-Stable tag: 2.2.1
+Version: 2.2.5
+Stable tag: 2.2.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, portfolio, photography, two-columns, right-sidebar, full-width-template, custom-colors, custom-menu, custom-logo, custom-header, featured-images, footer-widgets, theme-options, threaded-comments, translation-ready, rtl-language-support
@@ -80,7 +80,23 @@ License: GNU General Public License v2 or later
 
 == Changelog ==
 
-= 2.2.0 =
+= 2.2.5 =
+* Released: August 2020
+Normalize image height
+
+= 2.2.4 =
+* Released: August 2020
+Update html
+
+= 2.2.3 =
+* Released: June, 2020
+Remove freemius analytics tool.
+
+= 2.2.2 =
+* Released: May, 2020
+Fix js warning when dark mode button is removed from DOM.
+
+= 2.2.1 =
 * Released: May, 2020
 Add more options to theme customizer. Improve full width layout.
 
