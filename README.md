@@ -90,7 +90,7 @@ Now, let's set up some widgets in the right sidebar and remove the default ones!
 </div>
 ```
 
-Pick a custom html widget and drag it to the right sidebar. Paste the above html code there. Do not forget to add the correct urls to the different social media inside the anchor tags. Now, when you visit the website, you should be able to see a beautiful block with info about the webmaster. Feel free to modify the text and the code as much as you can!
+Pick a custom html widget and drag it to the right sidebar. Paste the above html code there. Do not forget to add the correct urls to the different social media inside the anchor tags. Now, when you save te widget and visit the website, you should be able to see a beautiful block with info about the webmaster. Feel free to modify the text and the code as much as you can! You can easily do that via this [syntax highlighter tool](https://webformatter.com/html).
 
 ## Full-width Layout (No Sidebar)
 
