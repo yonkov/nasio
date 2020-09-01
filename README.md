@@ -62,14 +62,33 @@ The theme supports a right sidebar and you can add as many widgets as you want t
 
 Now, let's set up some widgets in the right sidebar and remove the default ones! In your dashboard, go to widgets and you will see a list of all the available widgets. Feel free to play around with them. Here is a custom html widget to display info about the webmaster just like on the theme's screenshot:
 
-    <div class="bio text-center"><img src="/wp-content/themes/nasio/images/wordpress-wizard.jpg" alt="webmaster pic" class="img-fluid">
-        <div class="bio-body">
-            <h2>George Doe</h2>
-            <p>Hi, my name is George Doe. I am a blogger, web developer and WordPress enthusiast. In this blog you can find up-to-date and useful information about our favourite open source framework!</p>
-            <p><a class="btn btn-primary btn-sm rounded" href="/about">Read my bio</a></p>
-            <p class="social"><a href="/#" class="p-2"><span class="fa fa-facebook"></span></a><a href="/#" class="p-2"><span class="fa fa-twitter"></span></a><a href="/#" class="p-2"><span class="fa fa-instagram"></span></a><a href="/#" class="p-2"><span class="fa fa-youtube-play"></span></a></p>
-        </div>
+```html
+<div class="bio text-center">
+    <!--Add your image url inside the src quotation marks -->
+    <img src="/wp-content/themes/nasio/images/wordpress-wizard.jpg" alt="webmaster pic" class="img-fluid" />
+    <div class="bio-body">
+        <!--Add your name inside the h2 tags-->
+        <h2>George Doe</h2>
+        <!--Add your info inside the p tags -->
+        <p>Hi, my name is George Doe. I am a blogger, web developer and WordPress enthusiast. In this blog you can find up-to-date and useful information about our favourite open source framework!</p>
+        <!-- Add social media links inside the href quotation marks-->
+        <p>
+            <a class="btn btn-primary btn-sm rounded" href="/about">Read my bio</a>
+        </p>
+        <!-- Add social media links inside the href quotation marks. -->
+        <p class="social">
+            <!-- Facebook social link-->
+            <a href="/#" class="p-2"><span class="fa fa-facebook"></span></a>
+            <!-- Twitter social link-->
+            <a href="/#" class="p-2"><span class="fa fa-twitter"></span></a>
+            <!--Instagram social link -->
+            <a href="/#" class="p-2"><span class="fa fa-instagram"></span></a>
+            <!--Youtube social link -->
+            <a href="/#" class="p-2"><span class="fa fa-youtube-play"></span></a>
+        </p>
     </div>
+</div>
+```
 
 Pick a custom html widget and drag it to the right sidebar. Paste the above html code there. Do not forget to add the correct urls to the different social media inside the anchor tags. Now, when you visit the website, you should be able to see a beautiful block with info about the webmaster. Feel free to modify the text and the code as much as you can!
 
