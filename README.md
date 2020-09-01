@@ -71,7 +71,7 @@ Now, let's set up some widgets in the right sidebar and remove the default ones!
         <h2>George Doe</h2>
         <!--Add your info inside the p tags -->
         <p>Hi, my name is George Doe. I am a blogger, web developer and WordPress enthusiast. In this blog you can find up-to-date and useful information about our favourite open source framework!</p>
-        <!-- Add social media links inside the href quotation marks-->
+        <!-- Add button url inside the href quotation marks-->
         <p>
             <a class="btn btn-primary btn-sm rounded" href="/about">Read my bio</a>
         </p>
@@ -98,22 +98,43 @@ Since version 1.04, the the theme support full-width layout out of the box. You 
 
 ## Footer Widgets
  In addition to the right sidebar you can add widgets to two defined regions in the footer. They are named "Footer 1" and "Footer 2". These will be arranged in a beautiful multi-column layout. The theme works best if you add just one widget in Footer 1 and two widgets in Footer 2. In this way, you should have 3 widgets in the footer in total. If you want, you can use and modify the text of the theme's default text widgets. Here is the code for them:
-    
-    <!-- About me widget-->
-    <h3 class="heading">About me</h3><p class="page-title"><img src="/wp-content/themes/nasio/images/about.jpg" alt="placeholder" class="img-fluid"></p><p>This is a good place to introduce yourself. Write about your work, hobbies and passion.<a href="/about"> Read More</a></p>
 
-    <!--Get Social Widget-->
-    <h3 class="widget-title">Get Social</h3>
-    <div class="textwidget custom-html-widget col-footer">
-        <ul class="list-unstyled footer-social">
-            <li><a href="/#"><span class="fa fa-twitter"></span> Twitter</a></li>
-            <li><a href="/#"><span class="fa fa-facebook"></span> Facebook</a></li>
-            <li><a href="/#"><span class="fa fa-instagram"></span> Instagram</a></li>
-            <li><a href="/#"><span class="fa fa-vimeo"></span> Vimeo</a></li>
-            <li><a href="/#"><span class="fa fa-youtube-play"></span> Youtube</a></li>
-            <li><a href="/#"><span class="fa fa-snapchat"></span> Snapshot</a></li>
-        </ul>
-    </div>
+```html 
+<!-- About me widget-->
+<h3 class="heading">About me</h3>
+<p class="page-title">
+    <img src="/wp-content/themes/nasio/images/about.jpg" alt="placeholder" class="img-fluid" />
+</p>
+<p>
+    This is a good place to introduce yourself. Write about your work, hobbies and passion.
+    <a href="/about"> Read More</a>
+</p>
+
+<!--Get Social Widget-->
+<h3 class="widget-title">Get Social</h3>
+<div class="textwidget custom-html-widget col-footer">
+    <ul class="list-unstyled footer-social">
+        <li>
+            <a href="/#"><span class="fa fa-twitter"></span> Twitter</a>
+        </li>
+        <li>
+            <a href="/#"><span class="fa fa-facebook"></span> Facebook</a>
+        </li>
+        <li>
+            <a href="/#"><span class="fa fa-instagram"></span> Instagram</a>
+        </li>
+        <li>
+            <a href="/#"><span class="fa fa-vimeo"></span> Vimeo</a>
+        </li>
+        <li>
+            <a href="/#"><span class="fa fa-youtube-play"></span> Youtube</a>
+        </li>
+        <li>
+            <a href="/#"><span class="fa fa-snapchat"></span> Snapshot</a>
+        </li>
+    </ul>
+</div>
+```
 
 For the above code you will need to use two custom html widgets. Drag them to the footer sidebars and paste the code there. Do not forget to save. In this way you will be able to customize the footer the way you like it.
 
@@ -127,7 +148,8 @@ Since v. 1.04, the theme supports the option to add custom header image via the 
 
 In some occasions, you might want to remove the light blue header bar on top of each page. You can remove it with the following css code. In the theme customizer, navigate to "Additional css" tab in the customizer (the last one tab):
   
-```/* CSS code to remove top bar */
+```css
+/* CSS code to remove top bar */
 .top-bar {
     display: none;
 }
@@ -178,9 +200,11 @@ Optionally specify a static front page.
 
 Protect your visitor's eyes and help them spend more time on your website by allowing them to switch between day and night mode (light and dark layout). To change to dark mode, you need to click on the toggle button in the theme footer. If you wish, you can remove the dark mode via the theme customizer. You can also change the background color and add custom css to change the main colors of the night mode. For example, if you want to change the link colors, you can use the following css:
 
-    body.dark-mode a {
-	    color: rgb(102, 222, 209) !important;
-    }
+```css
+body.dark-mode a {
+    color: rgb(102, 222, 209) !important;
+}
+```
 
 ### Additional CSS:
 This section is for more advanced users who want to write custom css to override the default theme's styles.
