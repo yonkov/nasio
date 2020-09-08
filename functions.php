@@ -216,7 +216,6 @@ Class Nasio_Recent_Posts_Widget extends WP_Widget_Recent_Posts {
 		 * @param array $args An array of arguments used to retrieve the recent posts.
 		 */
 
-
 		$r = new WP_Query( apply_filters( 'widget_posts_args', array(
 			'posts_per_page'      => $number,
 			'no_found_rows'       => true,
@@ -400,24 +399,32 @@ function nasio_numeric_posts_nav() {
 
 /**
  * Enable dark theme mode
- * 
- * Inspired by https://wordpress.org/plugins/wp-night-mode/
- * 
+ * @link https://wordpress.org/plugins/wp-night-mode/
  */
 
 function nasio_dark_mode($classes) {
 
     $nasio_night_mode = isset( $_COOKIE['nasioNightMode'] ) ? $_COOKIE['nasioNightMode'] : '';
 
-    if ($nasio_night_mode!=='' ) {
-        
+    if ($nasio_night_mode!=='' ) {        
         // Add 'dark-mode' body class
             return array_merge( $classes, array( 'dark-mode' ) );
-
     }
-
     return $classes;
-  
 }
 
 add_filter( 'body_class', 'nasio_dark_mode');
+
+/** 
+ * Facebook Open Graph
+ * Display featured posts as og:image on single page
+ * @link https://stackoverflow.com/questions/28735174/wordpress-ogimage-featured-image
+ */
+
+function nasio_fb_open_graph() {	
+	if( is_single() && has_post_thumbnail() ) {
+        echo '<meta property="og:image" content="'. esc_attr(get_the_post_thumbnail_url(get_the_ID()))   .'" />';
+    }
+}
+
+add_action('wp_head', 'nasio_fb_open_graph');
