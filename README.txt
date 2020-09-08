@@ -81,7 +81,7 @@ License: GNU General Public License v2 or later
 == Changelog ==
 
 = 2.2.6 =
-* Released: August 2020
+* Released: September 2020
 Fix Facebook Open Graph issue
 
 = 2.2.5 =

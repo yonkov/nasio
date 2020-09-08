@@ -6,7 +6,7 @@ Nasio does not use Bootstrap or any other css framework (only custom css!) to pr
 
 The theme extends the Recent Posts widget to include beautiful post thumbnail images in the right sidebar. Posts without a featured image are displayed with a default thumbnail. Optimized css and font delivery for better performance. Static files (css and js) are minifed. Fully compatible with Gutenberg but also supports the good old Classic editor.
 
-Live example: https://phototravelworld.com/
+Live example: http://merrystories.com/
 
 **Table of Contents**
 - [Nasio](#nasio)
