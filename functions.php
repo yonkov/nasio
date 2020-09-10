@@ -98,7 +98,7 @@ function nasio_styles() {
 	//Toggle Dark Theme Mode
 	wp_enqueue_script( 'dark-mode', get_template_directory_uri() . '/assets/js/toggleDarkMode.min.js', array(),'',true);
 	//Theme stylesheet.
-	wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style.min.css', '', '1.2.4' );
+	wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style.min.css', '', '1.2.5' );
 }
 
 add_action( 'wp_enqueue_scripts', 'nasio_styles' );
