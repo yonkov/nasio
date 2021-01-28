@@ -36,14 +36,13 @@ get_header(); ?>
                         <div class="column<?php echo (is_sticky()) ?  ' sticky' : ''; ?>"> <?php
                         if ( has_post_thumbnail() ): ?>
                             <a class="blog-entry" href="<?php the_permalink() ?>">
-                                <?php the_post_thumbnail() ?>
+                                <?php the_post_thumbnail('medium_large') ?>
                                 <div class="blog-content-body">
                                     <h2><?php the_title() ?></h2>
                                 </div>
                             </a>
                             <?php else : ?>
                             <a class="blog-entry no-image" href="<?php the_permalink() ?>">
-                                <?php the_post_thumbnail() ?>
                                 <div class="blog-content-body">
                                     <h2><?php the_title() ?></h2>
                                 </div>
