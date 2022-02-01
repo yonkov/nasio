@@ -150,10 +150,6 @@ header {
     padding-right: 50px
 }
 
-.top-bar .social {
-    text-align: right
-}
-
 .top-bar .search-icon {
     text-align: left
 }
@@ -328,12 +324,6 @@ header {
 
 section[id*="recent-posts"] li a {
     padding-right: 10px
-}
-
-/* Social menu */
-
-.social-links-menu {
-    float: right
 }
 
 /* Dark mode rtl */
