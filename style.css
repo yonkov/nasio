@@ -848,9 +848,7 @@ code {
 }
 
 .navbar-nav {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
     flex-direction: column;
     padding-left: 0;
     margin-bottom: 0;
@@ -858,11 +856,8 @@ code {
 }
 
 .navbar-collapse {
-    -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    -ms-flex-positive: 1;
     flex-grow: 1;
-    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -896,14 +891,12 @@ code {
     }
 
     .navbar-nav {
-        display: -ms-flexbox;
         display: flex;
-        -ms-flex-direction: column;
         flex-direction: column;
         padding-left: 0;
         margin-bottom: 0;
         list-style: none;
-        width: 80%;
+        width: 90%;
         background: #fff;
         padding: 2em;
         border-bottom: 1px solid#f5f5f5;
@@ -922,7 +915,6 @@ code {
 
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav {
-        -ms-flex-direction: row;
         flex-direction: row;
     }
 
@@ -937,14 +929,11 @@ code {
 
     .navbar-expand-lg > .container,
     .navbar-expand-lg > .container-fluid {
-        -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     }
 
     .navbar-expand-lg .navbar-collapse {
-        display: -ms-flexbox !important;
         display: flex !important;
-        -ms-flex-preferred-size: auto;
         flex-basis: auto;
     }
 

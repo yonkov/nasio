@@ -82,7 +82,7 @@ License: GNU General Public License v2 or later
 
 = 2.3.0 =
 * Released: February 2022
-Social Links mobile fix. Sticky post update styles.
+Social Links mobile fix. Sticky post update styles. Remove obsolete styles.
 
 = 2.2.9 =
 * Released: February 2022
