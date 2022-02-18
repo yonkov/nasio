@@ -62,16 +62,18 @@
             * Since WordPress 4.5
             */
             if (function_exists('the_custom_logo')) :
-              if ( !has_custom_logo() ) : //Display default theme logo if no logo is specified ?>
-                <img class="default custom_logo"
-                    src="<?php echo esc_url( get_template_directory_uri()); ?>/images/nasio-logo.png"
-                    alt="<?php echo esc_attr('nasio theme logo')?>" />
-              <?php else: ?>
-                        <?php //allow the user to upload cutom logo and replace the theme logo
-                $custom_logo_id = get_theme_mod( 'custom_logo' );
-                $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
-                echo '<img class="custom_logo" src="' . esc_url( $custom_logo_url ) . '" alt="nasio-logo" />';              
+                if ( !has_custom_logo() ) : //Display default theme logo if no logo is specified ?>
+                <a href="<?php echo esc_attr(home_url()); ?>">
+                    <img class="default custom_logo"
+                        src="<?php echo esc_url( get_template_directory_uri()); ?>/images/nasio-logo.png"
+                        alt="<?php echo esc_attr('nasio theme logo')?>" />
+                <?php else: ?>
+                            <?php //allow the user to upload cutom logo and replace the theme logo
+                    $custom_logo_id = get_theme_mod( 'custom_logo' );
+                    $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
+                    echo '<img class="custom_logo" src="' . esc_url( $custom_logo_url ) . '" alt="site-logo" />';              
                 endif;
+                    echo '</a>';
             endif; //Show site title
                     if (display_header_text()==true) : ?>
                         <h1 class="site-title"><a href="<?php echo esc_attr(home_url()); ?>"><?php bloginfo( 'name' ); ?></a></h1>
