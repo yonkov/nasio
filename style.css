@@ -4,7 +4,7 @@ Theme URI: https://github.com/yonkov/nasio/
 Author: Atanas Yonkov
 Author URI: http://yonkov.github.io/
 Description: Extremely lightweight WordPress theme without any frameworks developed by Atanas Yonkov. Ideal for blogs and portfolio websites. Very easy to set up even for people with no coding experience thanks to its extensive documentation and generous theme options. The theme is optimized for speed and better performance in google search results. It does not use Bootstrap or any other css framework (only custom css!) to provide unique and high-quality user experience. As a result, the whole theme's zip file is less than 300KB. It has fully responsive 2-column grid layout. Option to use a static Homepage. Beautiful pagination. Option to add header image, custom logo, site icon and change theme accent colors from the theme customizer. Option to switch between right sidebar layout and full-width layout. The visitors can switch between light and dark (night) theme mode with a single click and change their preferences at any time. The theme supports nested dropdown sub menus. It extends the Recent Posts widget to include thumbnail images. Posts without a featured image are displayed with a default thumbnail. Optimized for speed. Optimized css and font delivery for better performance. Extremely fast and SEO friendly. Static files (css and js) are minified. Fully compatible with Gutenberg but also supports the good old Classic editor. How to set it up: https://github.com/yonkov/nasio#readme. Live example: http://merrystories.com/
-Version: 2.3.0
+Version: 2.3.1
 Requires at least: 4.4
 Requires PHP: 5.2.4
 Tested up to: 5.9
@@ -1834,7 +1834,7 @@ section[id*="recent-comments"] h2 {
 }
 
 .site-footer p {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, .75);
     font-size: 14px;
 }
 

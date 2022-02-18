@@ -3,8 +3,8 @@ Contributors: nravota12
 Requires at least: 4.4
 Tested up to: 5.9
 Requires PHP: 5.2.4
-Version: 2.3.0
-Stable tag: 2.3.0
+Version: 2.3.1
+Stable tag: 2.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, portfolio, photography, two-columns, right-sidebar, full-width-template, custom-colors, custom-menu, custom-logo, custom-header, featured-images, footer-widgets, theme-options, threaded-comments, translation-ready, rtl-language-support
@@ -79,6 +79,10 @@ Theme structure is based on Twenty Seventeen https://wordpress.org/themes/twenty
 License: GNU General Public License v2 or later
 
 == Changelog ==
+
+= 2.3.1 =
+* Released: February 2022
+Footer widgets text improve contrast ratio.
 
 = 2.3.0 =
 * Released: February 2022

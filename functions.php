@@ -113,7 +113,7 @@ function nasio_styles() {
 	// Toggle Dark Theme Mode
 	wp_enqueue_script( 'dark-mode', get_template_directory_uri() . '/assets/js/toggleDarkMode.min.js', array(), '', true );
 	// Theme stylesheet.
-	wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style.min.css', '', '2.3.0' );
+	wp_enqueue_style( 'nasio-css', get_template_directory_uri() . '/style.min.css', '', '2.3.1' );
 }
 
 add_action( 'wp_enqueue_scripts', 'nasio_styles' );
@@ -136,11 +136,11 @@ add_action( 'wp_footer', 'nasio_fonts' );
 function nasio_remove_image_size_attributes( $html ) {
 	return preg_replace( '/(width|height)="\d*"/', '', $html );
 }
-	// Remove image size attributes from post thumbnails
-	add_filter( 'post_thumbnail_html', 'nasio_remove_image_size_attributes' );
+// Remove image size attributes from post thumbnails
+add_filter( 'post_thumbnail_html', 'nasio_remove_image_size_attributes' );
 
-	// Remove image size attributes from images added to a WordPress post
-	add_filter( 'image_send_to_editor', 'nasio_remove_image_size_attributes' );
+// Remove image size attributes from images added to a WordPress post
+add_filter( 'image_send_to_editor', 'nasio_remove_image_size_attributes' );
 
 
 function nasio_front_page_template( $template ) {
