@@ -1,10 +1,10 @@
 ﻿=== Nasio ===
 Contributors: nravota12
 Requires at least: 4.4
-Tested up to: 5.9
+Tested up to: 6.6
 Requires PHP: 5.2.4
-Version: 2.3.3
-Stable tag: 2.3.3
+Version: 2.3.4
+Stable tag: 2.3.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, portfolio, photography, two-columns, right-sidebar, full-width-template, custom-colors, custom-menu, custom-logo, custom-header, featured-images, footer-widgets, theme-options, threaded-comments, translation-ready, rtl-language-support
@@ -15,7 +15,7 @@ Extremely lightweight WordPress theme without any frameworks developed by Atanas
 The theme is optimized for speed and better performance in google search results. It does not use Bootstrap or any other css framework (only custom css!) to provide unique and high-quality user experience. 
 It has fully responsive 2-column grid layout. Option to use a static Homepage. Beautiful pagination. Option to add header image, custom logo, site icon and change theme accent colors from the theme customizer. Option to switch between right sidebar layout and full-width layout. 
 The visitors can choose between light and dark theme mode and change their preferences any time. The theme supports nested dropdown sub menus. It extends the Recent Posts widget to include thumbnail images. Posts without a featured image are displayed with a default thumbnail. Optimized for speed. 
-Optimized css and font delivery for better performance. Extremely fast and SEO friendly. Static files (css and js) are minified. Fully compatible with Gutenberg but also supports the good old Classic editor. How to set it up: https://github.com/yonkov/nasio. Live example: http://phototravelworld.com/
+Optimized css and font delivery for better performance. Extremely fast and SEO friendly. Static files (css and js) are minified. Fully compatible with Gutenberg but also supports the good old Classic editor. How to set it up: https://github.com/yonkov/nasio#readme
 
 == Installation ==
 
@@ -32,7 +32,7 @@ You can read the Theme Instructions at https://github.com/yonkov/nasio in the Re
 
 == Copyright ==
 
-Nasio WordPress Theme, Copyright 2020 Atanas Yonkov
+Nasio WordPress Theme, Copyright 2020 - present Atanas Yonkov
 Nasio is distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
@@ -79,6 +79,10 @@ Theme structure is based on Twenty Seventeen https://wordpress.org/themes/twenty
 License: GNU General Public License v2 or later
 
 == Changelog ==
+
+= 2.3.4 =
+* Released: August 2024
+Update docs
 
 = 2.3.3 =
 * Released: February 2022
